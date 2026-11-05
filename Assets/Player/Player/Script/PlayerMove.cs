@@ -4,23 +4,35 @@ using UnityEngine.EventSystems;
 
 public class PlayerMove : MonoBehaviour
 {
-    private float moveSpeed = 5;
+    //現在のスピードを保存
+    public float currentSpeed;
 
+    //通常時のスピード・走っているときのスピード
+    private float moveSpeed = 1.5f , runSpeed = 3;
+
+    //Rayの長さ
     private float playerHeight = 2;
 
+    //地面の摩擦力
     private float groundDrag;
 
+    //地面にいるかどうか
     private bool grounded;
 
+    //どこを向いているか
     public Transform orientation;
-    private float horizontalInput;
-    private float verticalInput;
+    
+    //縦・横のキー設定
+    private float horizontalInput, verticalInput;
+    
     private Vector3 moveDirection;
     private Rigidbody rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        currentSpeed = runSpeed;
     }
 
     // Update is called once per frame
@@ -32,6 +44,10 @@ public class PlayerMove : MonoBehaviour
         MovePlayer();
 
         SpeedControl();
+
+        bool isRuning = Input.GetKey(KeyCode.LeftControl);
+
+        currentSpeed = isRuning ? moveSpeed : runSpeed;
 
         if (grounded)
             rb.linearDamping = groundDrag;
@@ -49,12 +65,11 @@ public class PlayerMove : MonoBehaviour
         {
             if (moveDirection.magnitude > 0)
             {
-                rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+                rb.AddForce(moveDirection.normalized * currentSpeed * 10f, ForceMode.Force);
             }
             else
             {
-                // ���͂������Ƃ��̓s�^�b�Ǝ~�߂�
-                rb.linearVelocity = new Vector3(0f, rb.linearVelocity.y, 0f);
+                rb.AddForce(moveDirection.normalized * currentSpeed * 10f , ForceMode.Force);
             }
         }
 
@@ -65,9 +80,9 @@ public class PlayerMove : MonoBehaviour
     {
         Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
-        if (flatVel.magnitude > moveSpeed)
+        if (flatVel.magnitude > currentSpeed)
         {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
+            Vector3 limitedVel = flatVel.normalized * currentSpeed;
 
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
