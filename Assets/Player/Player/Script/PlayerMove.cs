@@ -8,16 +8,21 @@ public class PlayerMove : MonoBehaviour
     public float currentSpeed;
 
     //通常時のスピード・走っているときのスピード
-    private float moveSpeed = 1.5f , runSpeed = 3;
+   [SerializeField] private float moveSpeed = 1.5f , runSpeed = 3;
+
+    [SerializeField] private float airMultiplier = 6;
+
+    //ジャンプ力
+    [SerializeField] private float jumpForce = 14;
 
     //Rayの長さ
     private float playerHeight = 2;
 
     //地面の摩擦力
-    private float groundDrag;
+    [SerializeField] private float groundDrag = 5;
 
     //地面にいるかどうか
-    private bool grounded;
+    private bool grounded , isReadyToJump;
 
     //どこを向いているか
     public Transform orientation;
@@ -40,6 +45,17 @@ public class PlayerMove : MonoBehaviour
     {
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
 
+        if(!grounded)
+        {
+            isReadyToJump = false;
+
+            Invoke(nameof(IsResetJump), 0f);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space)&& isReadyToJump  && grounded)
+        {
+            Jump();
+        }
 
         MovePlayer();
 
@@ -69,7 +85,7 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                rb.AddForce(moveDirection.normalized * currentSpeed * 10f , ForceMode.Force);
+                rb.AddForce(moveDirection.normalized * currentSpeed * 10f * airMultiplier, ForceMode.Force);
             }
         }
 
@@ -86,5 +102,20 @@ public class PlayerMove : MonoBehaviour
 
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
+    }
+
+    private void Jump()
+    {
+        //上方向速度リセット
+        rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+
+        //上方向へ力を加える
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
+    }
+
+    private void IsResetJump()
+    {
+        isReadyToJump = true;
     }
 }
