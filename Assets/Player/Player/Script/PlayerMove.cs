@@ -6,13 +6,17 @@ using Unity.Netcode;
 
 public class PlayerMove : NetworkBehaviour
 {
+    public static PlayerMove instance { get; private set; }
+
     //現在のスピードを保存
     public float currentSpeed;
 
     //通常時のスピード・走っているときのスピード
-   [SerializeField] private float moveSpeed = 1.5f , runSpeed = 3;
+    [SerializeField] private float moveSpeed = 1.5f, runSpeed = 3;
 
-    [SerializeField] private float airMultiplier = 6;
+    [SerializeField] private float airMultiplier = 0.6f;
+
+    [SerializeField] private float fallMutipler = 3f;
 
     //ジャンプ力
     [SerializeField] private float jumpForce = 14;
@@ -24,16 +28,22 @@ public class PlayerMove : NetworkBehaviour
     [SerializeField] private float groundDrag = 5;
 
     //地面にいるかどうか
-    private bool grounded , isReadyToJump;
+    public bool grounded, isReadyToJump;
 
     //どこを向いているか
     public Transform orientation;
-    
+
     //縦・横のキー設定
     private float horizontalInput, verticalInput;
-    
+
     private Vector3 moveDirection;
     private Rigidbody rb;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -47,19 +57,20 @@ public class PlayerMove : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
+        //grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
         //network系統
         //if (!IsOwner) return;
 
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
+        //grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
 
-        if(!grounded)
+        if (!grounded)
         {
             isReadyToJump = false;
 
             Invoke(nameof(IsResetJump), 0f);
         }
 
-        if(Input.GetKeyDown(KeyCode.Space)&& isReadyToJump  && grounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isReadyToJump && grounded)
         {
             Jump();
         }
@@ -77,6 +88,18 @@ public class PlayerMove : NetworkBehaviour
         else
             rb.linearDamping = 0;
     }
+
+    private void FixedUpdate()
+    {
+        if (rb.linearVelocity.y < 0)
+        {
+            rb.AddForce(
+                Vector3.up * Physics.gravity.y * (fallMutipler - 1),
+                ForceMode.Acceleration
+            );
+        }
+    }
+
     private void MovePlayer()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -86,14 +109,12 @@ public class PlayerMove : NetworkBehaviour
 
         if (grounded)
         {
-            if (moveDirection.magnitude > 0)
-            {
-                rb.AddForce(moveDirection.normalized * currentSpeed * 10f, ForceMode.Force);
-            }
-            else
-            {
-                rb.AddForce(moveDirection.normalized * currentSpeed * 10f * airMultiplier, ForceMode.Force);
-            }
+            rb.AddForce(moveDirection.normalized * currentSpeed * 10f, ForceMode.Force);
+        }
+
+        else
+        {
+            rb.AddForce(moveDirection.normalized * currentSpeed * 10f * airMultiplier, ForceMode.Force);
         }
 
         //rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
@@ -125,4 +146,6 @@ public class PlayerMove : NetworkBehaviour
     {
         isReadyToJump = true;
     }
+
+    
 }

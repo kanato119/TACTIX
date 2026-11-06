@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    private float sensX = 500;
-    private float sensY = 500;
+    [Range(1f, 500f)]
+    [SerializeField] float Sens = 500;
+    //[Range(1f, 500f)]
+    //private float sensY = 500;
 
     public Transform orientation;
 
@@ -28,8 +30,8 @@ public class PlayerCamera : MonoBehaviour
     {
         
 
-        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
+        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * Sens;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * Sens;
 
         yRotation += mouseX;
 

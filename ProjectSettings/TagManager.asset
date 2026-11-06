@@ -19,6 +19,7 @@ TagManager:
   - FukuiTextPlayer1
   - FukuiTestPlayer2
   - FukuiTestPlayer3
+  - Ground
   layers:
   - Default
   - TransparentFX

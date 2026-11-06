@@ -1,8 +1,10 @@
+using TMPro;
 using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
     public Transform cameraPosition;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,5 +15,14 @@ public class Camera : MonoBehaviour
     void Update()
     {
         transform.position = cameraPosition.position;
+        crouch();
+    }
+
+    private void crouch()
+    {
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            Debug.Log("押されている");
+        }
     }
 }
