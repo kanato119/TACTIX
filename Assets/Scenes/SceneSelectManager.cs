@@ -30,6 +30,7 @@ public class SceneSelectManager
     {
         SceneManager.LoadScene(sceneName);
     }
+
     /// <summary>
     /// ホスト専用すべてのclientシーン遷移
     /// 前のシーンは削除される

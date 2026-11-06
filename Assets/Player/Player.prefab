@@ -150,8 +150,8 @@ GameObject:
   - component: {fileID: 4149772771571118441}
   - component: {fileID: 7638935843770754584}
   - component: {fileID: 6579306894753601594}
-  - component: {fileID: 7454336228385710366}
   - component: {fileID: 5149242110279522057}
+  - component: {fileID: 7454336228385710366}
   - component: {fileID: 6856879186893655770}
   - component: {fileID: 7192091901730208725}
   m_Layer: 0
@@ -170,7 +170,7 @@ Transform:
   m_GameObject: {fileID: 6325208163295343933}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.57, z: 54.7}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -286,20 +286,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &7454336228385710366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6325208163295343933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b94cd4808e9953d4c8630a9e174033ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
-  currentSpeed: 0
-  orientation: {fileID: 6067926575878654235}
 --- !u!114 &5149242110279522057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 0
+  GlobalObjectIdHash: 4173274084
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -327,6 +313,26 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
+--- !u!114 &7454336228385710366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6325208163295343933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94cd4808e9953d4c8630a9e174033ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
+  ShowTopMostFoldoutHeaderGroup: 1
+  currentSpeed: 0
+  moveSpeed: 1.5
+  runSpeed: 3
+  airMultiplier: 6
+  jumpForce: 14
+  groundDrag: 5
+  orientation: {fileID: 6067926575878654235}
 --- !u!114 &6856879186893655770
 MonoBehaviour:
   m_ObjectHideFlags: 0
