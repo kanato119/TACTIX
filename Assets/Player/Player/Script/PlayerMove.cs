@@ -61,7 +61,7 @@ public class PlayerMove : NetworkBehaviour
         //network系統
         //if (!IsOwner) return;
 
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
+        //grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
 
         if (!grounded)
         {
