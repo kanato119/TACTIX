@@ -1,26 +1,34 @@
+using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
-using Unity.Netcode.Components;
+using Unity.Netcode;
 
 
-public class NetworkStart:MonoBehaviour
+public class NetworkStart : MonoBehaviour
 {
-    
+
     /// <summary>
     /// サーバー作成
     /// </summary>
     /// <returns></returns>
-    private bool StartHost()
+    public void StartHost()
     {
-        return true;
+        //すでに通信中なら処理しない
+        if (NetworkManager.Singleton.IsListening) return;
+
+        Unity.Netcode.NetworkManager.Singleton.StartHost();
     }
 
     /// <summary>
     /// 参加
     /// </summary>
     /// <returns></returns>
-    private bool StartClient()
+    public void StartClient()
     {
-        return true;
+        //すでに通信中なら処理しない
+        if (NetworkManager.Singleton.IsListening) return;
+
+        Unity.Netcode.NetworkManager.Singleton.StartClient();
     }
 
 
