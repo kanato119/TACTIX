@@ -219,8 +219,8 @@ GameObject:
   - component: {fileID: 5480150816331321239}
   - component: {fileID: 416629618263957627}
   - component: {fileID: 607011553098231079}
-  - component: {fileID: 6387722255756118171}
   - component: {fileID: 2809607140386367587}
+  - component: {fileID: 6387722255756118171}
   - component: {fileID: 2021539076270327710}
   - component: {fileID: 561523955111493093}
   m_Layer: 0
@@ -357,28 +357,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &6387722255756118171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4114063497597692955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b94cd4808e9953d4c8630a9e174033ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
-  currentSpeed: 0
-  moveSpeed: 1.8
-  runSpeed: 3.5
-  airMultiplier: 0.3
-  fallMutipler: 3
-  jumpForce: 18
-  groundDrag: 20
-  grounded: 0
-  isReadyToJump: 0
-  orientation: {fileID: 6504429778405366547}
 --- !u!114 &2809607140386367587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 403448574
+  GlobalObjectIdHash: 2716355555
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -406,6 +384,29 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
+--- !u!114 &6387722255756118171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4114063497597692955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94cd4808e9953d4c8630a9e174033ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
+  ShowTopMostFoldoutHeaderGroup: 1
+  currentSpeed: 0
+  moveSpeed: 1.8
+  runSpeed: 3.5
+  airMultiplier: 0.3
+  fallMutipler: 3
+  jumpForce: 18
+  groundDrag: 20
+  grounded: 0
+  isReadyToJump: 0
+  orientation: {fileID: 6504429778405366547}
 --- !u!114 &2021539076270327710
 MonoBehaviour:
   m_ObjectHideFlags: 0
