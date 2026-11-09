@@ -1,28 +1,76 @@
+
 using UnityEngine;
 
 public class DeathMatchResult : MonoBehaviour
 {
     public RulesDeathMatch[] players;
 
+    // 制限時間（5分）
+    public float timeLimit = 300f;
+
+    // ゲーム終了判定（全プレイヤーで共有）
+    public static bool GameEnded = false;
+
+    void Start()
+    {
+        GameEnded = false;
+    }
+
+    void Update()
+    {
+        if (GameEnded)
+            return;
+        // 25キルに到達したプレイヤーがいるか確認
+        foreach (RulesDeathMatch player in players)
+        {
+            if (player == null)
+                continue;
+
+            if (player.Kills >= 25)
+            {
+                Debug.Log(player.gameObject.name + " の勝ち！");
+                GameEnded = true;
+                return;
+            }
+        }
+        // 時間を減らす
+        timeLimit -= Time.deltaTime;
+
+        // 5分経過
+        if (timeLimit <= 0)
+        {
+            timeLimit = 0;
+            CheckWinner();
+        }
+    }
+
     public void CheckWinner()
     {
-        int maxKills = 0;
+        GameEnded = true;
+
+        int maxKills = -1;
 
         // 最大キル数を取得
         foreach (RulesDeathMatch player in players)
         {
+            if (player == null)
+                continue;
+
             if (player.Kills > maxKills)
             {
                 maxKills = player.Kills;
             }
         }
 
-        // 最大キル数の人を探す
+        // 勝者を探す
         foreach (RulesDeathMatch player in players)
         {
+            if (player == null)
+                continue;
+
             if (player.Kills == maxKills)
             {
-                Debug.Log("勝ち！");
+                Debug.Log(player.gameObject.name + " の勝ち！");
             }
         }
     }
