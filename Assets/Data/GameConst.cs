@@ -1,23 +1,15 @@
-using UnityEngine;
 
-
-/// <summary>
-/// ゲームの種類
-/// </summary>
-public enum eGameType
+public class GameConst
 {
-    Invalid = -1,
-    
-    /// <summary>
-    /// デスマッチ
-    /// </summary>
-    Deathmatch,
 
-    /// <summary>
-    /// 通常マッチ
-    /// </summary>
-    Unrated,
+    public static readonly string SCENE_TITLE /*= 作成していない*/;
+    public static readonly string SCENE_GAME_MAIN = "MainGame";
+    public static readonly string SCENE_GAME_SELECT ="GameSelect";
+    public static readonly string SCENE_GAME_LOBYY = "GameLobby";
+    public static readonly string SCENE_TEST_NET = "Test_BetScene";
+
+
+
+
 }
-
-
 
