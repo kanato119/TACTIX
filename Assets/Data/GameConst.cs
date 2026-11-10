@@ -7,9 +7,15 @@ using UnityEngine;
 public enum eGameType
 {
     Invalid = -1,
-
+    
+    /// <summary>
+    /// デスマッチ
+    /// </summary>
     Deathmatch,
 
+    /// <summary>
+    /// 通常マッチ
+    /// </summary>
     Unrated,
 }
 
