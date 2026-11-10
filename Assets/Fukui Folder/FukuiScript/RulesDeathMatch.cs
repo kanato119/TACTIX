@@ -15,7 +15,7 @@ public class RulesDeathMatch : MonoBehaviour
 
     void Start()
     {
-        
+        // 現在のシーン名を取得し、sceneNameに入れる
         sceneName = SceneManager.GetActiveScene().name;
         ResurrectionRules();
     }
