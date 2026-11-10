@@ -481,8 +481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.8167114, y: -140.22629}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 208.2, y: -82.23}
+  m_SizeDelta: {x: 239.7866, y: 164.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860329342
 MonoBehaviour:
@@ -527,7 +527,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 860329343}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3203126500237000834, guid: 9a5111ca7ae969a40920cc819debd62a,
+          type: 3}
+        m_TargetAssemblyTypeName: SelectGameType, Assembly-CSharp
+        m_MethodName: SelectDeathmatch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &860329343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,7 +695,7 @@ GameObject:
   - component: {fileID: 1536534170}
   - component: {fileID: 1536534169}
   m_Layer: 5
-  m_Name: Unrated_Button_1
+  m_Name: Unrated_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -705,8 +718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.8167114, y: -140.22629}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -249.9, y: -76.77224}
+  m_SizeDelta: {x: 222.2999, y: 153.5446}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1536534169
 MonoBehaviour:
@@ -751,7 +764,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1536534170}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3203126500237000834, guid: 9a5111ca7ae969a40920cc819debd62a,
+          type: 3}
+        m_TargetAssemblyTypeName: SelectGameType, Assembly-CSharp
+        m_MethodName: SelectUnrated
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1536534170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,7 +873,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Deathmatch
+  m_text: Unrated
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
