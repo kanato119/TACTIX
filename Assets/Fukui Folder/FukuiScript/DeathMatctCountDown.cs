@@ -38,6 +38,9 @@ public class DeathMatctCountDown : MonoBehaviour
         // start表示して2秒後には消す
         TimerText.text = "Start";
 
+        // ここで試合開始！
+        DeathMatchResult.GameStarted = true;
+
         yield return new WaitForSeconds(2f);
 
         TimerText.enabled = false;
