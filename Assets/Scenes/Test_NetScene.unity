@@ -1812,7 +1812,7 @@ PrefabInstance:
     - target: {fileID: 4104730657390612222, guid: 2e2c008e55df82e43987ffbf79830679,
         type: 3}
       propertyPath: m_Name
-      value: SessionManager
+      value: SystemManager
       objectReference: {fileID: 0}
     - target: {fileID: 6858078024469725078, guid: 2e2c008e55df82e43987ffbf79830679,
         type: 3}
@@ -1864,11 +1864,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2466067948167547927, guid: 2e2c008e55df82e43987ffbf79830679, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4104730657390612222, guid: 2e2c008e55df82e43987ffbf79830679,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2111762294}
   m_SourcePrefab: {fileID: 100100000, guid: 2e2c008e55df82e43987ffbf79830679, type: 3}
+--- !u!1 &2111762293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4104730657390612222, guid: 2e2c008e55df82e43987ffbf79830679,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111762292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2111762294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111762293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8643b2d6eafc347ab16e152dbebdff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SystemManager
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
