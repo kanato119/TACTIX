@@ -17,6 +17,6 @@ public class SystemManager : MonoBehaviour
         if (SceneSelectManager.instance == null) return;
 
         //テストシーンに遷移
-        SceneSelectManager.instance.ChangeLocalScene("Test_NetScene");
+        //SceneSelectManager.instance.ChangeLocalScene(GameConst.SCENE_TEST_NET);
     }
 }

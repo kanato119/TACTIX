@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Collections;
-using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Unity.Services.Multiplayer;
 using UnityEngine;
@@ -14,19 +10,20 @@ public class SessionCreator : MonoBehaviour
     //ルーム・サーバー設定
 
     private string _playerID;
-    private int _gameTypeID;
 
+    /// <summary>
+    /// ホストが持つ変数
+    /// https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.1/api/Unity.Services.Multiplayer.IHostSession.html
+    /// </summary>
+    private IHostSession _session;
 
-
-    SelectGameType selectGameType;
+   
 
     void Start()
     {
         if (SessionManager.instance == null) return;
 
         _playerID = SessionManager.instance.GetPlayerID();
-
-        if (selectGameType == null) return;
     }
 
     // Update is called once per frame
@@ -35,12 +32,14 @@ public class SessionCreator : MonoBehaviour
 
     }
 
-    private void SaveGameType()
+    /// <summary>
+    /// セッション作成ボタン
+    /// </summary>
+    public async void CreateSessionButton()
     {
-        if (selectGameType == null) return;
-        _gameTypeID = selectGameType.GetGameType();
-        if (selectGameType.GetGameType() == -1) return;
 
+
+        await CreateSession();
     }
 
 
@@ -50,55 +49,23 @@ public class SessionCreator : MonoBehaviour
     /// </summary>
     private async Task CreateSession()
     {
-        SaveGameType();
-
         SessionOptions options = null;
 
-        switch (_gameTypeID)
-        {
+        options = SessionManager.instance.GetSessionOptions();
 
-            case (int)eGameType.Deathmatch:
-                Debug.Log("デスマッチのルーム作成");
-                options = new SessionOptions
-                {
-                    MaxPlayers = GameConst.MAX_DEATHMATCH_COUNT,
-                   
-                }.WithRelayNetwork();
-                break;
-            case (int)eGameType.Unrated:
-                Debug.Log("アンレートのルーム作成");
-                break;
+        _session = await MultiplayerService.Instance.CreateSessionAsync(options);
 
-        }
-        var session = await MultiplayerService.Instance.CreateSessionAsync(options);
-
-
+        //自身のIDをホストとする
+        //いらない
+        //_session.Host = _playerID;
     }
 
-
-    private async Task JoinSession()
+    //自身がホストかの可否
+    public bool GetHost()
     {
-        IEnumerable o;
-        SaveGameType();
-        QuerySessionsOptions options = new QuerySessionsOptions
-        {
-            FilterOptions = new List<FilterOption> { 
-            new FilterOption(
-                FilterField.NumberIndex1,
-                "SSSSS",
-                FilterOperation.Contains
-                )
-            }
-
-        };
-
-        await MultiplayerService.Instance.QuerySessionsAsync(options);
-
-
-
-        
-
+        return _session != null;
     }
+
 
 
 }
