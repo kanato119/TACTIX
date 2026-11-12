@@ -93,6 +93,13 @@ public class SessionManager
         //仮ゲームマッチ画面
         SceneSelectManager.instance.ChangeLocalScene(GameConst.SCENE_TEST_NET);
     }
+    /// <summary>
+    /// 選択したゲームモードの値を取得
+    /// </summary>
+    public string GetGameTypeValue()
+    {
+        return ((int)selectGameType).ToString();
+    }
 
     /// <summary>
     /// じぶんが選択したゲームの種類の取得
@@ -100,12 +107,11 @@ public class SessionManager
     /// <returns></returns>
     public SessionOptions GetSessionOptions()
     {
-        string value =
-            ((int)selectGameType).ToString();
+       
 
         return new SessionOptions
         {
-            MaxPlayers = GameConst.MAX_DEATHMATCH_COUNT,
+            MaxPlayers = GameConst.MAX_MATCH_COUNT,
 
             SessionProperties =
                 new Dictionary<string, SessionProperty>
@@ -113,7 +119,7 @@ public class SessionManager
                 {
                     "GameType",
                     new SessionProperty(
-                        value,//０か１
+                        GetGameTypeValue(),
                         VisibilityPropertyOptions.Public,//他プレイヤーから参照できるように
                         PropertyIndex.Number1
                     )

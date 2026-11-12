@@ -528,9 +528,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1413835473}
-        m_TargetAssemblyTypeName: SessionCreator, Assembly-CSharp
-        m_MethodName: CreateSessionButton
+      - m_Target: {fileID: 3203126500237000834, guid: 9a5111ca7ae969a40920cc819debd62a,
+          type: 3}
+        m_TargetAssemblyTypeName: SelectGameType, Assembly-CSharp
+        m_MethodName: SelectDeathmatch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

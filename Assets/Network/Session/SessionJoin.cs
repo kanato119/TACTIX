@@ -1,6 +1,9 @@
+using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Unity.Services.Multiplayer;
 using UnityEngine;
+
 
 public class SessionJoin
 {
@@ -8,26 +11,62 @@ public class SessionJoin
 
     //シーンをゲームロビーに遷移させる
 
+    private ISession _sessionJoiner;
 
-    private void JoinServer()
+    /// <summary>
+    /// マッチメイキングボタン
+    /// </summary>
+    /// <returns></returns>
+    public async Task JoinButton()
     {
 
-        QuerySessionsOptions options = new QuerySessionsOptions
+        await JoinServer();
+
+    }
+
+
+    /// <summary>
+    /// ゲームモードにあったセッションのマッチメイキング
+    /// </summary>
+    /// <returns></returns>
+    private async Task JoinServer()
+    {
+        // ゲームモードの取得
+        string gameType = SessionManager.instance.GetGameTypeValue();
+
+        var queryOptions = new QuerySessionsOptions
         {
+            Count = 20,
+
+            //検索条件
             FilterOptions = new List<FilterOption>
             {
-
-                
-
+                new FilterOption(
+                FilterField.NumberIndex1,//gametypeで
+                gameType,
+                FilterOperation.Equal
+                )
             }
-
         };
 
-         MultiplayerService.Instance.QuerySessionsAsync(options);
+        //セッションの検索
+        var result = await MultiplayerService.Instance.QuerySessionsAsync(queryOptions);
+        
+        if (result.Sessions.Count == 0)
+        {
+            Debug.Log("参加できるセッションがありません");
+            return;
+        }
 
 
+        foreach (var sessionInfo in result.Sessions)
+        {
 
+            //条件に合ったセッションに参加
+            _sessionJoiner = await MultiplayerService.Instance.JoinSessionByIdAsync(sessionInfo.Id);
 
+            return;
+        }
 
     }
 
