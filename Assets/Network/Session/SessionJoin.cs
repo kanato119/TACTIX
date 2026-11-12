@@ -1,11 +1,9 @@
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Unity.Services.Multiplayer;
 using UnityEngine;
 
-
-public class SessionJoin
+public class SessionJoin:MonoBehaviour
 {
     //参加できるセッションの表示
 
@@ -17,7 +15,7 @@ public class SessionJoin
     /// マッチメイキングボタン
     /// </summary>
     /// <returns></returns>
-    public async Task JoinButton()
+    public async void JoinButton()
     {
 
         await JoinServer();
@@ -64,6 +62,8 @@ public class SessionJoin
 
             //条件に合ったセッションに参加
             _sessionJoiner = await MultiplayerService.Instance.JoinSessionByIdAsync(sessionInfo.Id);
+
+            SceneSelectManager.instance.ChangeNetSceneSingle(GameConst.SCENE_GAME_LOBYY);
 
             return;
         }

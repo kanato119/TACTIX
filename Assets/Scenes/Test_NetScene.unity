@@ -119,6 +119,86 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &358521014
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5274933008117580693, guid: 3cd772d9b94d09845823c799a314b203,
+        type: 3}
+      propertyPath: m_Name
+      value: SessionJoin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172580734940081579, guid: 3cd772d9b94d09845823c799a314b203,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 830.2697
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172580734940081579, guid: 3cd772d9b94d09845823c799a314b203,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 536.3077
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172580734940081579, guid: 3cd772d9b94d09845823c799a314b203,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.8015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172580734940081579, guid: 3cd772d9b94d09845823c799a314b203,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172580734940081579, guid: 3cd772d9b94d09845823c799a314b203,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172580734940081579, guid: 3cd772d9b94d09845823c799a314b203,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172580734940081579, guid: 3cd772d9b94d09845823c799a314b203,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172580734940081579, guid: 3cd772d9b94d09845823c799a314b203,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172580734940081579, guid: 3cd772d9b94d09845823c799a314b203,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172580734940081579, guid: 3cd772d9b94d09845823c799a314b203,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3cd772d9b94d09845823c799a314b203, type: 3}
+--- !u!114 &358521015 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5164198320369192969, guid: 3cd772d9b94d09845823c799a314b203,
+    type: 3}
+  m_PrefabInstance: {fileID: 358521014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53412b3ce8af6e944b1cb72d73fb4c6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SessionJoin
 --- !u!1 &736136951
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,9 +929,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1254381293}
-        m_TargetAssemblyTypeName: NetworkStart, Assembly-CSharp
-        m_MethodName: StartHost
+      - m_Target: {fileID: 6834363116057467128, guid: 290a55ee555414e419a8702b1087ed8b,
+          type: 3}
+        m_TargetAssemblyTypeName: SessionCreator, Assembly-CSharp
+        m_MethodName: CreateSessionButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1109,91 +1190,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &1293565060
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 228463091312632505, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: m_Name
-      value: NetworkManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871555162859560355, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.37983
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871555162859560355, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871555162859560355, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.03796
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871555162859560355, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871555162859560355, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871555162859560355, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871555162859560355, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871555162859560355, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871555162859560355, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871555162859560355, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676797968610221734, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: NetworkConfig.PlayerPrefab
-      value: 
-      objectReference: {fileID: 6325208163295343933, guid: 15576d705e015d442b6881fbb8128caa,
-        type: 3}
-    - target: {fileID: 6676797968610221734, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: NetworkConfig.Prefabs.NetworkPrefabsLists.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676797968610221734, guid: 827dc6705ecf0fe4e876674a193197df,
-        type: 3}
-      propertyPath: 'NetworkConfig.Prefabs.NetworkPrefabsLists.Array.data[1]'
-      value: 
-      objectReference: {fileID: 11400000, guid: d174262485c924f4da76af70f2a55087,
-        type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 827dc6705ecf0fe4e876674a193197df, type: 3}
 --- !u!1 &1362770353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,9 +1545,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1254381293}
-        m_TargetAssemblyTypeName: NetworkStart, Assembly-CSharp
-        m_MethodName: StartClient
+      - m_Target: {fileID: 358521015}
+        m_TargetAssemblyTypeName: SessionJoin, Assembly-CSharp
+        m_MethodName: JoinButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1599,6 +1595,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649169748}
   m_CullTransparentMesh: 1
+--- !u!1 &1764945559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1764945561}
+  - component: {fileID: 1764945560}
+  m_Layer: 0
+  m_Name: NetworkCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1764945560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764945559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec2e07b989c19e45a2723b72a9a8e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NetworkCheck
+--- !u!4 &1764945561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764945559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.41714, y: 0, z: 24.17227}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1924957608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,7 +1847,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 1200474510}
   - {fileID: 1023510008}
-  - {fileID: 1293565060}
   - {fileID: 1924957612}
   - {fileID: 1254381297}
   - {fileID: 1987568203}
+  - {fileID: 358521014}
+  - {fileID: 1764945561}

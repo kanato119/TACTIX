@@ -16,7 +16,5 @@ public class SystemManager : MonoBehaviour
         if (SessionManager.instance == null) return;
         if (SceneSelectManager.instance == null) return;
 
-        //テストシーンに遷移
-        SceneSelectManager.instance.ChangeLocalScene(GameConst.SCENE_GAME_SELECT);
     }
 }

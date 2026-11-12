@@ -91,7 +91,10 @@ public class SessionManager
     {
         if (SceneSelectManager.instance == null) return;
         //仮ゲームマッチ画面
-        SceneSelectManager.instance.ChangeLocalScene(GameConst.SCENE_TEST_NET);
+        SceneSelectManager.instance.ChangeLocalScene(
+    GameConst.SCENE_TEST_NET
+);
+
     }
     /// <summary>
     /// 選択したゲームモードの値を取得
@@ -125,6 +128,11 @@ public class SessionManager
                     )
                 }
                 }
-        };
+        }.WithRelayNetwork();
+
+
+       
     }
+
+
 }

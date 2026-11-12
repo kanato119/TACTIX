@@ -21,6 +21,8 @@ public class SessionCreator : MonoBehaviour
 
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
+
         if (SessionManager.instance == null) return;
 
         _playerID = SessionManager.instance.GetPlayerID();
@@ -55,9 +57,9 @@ public class SessionCreator : MonoBehaviour
 
         _session = await MultiplayerService.Instance.CreateSessionAsync(options);
 
-        //自身のIDをホストとする
-        //いらない
-        //_session.Host = _playerID;
+        SceneSelectManager.instance.ChangeNetSceneSingle(GameConst.SCENE_GAME_LOBYY);
+
+     
     }
 
     //自身がホストかの可否
