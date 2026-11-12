@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 public class SystemManager : MonoBehaviour
 {
     //初期化
-    private async void Start()
+    private async void Awake()
     {
         //Manager関連の初期化
         await SessionManager.instance.Initalize();

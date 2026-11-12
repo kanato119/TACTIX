@@ -41,12 +41,14 @@ public class PlayerMove : NetworkBehaviour
 
     private void Awake()
     {
+        if (!IsOwner) return;
         instance = this;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (!IsOwner) return;
         rb = GetComponent<Rigidbody>();
 
         currentSpeed = runSpeed;
@@ -91,6 +93,7 @@ public class PlayerMove : NetworkBehaviour
 
     private void FixedUpdate()
     {
+        if (!IsOwner) return;
         if (rb.linearVelocity.y < 0)
         {
             rb.AddForce(
@@ -102,6 +105,7 @@ public class PlayerMove : NetworkBehaviour
 
     private void MovePlayer()
     {
+        if (!IsOwner) return;
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
@@ -122,6 +126,7 @@ public class PlayerMove : NetworkBehaviour
 
     private void SpeedControl()
     {
+        if (!IsOwner) return;
         Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
         if (flatVel.magnitude > currentSpeed)
@@ -134,6 +139,7 @@ public class PlayerMove : NetworkBehaviour
 
     private void Jump()
     {
+        if (!IsOwner) return;
         //上方向速度リセット
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
@@ -144,6 +150,7 @@ public class PlayerMove : NetworkBehaviour
 
     private void IsResetJump()
     {
+        if (!IsOwner) return;
         isReadyToJump = true;
     }
 
