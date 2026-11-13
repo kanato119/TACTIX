@@ -41,18 +41,18 @@ public class PlayerMove : NetworkBehaviour
 
     private void Awake()
     {
+        if (!IsOwner) return;
         instance = this;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (!IsOwner) return;
         rb = GetComponent<Rigidbody>();
 
         currentSpeed = runSpeed;
     }
-
-    public 
 
     // Update is called once per frame
     void Update()
@@ -87,6 +87,7 @@ public class PlayerMove : NetworkBehaviour
             rb.linearDamping = groundDrag;
         else
             rb.linearDamping = 0;
+
     }
 
     private void FixedUpdate()
