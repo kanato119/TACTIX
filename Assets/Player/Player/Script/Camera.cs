@@ -1,7 +1,8 @@
 using TMPro;
 using UnityEngine;
+using Unity.Netcode;
 
-public class Camera : MonoBehaviour
+public class Camera : NetworkBehaviour
 {
     public Transform cameraPosition;
 
@@ -14,13 +15,17 @@ public class Camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!IsOwner) return;
+
         transform.position = cameraPosition.position;
         crouch();
     }
 
     private void crouch()
     {
-        if(Input.GetKey(KeyCode.LeftShift))
+        if (!IsOwner) return;
+
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             Debug.Log("押されている");
         }

@@ -1,7 +1,9 @@
+using Unity.Netcode;
 using UnityEngine;
 
-public class PlayerCamera : MonoBehaviour
+public class PlayerCamera : NetworkBehaviour
 {
+    
     [Range(1f, 500f)]
     [SerializeField] float Sens = 500;
     //[Range(1f, 500f)]
@@ -20,6 +22,8 @@ public class PlayerCamera : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
+        if (!IsOwner) return;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
@@ -28,7 +32,8 @@ public class PlayerCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!IsOwner) return;
+
 
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * Sens;
         float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * Sens;

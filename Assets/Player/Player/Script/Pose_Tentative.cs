@@ -1,6 +1,6 @@
 using UnityEngine;
-
-public class Pose_Tentative : MonoBehaviour
+using Unity.Netcode;
+public class Pose_Tentative : NetworkBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -11,7 +11,10 @@ public class Pose_Tentative : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.C))
+        if (!IsOwner) return;
+
+
+        if (Input.GetKeyDown(KeyCode.C))
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
