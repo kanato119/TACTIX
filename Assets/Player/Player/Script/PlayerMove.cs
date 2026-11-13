@@ -20,12 +20,10 @@ public class PlayerMove : NetworkBehaviour
 
     //ジャンプ力
     [SerializeField] private float jumpForce = 14;
-
-    //Rayの長さ
-    private float playerHeight = 2;
-
     //地面の摩擦力
     [SerializeField] private float groundDrag = 5;
+
+    [SerializeField] KeyCode WalkButton = KeyCode.LeftShift;
 
     //地面にいるかどうか
     public bool grounded, isReadyToJump;
@@ -59,11 +57,8 @@ public class PlayerMove : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        //grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
         //network系統
         if (!IsOwner) return;
-
-        //grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
 
         if (!grounded)
         {
@@ -81,7 +76,7 @@ public class PlayerMove : NetworkBehaviour
 
         SpeedControl();
 
-        bool isRuning = Input.GetKey(KeyCode.LeftControl);
+        bool isRuning = Input.GetKey(WalkButton);
 
         currentSpeed = isRuning ? moveSpeed : runSpeed;
 
@@ -109,7 +104,7 @@ public class PlayerMove : NetworkBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        moveDirection = orientation.forward * verticalInput + orientation.right  * horizontalInput;
 
         if (grounded)
         {
@@ -120,8 +115,6 @@ public class PlayerMove : NetworkBehaviour
         {
             rb.AddForce(moveDirection.normalized * currentSpeed * 10f * airMultiplier, ForceMode.Force);
         }
-
-        //rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
     }
 
     private void SpeedControl()
