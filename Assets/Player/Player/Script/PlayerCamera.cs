@@ -13,11 +13,14 @@ public class PlayerCamera : NetworkBehaviour
 
     
 
-    private float xRotation = 0;
-    private float yRotation = 0;
+    public float xRotation = 0;
+    public float yRotation = 0;
 
     private float xViewpointControl = -89;
     private float yViewpointControl = 89;
+
+    [SerializeField] AudioListener audioListener;
+    [SerializeField] Camera camera;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,11 +35,22 @@ public class PlayerCamera : NetworkBehaviour
     public override void OnNetworkSpawn()
     {
 
-        AudioListener audioListener = GetComponent<AudioListener>();
-        Camera camera = GetComponent<Camera>();
+        //AudioListener audioListener = GetComponent<AudioListener>();
+        //Camera camera = GetComponent<Camera>();
 
-        if (camera == null) return;
-        if (audioListener == null) return;
+        //if (camera == null) return;
+        //if (audioListener == null) return;
+        if (camera == null)
+        {
+            Debug.LogError("CameraÇ™å©Ç¬Ç©ÇËÇ‹ÇπÇÒÅI");
+            return;
+        }
+
+        if (audioListener == null)
+        {
+            Debug.LogError("AudioListenerÇ™å©Ç¬Ç©ÇËÇ‹ÇπÇÒÅI");
+            return;
+        }
 
         camera.enabled = IsOwner;
         audioListener.enabled = IsOwner;

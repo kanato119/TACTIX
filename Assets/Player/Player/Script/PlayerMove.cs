@@ -52,6 +52,7 @@ public class PlayerMove : NetworkBehaviour
         rb = GetComponent<Rigidbody>();
 
         currentSpeed = runSpeed;
+
     }
 
     // Update is called once per frame

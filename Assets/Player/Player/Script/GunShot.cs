@@ -36,7 +36,7 @@ public class GunShot : MonoBehaviour
     [SerializeField] TextMeshProUGUI RemainingBulletsText;
     [SerializeField] TextMeshProUGUI MaxRemainingBulletsText;
 
-
+    [SerializeField] private RecoilControl recoil;
 
     float pressetStartTime;
 
@@ -92,6 +92,7 @@ public class GunShot : MonoBehaviour
                         if (Time.time >= nextFireTime)
                         {
                             Fire();
+
                             nextFireTime = Time.time + fireRate;
                         }
                     }
@@ -163,6 +164,8 @@ public class GunShot : MonoBehaviour
             (bulletPrefab,
             muzzle.position,
             rotation);
+
+        recoil.AddRecoil();
 
         Reloading();
 
