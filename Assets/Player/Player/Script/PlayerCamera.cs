@@ -31,10 +31,14 @@ public class PlayerCamera : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-        Camera camera = GetComponent<Camera>();
-        camera.enabled = IsOwner;
 
         AudioListener audioListener = GetComponent<AudioListener>();
+        Camera camera = GetComponent<Camera>();
+
+        if (camera == null) return;
+        if (audioListener == null) return;
+
+        camera.enabled = IsOwner;
         audioListener.enabled = IsOwner;
     }
 
