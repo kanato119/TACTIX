@@ -1,6 +1,5 @@
 using UnityEngine;
-using Unity.Netcode;
-public class Pose_Tentative : NetworkBehaviour
+public class Pose_Tentative : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -11,7 +10,7 @@ public class Pose_Tentative : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!IsOwner) return;
+       
 
 
         if (Input.GetKeyDown(KeyCode.C))

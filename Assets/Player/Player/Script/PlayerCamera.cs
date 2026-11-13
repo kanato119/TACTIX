@@ -29,6 +29,15 @@ public class PlayerCamera : NetworkBehaviour
 
     }
 
+    public override void OnNetworkSpawn()
+    {
+        Camera camera = GetComponent<Camera>();
+        camera.enabled = IsOwner;
+
+        AudioListener audioListener = GetComponent<AudioListener>();
+        audioListener.enabled = IsOwner;
+    }
+
     // Update is called once per frame
     void Update()
     {
