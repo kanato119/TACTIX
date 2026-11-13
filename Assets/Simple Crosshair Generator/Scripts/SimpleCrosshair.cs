@@ -69,6 +69,7 @@ public class SimpleCrosshair : MonoBehaviour
 
         m_crosshairImage = imageGameObject.AddComponent<Image>();
         m_crosshairImage.rectTransform.localPosition = new Vector2(0, 0);
+
         m_crosshairImage.raycastTarget = false;
     }
 

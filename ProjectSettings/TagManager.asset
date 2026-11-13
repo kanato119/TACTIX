@@ -20,6 +20,7 @@ TagManager:
   - FukuiTestPlayer2
   - FukuiTestPlayer3
   - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX
