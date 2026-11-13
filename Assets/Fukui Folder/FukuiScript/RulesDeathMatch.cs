@@ -37,7 +37,7 @@ public class RulesDeathMatch : MonoBehaviour
 
     private void Test()
     {
-        if (Input.GetKeyDown(KeyCode.D) && gameObject.CompareTag("FukuiTextPlayer1") && !DeathMatchResult.GameEnded)
+        if (Input.GetKeyDown(KeyCode.T) && gameObject.CompareTag("FukuiTextPlayer1") && !DeathMatchResult.GameEnded)
         {
             LivesLeft--;
             Kills++;
