@@ -38,7 +38,7 @@ namespace InfimaGames.LowPolyShooterPack
         /// <summary>
         /// Returns the player character's main camera.
         /// </summary>
-        public abstract Camera GetCameraWorld();
+        public abstract CameraPosition GetCameraWorld();
         
         /// <summary>
         /// Returns a reference to the Inventory component.
