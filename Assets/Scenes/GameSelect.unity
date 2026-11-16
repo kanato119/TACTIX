@@ -646,7 +646,7 @@ PrefabInstance:
         type: 3}
       propertyPath: NetworkConfig.PlayerPrefab
       value: 
-      objectReference: {fileID: 1036725532349000132, guid: 46e1e8b31422dcc46a31cfc569c6d5dc,
+      objectReference: {fileID: 5315236170500659714, guid: ad9dab183fd788f4f937d547394a31c6,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

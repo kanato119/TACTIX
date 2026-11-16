@@ -40,22 +40,48 @@ public class SessionManager
     {
         try
         {
+            //初期化オプションを作成
+            var options = new InitializationOptions();
 
-            if (UnityServices.State != ServicesInitializationState.Initialized)
+            //UnityEditor上で実行されているParrelSyncのcloneかどうかの可否
+#if UNITY_EDITOR
+            if (ParrelSync.ClonesManager.IsClone())
             {
-                //回線の初期化(Unity Gaming Servies SDK)
-                await UnityServices.InitializeAsync();
+                // Cloneの識別IDを取得
+                string cloneID = ParrelSync.ClonesManager.GetArgument();
+
+                // Clone専用Profileを設定
+                options.SetProfile($"Clone_{cloneID}_Profile");
+
+                Debug.Log($"Clone Profile: Clone_{cloneID}_Profile");
+            }
+            else
+            {
+                Debug.Log("Host Profile: default");
+            }
+#endif
+
+            //Unity Servicesの初期化
+            if (UnityServices.State == ServicesInitializationState.Uninitialized)
+            {
+                await UnityServices.InitializeAsync(options);
+            }
+            else
+            {
+                Debug.LogWarning(
+                    $"Unity Servicesはすでに初期化されています。State: {UnityServices.State}"
+                );
             }
 
-            // 匿名認証
+            //匿名認証
             if (!AuthenticationService.Instance.IsSignedIn)
             {
-                //匿名で認証する
                 await AuthenticationService.Instance.SignInAnonymouslyAsync();
             }
 
-            //PlayerIDの取得
-            Debug.Log($"Sign in anonymously succeeded! PlayerID:{AuthenticationService.Instance.PlayerId}");
+            //PlayerIDとProfileをコンソール上で確認するため
+            Debug.Log($"PlayerID: {AuthenticationService.Instance.PlayerId}");
+            Debug.Log($"Profile: {AuthenticationService.Instance.Profile}");
         }
         catch (Exception e)
         {
