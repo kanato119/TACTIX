@@ -76,8 +76,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   speed: 700
   lifeTime: 10
+  BlletHoleLifTime: 3
   hasHitWall: 0
   GroundDestory: 0
+  bulletHole: {fileID: 3990476725851591230, guid: 8880d49a7ba049942a568442433c3d89,
+    type: 3}
 --- !u!65 &1232177633507323078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -191,7 +194,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9087596835404476545, guid: 02c727f0944ac8a4e8014700d3a7f106,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8357951289688545494}
+      addedObject: {fileID: 8294636336446469220}
   m_SourcePrefab: {fileID: 100100000, guid: 02c727f0944ac8a4e8014700d3a7f106, type: 3}
 --- !u!4 &1557354034820969179 stripped
 Transform:
@@ -205,7 +208,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2698593338682497001}
   m_PrefabAsset: {fileID: 0}
---- !u!96 &8357951289688545494
+--- !u!96 &8294636336446469220
 TrailRenderer:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -254,7 +257,7 @@ TrailRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Time: 0.05
+  m_Time: 0.02
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -269,8 +272,8 @@ TrailRenderer:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
         value: 1
@@ -285,7 +288,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.990566, g: 0.8642036, b: 0, a: 1}
+      key0: {r: 1, g: 0.8627451, b: 0, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}

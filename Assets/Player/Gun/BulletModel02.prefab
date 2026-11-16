@@ -72,6 +72,8 @@ MonoBehaviour:
   lifeTime: 10
   hasHitWall: 0
   GroundDestory: 0
+  bulletHole: {fileID: 3990476725851591230, guid: 8880d49a7ba049942a568442433c3d89,
+    type: 3}
 --- !u!54 &6013851365300375823
 Rigidbody:
   m_ObjectHideFlags: 0
