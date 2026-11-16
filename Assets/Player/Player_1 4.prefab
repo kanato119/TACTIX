@@ -1029,7 +1029,7 @@ MonoBehaviour:
   xRotation: 0
   yRotation: 0
   audioListener: {fileID: 806465648492948682}
-  camera: {fileID: 5691235860072095602}
+  _playerCamera: {fileID: 5691235860072095602}
 --- !u!1 &4962951044407800700
 GameObject:
   m_ObjectHideFlags: 0
