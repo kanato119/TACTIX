@@ -24,9 +24,9 @@ namespace InfimaGames.LowPolyShooterPack
 
 		[Header("Cameras")]
 
-		[Tooltip("Normal CameraPosition.")]
+		[Tooltip("Normal Camera.")]
 		[SerializeField]
-		private CameraPosition cameraWorld;
+		private Camera cameraWorld;
 
 		[Header("Animation")]
 
@@ -242,7 +242,7 @@ namespace InfimaGames.LowPolyShooterPack
 
 		#region GETTERS
 
-		public override CameraPosition GetCameraWorld() => cameraWorld;
+		public override Camera GetCameraWorld() => cameraWorld;
 
 		public override InventoryBehaviour GetInventory() => inventory;
 		
