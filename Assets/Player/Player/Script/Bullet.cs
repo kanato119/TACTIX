@@ -7,9 +7,13 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float speed = 100.0f;
     [SerializeField] private float lifeTime = 3f;
 
+    [SerializeField] private float BlletHoleLifTime = 5f;
+
     [SerializeField] private bool hasHitWall = false;
 
     [SerializeField] private float GroundDestory = 0;
+
+    [SerializeField] private GameObject bulletHole;
 
     private Rigidbody rigidbody;
     private TrailRenderer trail;
@@ -23,12 +27,17 @@ public class Bullet : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         trail = GetComponent<TrailRenderer>();
 
+        if (trail != null)
+        {
+            trail.emitting = false;
+            trail.Clear();
+            trail.emitting = true;
+        }
+
         rigidbody.linearVelocity = transform.forward * speed;
 
         Destroy(gameObject, lifeTime);
     }
-
-    // Update is called once per frame
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -71,6 +80,17 @@ public class Bullet : MonoBehaviour
         else
         {
             Destroy(gameObject, 0.1f);
+        }
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 100f))
+        {
+            var decalPos = hit.point + hit.normal * 0.01f;
+            var decalRot = Quaternion.FromToRotation(-bulletHole.transform.forward, hit.normal);
+            GameObject decal = Instantiate(bulletHole, decalPos, decalRot);
+
+            Destroy(decal, BlletHoleLifTime);
         }
     }
 }

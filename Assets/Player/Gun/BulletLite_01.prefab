@@ -78,6 +78,8 @@ MonoBehaviour:
   lifeTime: 3
   hasHitWall: 0
   GroundDestory: 0
+  bulletHole: {fileID: 3990476725851591230, guid: 8880d49a7ba049942a568442433c3d89,
+    type: 3}
 --- !u!1 &945776989315095066
 GameObject:
   m_ObjectHideFlags: 0
