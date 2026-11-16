@@ -71,6 +71,6 @@ public class PlayerCamera : NetworkBehaviour
         xRotation = Mathf.Clamp(xRotation, xViewpointControl, yViewpointControl);
 
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+        orientation.localRotation = Quaternion.Euler(0, yRotation, 0);
     }
 }

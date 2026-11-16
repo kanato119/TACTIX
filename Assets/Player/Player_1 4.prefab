@@ -732,17 +732,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c308e3989e2d7449a4828c402752fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecoilControl
-  orientation: {fileID: 8571902303732013707}
-  playerCamera: {fileID: 1275579848152448022}
-  RecoilPattern:
-  - {x: 1.2, y: 0}
-  - {x: 1.4, y: 0.2}
-  - {x: 1.6, y: -0.2}
-  - {x: 1.8, y: 0.3}
-  - {x: 2, y: -0.4}
-  TimeReaction: 0.4
-  resetDelay: 0.8
-  randomSide: 0.1
+  recoliAmountX: 0
+  recoliAmountY: 0
+  currentRecoilXPos: 0
+  currentRecoilYPos: 0
+  maxRecoilTime: 4
 --- !u!1 &3908504387854683643
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,12 +939,12 @@ Transform:
   m_GameObject: {fileID: 4375427012306107429}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.70000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5335470994994894466}
-  m_Father: {fileID: 508909770920088859}
+  m_Father: {fileID: 1922867020017847819}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &5691235860072095602
 Camera:
@@ -1039,6 +1033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1922867020017847819}
+  - component: {fileID: 6233095350004302379}
   m_Layer: 0
   m_Name: cameraPosition
   m_TagString: Untagged
@@ -1058,9 +1053,56 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.70000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 508909770920088859}
+  m_Children:
+  - {fileID: 5090806878408485980}
+  m_Father: {fileID: 8571902303732013707}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6233095350004302379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4962951044407800700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616d83131ace85a4cb15c02636b370c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NetworkTransfromClient
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkTransformExpanded: 1
+  AutoOwnerAuthorityTickOffset: 1
+  PositionInterpolationType: 0
+  RotationInterpolationType: 0
+  ScaleInterpolationType: 0
+  PositionLerpSmoothing: 1
+  PositionMaxInterpolationTime: 0.1
+  RotationLerpSmoothing: 1
+  RotationMaxInterpolationTime: 0.1
+  ScaleLerpSmoothing: 1
+  ScaleMaxInterpolationTime: 0.1
+  AuthorityMode: 1
+  TickSyncChildren: 0
+  UseUnreliableDeltas: 0
+  SyncPositionX: 0
+  SyncPositionY: 0
+  SyncPositionZ: 0
+  SyncRotAngleX: 1
+  SyncRotAngleY: 0
+  SyncRotAngleZ: 0
+  SyncScaleX: 0
+  SyncScaleY: 0
+  SyncScaleZ: 0
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 0
+  UseQuaternionCompression: 0
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 1
+  SwitchTransformSpaceWhenParented: 0
+  Interpolate: 1
+  SlerpPosition: 0
 --- !u!1 &5315236170500659714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,13 +1142,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8571902303732013707}
-  - {fileID: 1922867020017847819}
   - {fileID: 489417105678847623}
   - {fileID: 390222762184714741}
   - {fileID: 1465729094564135376}
   - {fileID: 1046444818121327454}
   - {fileID: 6134956050947587138}
-  - {fileID: 5090806878408485980}
   - {fileID: 2518787650926601592}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1229,7 +1269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1556803015
+  GlobalObjectIdHash: 249258011
   InScenePlacedSourceGlobalObjectIdHash: 1556803015
   m_InScenePlacedDisabledByDefault: 1
   DeferredDespawnTick: 0
@@ -3085,7 +3125,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1922867020017847819}
   m_Father: {fileID: 508909770920088859}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1361189558845000090
@@ -3130,7 +3171,7 @@ MonoBehaviour:
   SyncPositionX: 0
   SyncPositionY: 0
   SyncPositionZ: 0
-  SyncRotAngleX: 1
+  SyncRotAngleX: 0
   SyncRotAngleY: 1
   SyncRotAngleZ: 0
   SyncScaleX: 0
