@@ -20,7 +20,7 @@ public class PlayerCamera : NetworkBehaviour
     private float yViewpointControl = 89;
 
     [SerializeField] AudioListener audioListener;
-    [SerializeField] CameraPosition _playerCamera;
+    [SerializeField] Camera _playerCamera;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
