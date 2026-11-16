@@ -71,7 +71,7 @@ public class PlayerMove : NetworkBehaviour
             Invoke(nameof(IsResetJump), 0f);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isReadyToJump && grounded)
+        if (Input.GetKeyDown(KeyCode.Space) && !isReadyToJump && grounded)
         {
             Jump();
         }
@@ -151,7 +151,7 @@ public class PlayerMove : NetworkBehaviour
     private void IsResetJump()
     {
         if (!IsOwner) return;
-        isReadyToJump = true;
+        isReadyToJump = false;
     }
 
     

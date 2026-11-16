@@ -688,61 +688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 598a7ecab8fe09141980a42a11db6ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Attack
---- !u!1 &2209158578081044677
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2518787650926601592}
-  - component: {fileID: 2629231458147769710}
-  m_Layer: 0
-  m_Name: RecoilControl
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2518787650926601592
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2209158578081044677}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.196959, y: -1.115, z: -3.5824}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 508909770920088859}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2629231458147769710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2209158578081044677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63c308e3989e2d7449a4828c402752fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RecoilControl
-  orientation: {fileID: 8571902303732013707}
-  playerCamera: {fileID: 1275579848152448022}
-  RecoilPattern:
-  - {x: 1.2, y: 0}
-  - {x: 1.4, y: 0.2}
-  - {x: 1.6, y: -0.2}
-  - {x: 1.8, y: 0.3}
-  - {x: 2, y: -0.4}
-  TimeReaction: 0.4
-  resetDelay: 0.8
-  randomSide: 0.1
 --- !u!1 &3908504387854683643
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,7 +890,7 @@ Transform:
   m_GameObject: {fileID: 4375427012306107429}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.754, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1029,7 +974,7 @@ MonoBehaviour:
   xRotation: 0
   yRotation: 0
   audioListener: {fileID: 806465648492948682}
-  camera: {fileID: 5691235860072095602}
+  camera: {fileID: 0}
 --- !u!1 &4962951044407800700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,7 +1052,6 @@ Transform:
   - {fileID: 1046444818121327454}
   - {fileID: 6134956050947587138}
   - {fileID: 5090806878408485980}
-  - {fileID: 2518787650926601592}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6009363652108051395
@@ -2052,7 +1996,7 @@ MonoBehaviour:
   cam: {fileID: 5691235860072095602}
   RemainingBulletsText: {fileID: 5897814029516440348}
   MaxRemainingBulletsText: {fileID: 3345924589129090624}
-  recoil: {fileID: 2629231458147769710}
+  recoil: {fileID: 0}
 --- !u!1 &7194090975157745889
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,7 +2817,7 @@ MonoBehaviour:
   cam: {fileID: 5691235860072095602}
   RemainingBulletsText: {fileID: 5897814029516440348}
   MaxRemainingBulletsText: {fileID: 3345924589129090624}
-  recoil: {fileID: 2629231458147769710}
+  recoil: {fileID: 0}
 --- !u!1 &8688144303463091500
 GameObject:
   m_ObjectHideFlags: 0
