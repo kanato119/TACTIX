@@ -143,6 +143,10 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   Sens: 149
   orientation: {fileID: 1580694149544391566}
+  xRotation: 0
+  yRotation: 0
+  audioListener: {fileID: 7710910735220902337}
+  _playerCamera: {fileID: 648549633653434760}
 --- !u!1 &2379228684163145100
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,6 +978,7 @@ MonoBehaviour:
   cam: {fileID: 648549633653434760}
   RemainingBulletsText: {fileID: 0}
   MaxRemainingBulletsText: {fileID: 0}
+  recoil: {fileID: 0}
 --- !u!4 &6808983355138262091 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6559362985659250037, guid: 260ff1508afea5241b6511d8fbe92201,
@@ -1111,6 +1116,7 @@ MonoBehaviour:
   cam: {fileID: 648549633653434760}
   RemainingBulletsText: {fileID: 0}
   MaxRemainingBulletsText: {fileID: 0}
+  recoil: {fileID: 0}
 --- !u!4 &939770347398384657 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5738456080911321149, guid: a35b8c32acba1334b9b31dfe8cdbc9be,

@@ -20,7 +20,7 @@ public class PlayerCamera : NetworkBehaviour
     private float yViewpointControl = 89;
 
     [SerializeField] AudioListener audioListener;
-    [SerializeField] Camera camera;
+    [SerializeField] Camera _playerCamera;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,7 +40,7 @@ public class PlayerCamera : NetworkBehaviour
 
         //if (camera == null) return;
         //if (audioListener == null) return;
-        if (camera == null)
+        if (_playerCamera == null)
         {
             Debug.LogError("CameraÇ™å©Ç¬Ç©ÇËÇ‹ÇπÇÒÅI");
             return;
@@ -52,7 +52,7 @@ public class PlayerCamera : NetworkBehaviour
             return;
         }
 
-        camera.enabled = IsOwner;
+        _playerCamera.enabled = IsOwner;
         audioListener.enabled = IsOwner;
     }
 
