@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using Unity.Netcode;
 
-public class Camera : NetworkBehaviour
+public class CameraPosition : NetworkBehaviour
 {
     public Transform cameraPosition;
 
