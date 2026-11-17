@@ -2,7 +2,6 @@ using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using Unity.Netcode;
 
 public class PlayerMove : NetworkBehaviour
 {
@@ -48,7 +47,7 @@ public class PlayerMove : NetworkBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (!IsOwner) return;
+     
         rb = GetComponent<Rigidbody>();
 
         currentSpeed = runSpeed;
@@ -103,27 +102,37 @@ public class PlayerMove : NetworkBehaviour
         }
     }
 
+
+    /// <summary>
+    /// クライアント側で移動をするとServer側に伝える
+    /// </summary>
     private void MovePlayer()
     {
         if (!IsOwner) return;
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        //移動量のキャスト
+        Vector3 direction = moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+
 
         if (grounded)
         {
-            rb.AddForce(moveDirection.normalized * currentSpeed * 10f, ForceMode.Force);
+            rb.AddForce(direction.normalized * currentSpeed * 10f, ForceMode.Force);
         }
 
         else
         {
-            rb.AddForce(moveDirection.normalized * currentSpeed * 10f * airMultiplier, ForceMode.Force);
+            rb.AddForce(direction.normalized * currentSpeed * 10f * airMultiplier, ForceMode.Force);
         }
+
 
         //rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
     }
 
+
+   
+    
     private void SpeedControl()
     {
         if (!IsOwner) return;
@@ -136,7 +145,6 @@ public class PlayerMove : NetworkBehaviour
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
     }
-
     private void Jump()
     {
         if (!IsOwner) return;
@@ -147,12 +155,14 @@ public class PlayerMove : NetworkBehaviour
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
     }
-
+    
     private void IsResetJump()
     {
         if (!IsOwner) return;
         isReadyToJump = true;
     }
 
-    
+
+
+
 }
