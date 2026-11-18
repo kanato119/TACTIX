@@ -51,8 +51,6 @@ public class Bullet : MonoBehaviour
 
         if(collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("当たっている");
-
             Attack.instance.AttackDamage(GunShot.instance.Damage, collision.gameObject);
 
             StopBullet();
