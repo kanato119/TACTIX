@@ -106,6 +106,10 @@ public class ChangeWeapon : NetworkBehaviour
         UpdateWeapon(newValue);
     }
 
+    /// <summary>
+    /// 武器の更新
+    /// </summary>
+    /// <param name="numbers"></param>
     private void UpdateWeapon(int numbers)
     {
 
