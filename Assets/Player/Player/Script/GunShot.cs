@@ -165,7 +165,7 @@ public class GunShot : MonoBehaviour
             muzzle.position,
             rotation);
 
-        //recoil.AddRecoil();
+        recoil.RecoilMath();
 
         Reloading();
 

@@ -1,9 +1,12 @@
+using Unity.Netcode;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
 
     public static Attack instance { get; private set; }
+
+    [SerializeField] HP hpText;
 
     private void Awake()
     {
@@ -32,13 +35,17 @@ public class Attack : MonoBehaviour
         //HPが0になったら
         if (PlayerHP.NOW_HP <= 0)
         {
+            PlayerHP.isDead = true;
+
             //0以下にならないようにする
             PlayerHP.NOW_HP = 0;
             Debug.Log("PlayerのHPが0");
 
+            PlayerHP.ShowHP();
 
-            //オブジェクト破棄
             Destroy(obj);
+
+            Respawn.instance.Respawn_Mode();
         }
     }
 }

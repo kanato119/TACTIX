@@ -7,7 +7,9 @@ public class HP : MonoBehaviour
     [SerializeField] public int NOW_HP = 150;
     [SerializeField] private int MAX_HP = 150;
 
-    [SerializeField] private TextMeshProUGUI HPText;
+    public bool isDead = true;
+
+    //[SerializeField] private TextMeshProUGUI HPText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,8 +22,8 @@ public class HP : MonoBehaviour
         ShowHP();
     }
 
-    private void ShowHP()
+    public void ShowHP()
     {
-        HPText.text = NOW_HP.ToString();
+        //HPText.text = NOW_HP.ToString();
     }
 }
