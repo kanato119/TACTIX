@@ -36,7 +36,7 @@ public class PlayerMove : NetworkBehaviour
     private float horizontalInput, verticalInput;
 
     private Vector3 moveDirection;
-    private Rigidbody rb;
+    [SerializeField] private Rigidbody rb;
 
     private void Awake()
     {
