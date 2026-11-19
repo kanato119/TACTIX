@@ -850,7 +850,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 827dc6705ecf0fe4e876674a193197df, type: 3}
-<<<<<<< Updated upstream:Assets/Player/Player/Player.unity
 --- !u!1 &1274193979
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,8 +905,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> Stashed changes:Assets/Scenes/Player.unity
 --- !u!1 &1509467951 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3216579825125446628, guid: fc5a676d2c90b3d4f8a22e369c35950d,
@@ -936,8 +933,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 9070343936430133588, guid: be3ed9816d019ff4a85901f7a3aae376, type: 3}
-<<<<<<< Updated upstream:Assets/Player/Player/Player.unity
-=======
 --- !u!1 &1873500767
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +964,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 327490537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes:Assets/Scenes/Player.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -980,9 +974,6 @@ SceneRoots:
   - {fileID: 395471429}
   - {fileID: 1104427154}
   - {fileID: 773167370}
-<<<<<<< Updated upstream:Assets/Player/Player/Player.unity
   - {fileID: 1274193981}
-=======
   - {fileID: 878644081}
   - {fileID: 327490537}
->>>>>>> Stashed changes:Assets/Scenes/Player.unity
