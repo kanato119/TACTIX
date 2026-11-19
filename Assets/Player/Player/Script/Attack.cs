@@ -7,7 +7,6 @@ public class Attack : MonoBehaviour
 
     public static Attack instance { get; private set; }
 
-    [SerializeField] public GameObject playerPrefab;
 
     private void Awake()
     {
@@ -43,7 +42,7 @@ public class Attack : MonoBehaviour
             //オブジェクト破棄
             //Destroy(obj);
 
-            playerPrefab.SetActive(false);
+            obj.SetActive(false);
 
             Respawn.instance.Respawn_Mode(obj);
 

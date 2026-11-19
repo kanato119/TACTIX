@@ -53,8 +53,11 @@ public class Respawn : MonoBehaviour
 
         Transform spawnPoint = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
 
-        Attack.instance.playerPrefab.SetActive(true);
+        obj.transform.position = spawnPoint.position;
 
         PlayerHP.NOW_HP = 150;
+
+        obj.SetActive(true);
+
     }
 }
