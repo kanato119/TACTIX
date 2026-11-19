@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.Netcode;
 
-public class GunShot : MonoBehaviour
+public class GunShot : NetworkBehaviour
 {
     public static GunShot instance { get; private set; }
 
@@ -181,6 +182,14 @@ public class GunShot : MonoBehaviour
             }
         }
         
+    }
+
+    [ServerRpc]
+    private void FireServerRpc(Vector3 ray)
+    {
+
+
+
     }
 
     private void ShowRemainingBullets()
