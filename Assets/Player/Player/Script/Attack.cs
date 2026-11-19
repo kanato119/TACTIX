@@ -1,9 +1,13 @@
+using Unity.Netcode;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
 
     public static Attack instance { get; private set; }
+
+    [SerializeField] public GameObject playerPrefab;
 
     private void Awake()
     {
@@ -36,9 +40,13 @@ public class Attack : MonoBehaviour
             PlayerHP.NOW_HP = 0;
             Debug.Log("PlayerのHPが0");
 
-
             //オブジェクト破棄
             Destroy(obj);
+
+            playerPrefab.SetActive(false);
+
+            Respawn.instance.Respawn_Mode(obj);
+
         }
     }
 }
