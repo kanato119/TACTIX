@@ -5,7 +5,7 @@ using TMPro;
 public class DeathMatctCountDown : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI TimerText;
-
+    // カウントダウンタイマー
     float limitTime = 5f;
 
     void Start()

@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
 
 public class RulesDeathMatch : MonoBehaviour
 {
@@ -25,43 +27,44 @@ public class RulesDeathMatch : MonoBehaviour
         Test();
     }
 
-    public void ResurrectionRules()
-    {
-        if (sceneName == "DeathMatch")
-        {
+    public void ResurrectionRules(){
+        if (sceneName == "DeathMatch"){
             LivesLeft = 9999;
             Debug.Log(LivesLeft);
         }
       
     }
 
-    private void Test()
-    {
-        if (Input.GetKeyDown(KeyCode.T) && gameObject.CompareTag("FukuiTextPlayer1") && !DeathMatchResult.GameEnded)
-        {
+    private void Test(){
+        if (Input.GetKeyDown(KeyCode.T) && gameObject.CompareTag("FukuiTextPlayer1") 
+            && !DeathMatchResult.GameEnded){
             LivesLeft--;
             Kills++;
 
             Debug.Log(gameObject.name + "残機：" + LivesLeft);
-            Debug.Log(gameObject.name + "キル数：" + Kills);
+            DebugText.Instance.Show(gameObject.name + 
+                " Kills " + Kills);
          
         }
-        if (Input.GetKeyDown(KeyCode.K) && gameObject.CompareTag("FukuiTestPlayer2") && !DeathMatchResult.GameEnded)
-        {
+        if (Input.GetKeyDown(KeyCode.K) && gameObject.CompareTag("FukuiTestPlayer2")
+            && !DeathMatchResult.GameEnded){
             LivesLeft -=2;
             Kills += 2;
 
             Debug.Log(gameObject.name + "残機：" + LivesLeft);
-            Debug.Log(gameObject.name + "キル数：" + Kills);
+            DebugText.Instance.Show(gameObject.name +
+                " Kills " + Kills);
           
         }
-        if (Input.GetKeyDown(KeyCode.F) && gameObject.CompareTag("FukuiTestPlayer3") && !DeathMatchResult.GameEnded)
-        {
+        if (Input.GetKeyDown(KeyCode.F) && gameObject.CompareTag("FukuiTestPlayer3") 
+            && !DeathMatchResult.GameEnded){
             LivesLeft -= 3;
             Kills += 3;
 
             Debug.Log(gameObject.name + "残機：" + LivesLeft);
-            Debug.Log(gameObject.name + "キル数：" + Kills);
+      
+            DebugText.Instance.Show(gameObject.name + 
+                " Kills " + Kills);
          
         }
 
