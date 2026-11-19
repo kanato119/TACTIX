@@ -44,10 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3743ea44b9d975b4ea94fde530300bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeWeapon
-  Knife: {fileID: 682337375138225668}
-  Pistol: {fileID: 6789617670541925641}
-  Assault: {fileID: 8644126445019784342}
+  ShowTopMostFoldoutHeaderGroup: 1
+  gameObjects:
+  - {fileID: 6789617670541925641}
+  - {fileID: 682337375138225668}
+  - {fileID: 8644126445019784342}
   AmmoCountText: {fileID: 8700603990888884122}
+  Weapons:
+    UpdateTraits:
+      MinSecondsBetweenUpdates: 0
+      MaxSecondsBetweenUpdates: 0
+    m_InternalValue: 2
 --- !u!1 &431007528196208388
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,13 +740,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c308e3989e2d7449a4828c402752fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecoilControl
-
-  recoliAmountX: 1.5
-  recoliAmountY: 1.2
+  recoliAmountX: 0
+  recoliAmountY: 0
   currentRecoilXPos: 0
   currentRecoilYPos: 0
-  targetRecoilXPos: 0
-  targetRecoilYPos: 0
   maxRecoilTime: 4
 --- !u!1 &3908504387854683643
 GameObject:
@@ -1273,7 +1277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 249258011
+  GlobalObjectIdHash: 1556803015
   InScenePlacedSourceGlobalObjectIdHash: 1556803015
   m_InScenePlacedDisabledByDefault: 1
   DeferredDespawnTick: 0
@@ -1311,7 +1315,6 @@ MonoBehaviour:
   grounded: 0
   isReadyToJump: 0
   orientation: {fileID: 8571902303732013707}
-  rb: {fileID: 3069299294080565648}
 --- !u!114 &893637094403239808
 MonoBehaviour:
   m_ObjectHideFlags: 0

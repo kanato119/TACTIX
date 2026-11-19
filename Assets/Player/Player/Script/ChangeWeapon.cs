@@ -83,14 +83,18 @@ public class ChangeWeapon : NetworkBehaviour
     /// </summary>
     public override void OnNetworkSpawn()
     {
-        // 武器変更イベントを登録
+        //武器変更イベントを登録
         Weapons.OnValueChanged += OnWeaponChanged;
 
-        // 初期武器を表示
+        //初期武器を表示
         UpdateWeapon(Weapons.Value);
     }
+    /// <summary>
+    /// ネットワークを切断した時
+    /// </summary>
     public override void OnNetworkDespawn()
     {
+        //武器変更イベントから削除
         Weapons.OnValueChanged -= OnWeaponChanged;
     }
 
@@ -100,6 +104,10 @@ public class ChangeWeapon : NetworkBehaviour
         UpdateWeapon(newValue);
     }
 
+    /// <summary>
+    /// 選択した武器の表示
+    /// </summary>
+    /// <param name="numbers"></param>
     private void UpdateWeapon(int numbers)
     {
 

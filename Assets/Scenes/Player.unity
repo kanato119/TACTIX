@@ -190,7 +190,7 @@ PrefabInstance:
     - target: {fileID: 4603156116648498359, guid: fc5a676d2c90b3d4f8a22e369c35950d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -10.3
       objectReference: {fileID: 0}
     - target: {fileID: 4603156116648498359, guid: fc5a676d2c90b3d4f8a22e369c35950d,
         type: 3}
@@ -879,17 +879,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c308e3989e2d7449a4828c402752fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecoilControl
-  orientation: {fileID: 0}
-  playerCamera: {fileID: 0}
-  RecoilPattern:
-  - {x: 1.2, y: 0}
-  - {x: 1.4, y: 0.2}
-  - {x: 1.6, y: -0.2}
-  - {x: 1.8, y: 0.3}
-  - {x: 2, y: -0.4}
-  TimeReaction: 0.4
-  resetDelay: 0.8
-  randomSide: 0.1
+  recoliAmountX: 0
+  recoliAmountY: 0
+  currentRecoilXPos: 0
+  currentRecoilYPos: 0
+  maxRecoilTime: 4
 --- !u!4 &1274193981
 Transform:
   m_ObjectHideFlags: 0
