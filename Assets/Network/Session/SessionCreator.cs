@@ -57,7 +57,7 @@ public class SessionCreator : MonoBehaviour
 
         _session = await MultiplayerService.Instance.CreateSessionAsync(options);
 
-        SceneSelectManager.instance.ChangeNetSceneSingle(GameConst.SCENE_GAME_LOBYY);
+        SceneSelectManager.instance.ChangeNetSceneSingle(GameConst.SCENE_TEST_PLAYER);
 
      
     }

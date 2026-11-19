@@ -63,7 +63,7 @@ public class SessionJoin:MonoBehaviour
             //条件に合ったセッションに参加
             _sessionJoiner = await MultiplayerService.Instance.JoinSessionByIdAsync(sessionInfo.Id);
 
-            SceneSelectManager.instance.ChangeNetSceneSingle(GameConst.SCENE_GAME_LOBYY);
+            SceneSelectManager.instance.ChangeNetSceneSingle(GameConst.SCENE_TEST_PLAYER);
 
             return;
         }
