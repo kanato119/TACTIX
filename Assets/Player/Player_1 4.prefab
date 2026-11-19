@@ -740,10 +740,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c308e3989e2d7449a4828c402752fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecoilControl
-  recoliAmountX: 0
-  recoliAmountY: 0
+  recoliAmountX: 1.5
+  recoliAmountY: 2
   currentRecoilXPos: 0
   currentRecoilYPos: 0
+  targetRecoilXPos: 0
+  targetRecoilYPos: 0
   maxRecoilTime: 4
 --- !u!1 &3908504387854683643
 GameObject:
@@ -1032,6 +1034,7 @@ MonoBehaviour:
   yRotation: 0
   audioListener: {fileID: 806465648492948682}
   _playerCamera: {fileID: 5691235860072095602}
+  recoil: {fileID: 2629231458147769710}
 --- !u!1 &4962951044407800700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,7 +1134,7 @@ GameObject:
   - component: {fileID: 1733157831306833394}
   m_Layer: 0
   m_Name: Player_1 4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

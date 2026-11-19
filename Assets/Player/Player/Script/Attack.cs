@@ -41,7 +41,7 @@ public class Attack : MonoBehaviour
             Debug.Log("PlayerのHPが0");
 
             //オブジェクト破棄
-            Destroy(obj);
+            //Destroy(obj);
 
             playerPrefab.SetActive(false);
 

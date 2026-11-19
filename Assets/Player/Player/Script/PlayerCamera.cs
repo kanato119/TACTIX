@@ -1,9 +1,10 @@
+using System.Globalization;
 using Unity.Netcode;
 using UnityEngine;
 
 public class PlayerCamera : NetworkBehaviour
 {
-    
+
     [Range(1f, 500f)]
     [SerializeField] float Sens = 500;
     //[Range(1f, 500f)]
@@ -11,7 +12,7 @@ public class PlayerCamera : NetworkBehaviour
 
     public Transform orientation;
 
-    
+
 
     public float xRotation = 0;
     public float yRotation = 0;
@@ -21,6 +22,11 @@ public class PlayerCamera : NetworkBehaviour
 
     [SerializeField] AudioListener audioListener;
     [SerializeField] Camera _playerCamera;
+
+    [SerializeField] private RecoilControl recoil;
+
+    private bool wasShooting;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -66,11 +72,41 @@ public class PlayerCamera : NetworkBehaviour
         float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * Sens;
 
         yRotation += mouseX;
-
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, xViewpointControl, yViewpointControl);
 
-        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+
+        if (recoil.IsShooting)
+        {
+            wasShooting = true;
+        }
+        else if (wasShooting)
+        {
+            xRotation -= recoil.currentRecoilXPos;
+            yRotation += recoil.currentRecoilYPos;
+
+            recoil.ResetRecoil();
+
+            wasShooting = false;
+        }
+
+
+        xRotation = Mathf.Clamp(xRotation, xViewpointControl, yViewpointControl);
         orientation.localRotation = Quaternion.Euler(0, yRotation, 0);
+
+    }
+
+    private void LateUpdate()
+    {
+        if (!IsOwner) return;
+
+        float recoilX = recoil.currentRecoilXPos;
+        float recoilY = recoil.currentRecoilYPos;
+
+        float cameraX = xRotation - recoilX;
+        float cameraY = yRotation + recoilY;
+
+        cameraX = Mathf.Clamp(cameraX, xViewpointControl, yViewpointControl);
+
+        transform.rotation = Quaternion.Euler(cameraX, cameraY, 0);
     }
 }
