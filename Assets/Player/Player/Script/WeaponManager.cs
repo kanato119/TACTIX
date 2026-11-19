@@ -17,9 +17,9 @@ public class WeaponManager : NetworkBehaviour
         //ナイフ
         new WeaponData(eWeapons.Knife,false,0,0,50,0.5f,0f,false),
         //ライフル
-        new WeaponData(eWeapons.Knife,true,0,0,50,0.5f,0f,false),
+        new WeaponData(eWeapons.Assault,true,0,0,50,0.5f,0f,false),
         //ピストル
-        new WeaponData(eWeapons.Knife,false,0,0,50,0.5f,0f,false),
+        new WeaponData(eWeapons.Pistol,false,0,0,50,0.5f,0f,false),
     };
 
     public WeaponData GetWeaponData(eWeapons weapon)

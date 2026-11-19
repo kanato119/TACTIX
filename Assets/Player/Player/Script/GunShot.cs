@@ -37,6 +37,10 @@ public class GunShot : NetworkBehaviour
 
     private bool isReloading = false;
 
+    WeaponManager weaponManager;
+    ChangeWeapon weaponChange;
+
+
     ///networkvariable
     ///弾数の同機
     public NetworkVariable<int> AmmoCount = new NetworkVariable<int>(
@@ -62,15 +66,24 @@ public class GunShot : NetworkBehaviour
         defalutPoition = transform.localPosition;
 
         if (cam == null)
-        {
-            cam = UnityEngine.Camera.main;
-        }
-
+                cam = UnityEngine.Camera.main;
+        
         //武器のタイプによって初期弾数が違うのでここで初期化（TotalAmmo・AmmoCount）
 
     }
 
+    /// <summary>
+    /// 最初にServer側で弾薬をセットする
+    /// </summary>
+    [ServerRpc]
+    private void SetWeaponServerRpc(WeaponManager weapon)
+    {
+         //weaponManager = weapon.GetWeaponData(weapon);
 
+
+
+    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -221,7 +234,7 @@ public class GunShot : NetworkBehaviour
 
         //if (TotalAmmo <= 0)
         //{
-         //   TotalAmmo = 0;
+       //TotalAmmo = 0;
 
   //          isReloading = true;
 //        }
