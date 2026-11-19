@@ -166,7 +166,7 @@ public class GunShot : NetworkBehaviour
             muzzle.position,
             rotation);
 
-        //recoil.AddRecoil();
+        recoil.RecoilMath();
 
         Reloading();
 
