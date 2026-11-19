@@ -50,6 +50,7 @@ public class PlayerMove : NetworkBehaviour
      
         rb = GetComponent<Rigidbody>();
 
+        //始めの速度
         currentSpeed = runSpeed;
 
     }
@@ -57,44 +58,57 @@ public class PlayerMove : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        //grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
         //network系統
         if (!IsOwner) return;
 
-        //grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
-
+        // 地面に接地していない場合
         if (!grounded)
         {
+            //ジャンプできない
             isReadyToJump = false;
 
+            // ジャンプ可能状態をリセットする処理を呼び出す
             Invoke(nameof(IsResetJump), 0f);
         }
 
+        //スペースが押され、ジャンプ可能かつ接地している場合
         if (Input.GetKeyDown(KeyCode.Space) && isReadyToJump && grounded)
         {
+            //ジャンプ
             Jump();
         }
 
+        // プレイヤーの移動処理
         MovePlayer();
 
+        //移動速度の制限
         SpeedControl();
 
+        // 左Ctrlキーが押されているか判定
         bool isRuning = Input.GetKey(KeyCode.LeftControl);
 
+        // 左Ctrlキーを押している間は歩き速度、それ以外は走る速度を設定
         currentSpeed = isRuning ? moveSpeed : runSpeed;
 
+        //地面と接触している場合
         if (grounded)
+            //地面との摩擦を設定
             rb.linearDamping = groundDrag;
         else
+            //空中なら摩擦を0に
             rb.linearDamping = 0;
 
     }
 
+
     private void FixedUpdate()
     {
         if (!IsOwner) return;
+
+        // Y方向の速度がマイナスなら落下中と判定
         if (rb.linearVelocity.y < 0)
         {
+            // 落下中のみ追加の重力を加えて、落下速度を速くする
             rb.AddForce(
                 Vector3.up * Physics.gravity.y * (fallMutipler - 1),
                 ForceMode.Acceleration
@@ -104,18 +118,23 @@ public class PlayerMove : NetworkBehaviour
 
 
     /// <summary>
+    /// Playerの移動
     /// クライアント側で移動をするとServer側に伝える
     /// </summary>
     private void MovePlayer()
     {
         if (!IsOwner) return;
+
+        //左右の移動キー
         horizontalInput = Input.GetAxisRaw("Horizontal");
+
+        //上下の移動キー
         verticalInput = Input.GetAxisRaw("Vertical");
 
         //移動量のキャスト
         Vector3 direction = moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-
+        //地面にいたら
         if (grounded)
         {
             rb.AddForce(direction.normalized * currentSpeed * 10f, ForceMode.Force);
@@ -132,7 +151,9 @@ public class PlayerMove : NetworkBehaviour
 
 
    
-    
+    /// <summary>
+    /// スピードを抑える
+    /// </summary>
     private void SpeedControl()
     {
         if (!IsOwner) return;
@@ -145,6 +166,10 @@ public class PlayerMove : NetworkBehaviour
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
     }
+
+    /// <summary>
+    /// ジャンプ処理
+    /// </summary>
     private void Jump()
     {
         if (!IsOwner) return;
@@ -156,9 +181,14 @@ public class PlayerMove : NetworkBehaviour
 
     }
     
+    /// <summary>
+    /// もう一度ジャンプができるように
+    /// </summary>
     private void IsResetJump()
     {
         if (!IsOwner) return;
+
+        //ジャンプリセット
         isReadyToJump = true;
     }
 
