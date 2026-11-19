@@ -15,22 +15,8 @@ public class GunShot : NetworkBehaviour
     [Header("銃口")]
     [SerializeField] Transform muzzle;
 
-    [Header("発射速度")]
-    [SerializeField] float fireRate = 0.2f;
-
     [Header("最大距離")]
     [SerializeField] float maxDistance = 1000f;
-
-    [Header("次の発射までの時間")]
-    [SerializeField] float nextFireTime = 0f;
-
-    [SerializeField] int RemainingBullets = 25;
-    [SerializeField] int TotalAmmo = 50;
-
-    [Header("連射ON/OFF")]
-    [SerializeField] bool isRapidFire = true;
-
-    [SerializeField] public int Damage;
 
     [SerializeField] UnityEngine.Camera cam;
 
@@ -45,11 +31,27 @@ public class GunShot : NetworkBehaviour
 
     private bool isNotShoot = false;
 
-    private int AmmoCount;
+    // private int AmmoCount;
 
     private int ShotNumber;
 
     private bool isReloading = false;
+
+    ///networkvariable
+    ///弾数の同機
+    public NetworkVariable<int> AmmoCount = new NetworkVariable<int>(
+        25,//仮数値
+        NetworkVariableReadPermission.Everyone,
+        NetworkVariableWritePermission.Server
+        );
+
+    public NetworkVariable<int> TotalAmmo = new NetworkVariable<int>(
+        100,//仮数値
+        NetworkVariableReadPermission.Everyone,
+        NetworkVariableWritePermission.Server
+        );
+
+
     private void Awake()
     {
         instance = this;
@@ -64,14 +66,16 @@ public class GunShot : NetworkBehaviour
             cam = UnityEngine.Camera.main;
         }
 
-        AmmoCount = RemainingBullets;
+        //武器のタイプによって初期弾数が違うのでここで初期化（TotalAmmo・AmmoCount）
 
-        
     }
+
 
     // Update is called once per frame
     void Update()
     {
+        if (!IsOwner) return;
+
         if (Time.timeScale == 0) return;
 
         //押した瞬間だけ記録
@@ -81,42 +85,45 @@ public class GunShot : NetworkBehaviour
 
         }
 
-        if(!isNotShoot)
+        if (!isNotShoot)
         {
-            //フルオート
-            if (isRapidFire)
-            {
-                if (Input.GetMouseButton(0))
-                {
-                    if (Time.time - pressetStartTime > 0.2f)
-                    {
-                        if (Time.time >= nextFireTime)
-                        {
-                            Fire();
 
-                            nextFireTime = Time.time + fireRate;
-                        }
-                    }
-                }
+            ////フルオート
+            //if (isRapidFire)
+            //{
+            //    if (Input.GetMouseButton(0))
+            //    {
+            //        if (Time.time - pressetStartTime > 0.2f)
+            //        {
+            //            if (Time.time >= nextFireTime)
+            //            {
 
-            }
+            Fire();
 
-            //単発
-            if (Input.GetMouseButtonUp(0))
-            {
-                if (Time.time - pressetStartTime <= 0.2f)
-                {
-                    if (Time.time >= nextFireTime)
-                    {
-                        Fire();
-                        nextFireTime = Time.time + fireRate;
-                    }
-                }
-            }
+            //                nextFireTime = Time.time + fireRate;
+            //            }
+            //        }
+            //    }
+
+            //}
+
+            ////単発
+            //if (Input.GetMouseButtonUp(0))
+            //{
+            //    if (Time.time - pressetStartTime <= 0.2f)
+            //    {
+            //        if (Time.time >= nextFireTime)
+            //        {
+            //            Fire();
+            //            nextFireTime = Time.time + fireRate;
+            //        }
+            //    }
+            //}
 
         }
 
-        if(AmmoCount != RemainingBullets)
+        //リロード
+        if ( isReloading) //AmmoCount = 25/*RemainingBullets*/)
         {
             if (Input.GetKeyDown(KeyCode.R) && !isReloading)
             {
@@ -132,7 +139,8 @@ public class GunShot : NetworkBehaviour
 
     private void Fire()
     {
-        
+
+        if (!IsOwner) return;
         //画面中央からRay
         Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
 
@@ -161,6 +169,14 @@ public class GunShot : NetworkBehaviour
 
         Quaternion rotation = Quaternion.LookRotation(direction);
 
+
+
+        FireServerRpc(ray, rotation, targetPoint);
+    }
+
+    [ServerRpc]
+    private void FireServerRpc(Ray ray, Quaternion rotation, Vector3 target)
+    {
         GameObject bullet = Instantiate
             (bulletPrefab,
             muzzle.position,
@@ -181,14 +197,6 @@ public class GunShot : NetworkBehaviour
                 Physics.IgnoreCollision(playerCol, bulletCol);
             }
         }
-        
-    }
-
-    [ServerRpc]
-    private void FireServerRpc(Vector3 ray)
-    {
-
-
 
     }
 
@@ -200,44 +208,56 @@ public class GunShot : NetworkBehaviour
 
     private void Reloading()
     {
-
-        AmmoCount -= 1;
+        if (!IsOwner) return;
+        //AmmoCount -= 1;
         ShotNumber += 1;
 
-        if (AmmoCount <= 0)
-        {
-            AmmoCount = 0;
+        //if (AmmoCount <= 0)
+        //{
+           // AmmoCount = 0;
 
             isNotShoot = true;
-        }
+       // }
 
-        if(TotalAmmo <= 0)
-        {
-            TotalAmmo = 0;
+        //if (TotalAmmo <= 0)
+        //{
+         //   TotalAmmo = 0;
 
-            isReloading = true;
-        }
+  //          isReloading = true;
+//        }
 
     }
 
-    IEnumerator Reload(float time)
+    private IEnumerator Reload(float time)
     {
-        isNotShoot = true;
-        int reloadAmount = RemainingBullets - AmmoCount;
+        if (!IsOwner) yield return false;
 
-        int currentAmmo = AmmoCount;
+        ReloadServerRpc(time);
+    }
+    [ServerRpc]
+    IEnumerator ReloadServerRpc(float time)
+    {
+
+        isNotShoot = true;
+        //int reloadAmount = RemainingBullets - AmmoCount;
+
+        //int currentAmmo = AmmoCount;
 
         Debug.Log("リロード中");
-        AmmoCount = 0;
+        //AmmoCount = 0;
         yield return new WaitForSeconds(time);
-        int actualReloadAmount = Mathf.Min(reloadAmount, TotalAmmo);
+       //int actualReloadAmount = Mathf.Min(reloadAmount, TotalAmmo);
 
-        AmmoCount =currentAmmo + actualReloadAmount;
+       // AmmoCount = currentAmmo + actualReloadAmount;
 
-        TotalAmmo -= actualReloadAmount;
+        //TotalAmmo -= actualReloadAmount;
 
         isNotShoot = false;
         isReloading = false;
+
         Debug.Log("リロード完了");
+
     }
+
+
 }
