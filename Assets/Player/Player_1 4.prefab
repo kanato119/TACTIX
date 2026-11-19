@@ -688,6 +688,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 598a7ecab8fe09141980a42a11db6ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Attack
+<<<<<<< Updated upstream
+=======
+  playerPrefab: {fileID: 5315236170500659714}
+>>>>>>> Stashed changes
 --- !u!1 &2209158578081044677
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,10 +736,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c308e3989e2d7449a4828c402752fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecoilControl
+<<<<<<< Updated upstream
   recoliAmountX: 0
   recoliAmountY: 0
   currentRecoilXPos: 0
   currentRecoilYPos: 0
+=======
+  recoliAmountX: 1.5
+  recoliAmountY: 1.2
+  currentRecoilXPos: 0
+  currentRecoilYPos: 0
+  targetRecoilXPos: 0
+  targetRecoilYPos: 0
+>>>>>>> Stashed changes
   maxRecoilTime: 4
 --- !u!1 &3908504387854683643
 GameObject:
@@ -939,7 +952,11 @@ Transform:
   m_GameObject: {fileID: 4375427012306107429}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: -0.70000005, z: 0}
+=======
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1147,7 +1164,10 @@ Transform:
   - {fileID: 1465729094564135376}
   - {fileID: 1046444818121327454}
   - {fileID: 6134956050947587138}
+<<<<<<< Updated upstream
   - {fileID: 2518787650926601592}
+=======
+>>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6009363652108051395
@@ -1307,6 +1327,10 @@ MonoBehaviour:
   grounded: 0
   isReadyToJump: 0
   orientation: {fileID: 8571902303732013707}
+<<<<<<< Updated upstream
+=======
+  rb: {fileID: 3069299294080565648}
+>>>>>>> Stashed changes
 --- !u!114 &893637094403239808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1322,6 +1346,7 @@ MonoBehaviour:
   NOW_HP: 150
   MAX_HP: 150
   HPText: {fileID: 5450697960725241685}
+  isDead: 1
 --- !u!114 &6740130786746690232
 MonoBehaviour:
   m_ObjectHideFlags: 0
