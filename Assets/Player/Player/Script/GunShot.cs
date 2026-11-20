@@ -72,17 +72,17 @@ public class GunShot : NetworkBehaviour
 
     }
 
-    /// <summary>
-    /// 最初にServer側で弾薬をセットする
-    /// </summary>
-    [ServerRpc]
-    private void SetWeaponServerRpc(WeaponManager weapon)
-    {
-         //weaponManager = weapon.GetWeaponData(weapon);
+    ///// <summary>
+    ///// 最初にServer側で弾薬をセットする
+    ///// </summary>
+    //[ServerRpc]
+    //private void SetWeaponServerRpc(WeaponManager weapon)
+    //{
+    //    //weaponManager = weapon.GetWeaponData(weapon);
 
 
-
-    }
+    //    return;
+    //}
     
     // Update is called once per frame
     void Update()
@@ -184,34 +184,59 @@ public class GunShot : NetworkBehaviour
 
 
 
-        FireServerRpc(ray, rotation, targetPoint);
+        //FireServerRpc(ray, rotation, targetPoint);
     }
 
-    [ServerRpc]
-    private void FireServerRpc(Ray ray, Quaternion rotation, Vector3 target)
-    {
-        GameObject bullet = Instantiate
-            (bulletPrefab,
-            muzzle.position,
-            rotation);
+    //[ServerRpc]
+    //private void FireServerRpc(Ray ray, Quaternion rotation, Vector3 target)
+    //{
+    //    GameObject bullet = Instantiate
+    //        (bulletPrefab,
+    //        muzzle.position,
+    //        rotation);
 
-        recoil.RecoilMath();
+    //    recoil.RecoilMath();
 
-        Reloading();
+    //    Reloading();
 
-        Collider[] playerCollider = transform.root.GetComponentsInChildren<Collider>();
+    //    Collider[] playerCollider = transform.root.GetComponentsInChildren<Collider>();
 
-        Collider[] bulletCollider = bullet.GetComponentsInChildren<Collider>();
+    //    Collider[] bulletCollider = bullet.GetComponentsInChildren<Collider>();
 
-        foreach (Collider playerCol in playerCollider)
-        {
-            foreach (Collider bulletCol in bulletCollider)
-            {
-                Physics.IgnoreCollision(playerCol, bulletCol);
-            }
-        }
+    //    foreach (Collider playerCol in playerCollider)
+    //    {
+    //        foreach (Collider bulletCol in bulletCollider)
+    //        {
+    //            Physics.IgnoreCollision(playerCol, bulletCol);
+    //        }
+    //    }
 
-    }
+    //}
+    //[ServerRpc]
+    //private void FireServerRpc(Ray ray, Quaternion rotation, Vector3 target)
+    //{
+    //    GameObject bullet = Instantiate
+    //        (bulletPrefab,
+    //        muzzle.position,
+    //        rotation);
+
+    //    recoil.RecoilMath();
+
+    //    Reloading();
+
+    //    Collider[] playerCollider = transform.root.GetComponentsInChildren<Collider>();
+
+    //    Collider[] bulletCollider = bullet.GetComponentsInChildren<Collider>();
+
+    //    foreach (Collider playerCol in playerCollider)
+    //    {
+    //        foreach (Collider bulletCol in bulletCollider)
+    //        {
+    //            Physics.IgnoreCollision(playerCol, bulletCol);
+    //        }
+    //    }
+
+    //}
 
     private void ShowRemainingBullets()
     {
@@ -245,10 +270,10 @@ public class GunShot : NetworkBehaviour
     {
         if (!IsOwner) yield return false;
 
-        ReloadServerRpc(time);
+       // ReloadServerRpc(time);
     }
     [ServerRpc]
-    IEnumerator ReloadServerRpc(float time)
+    void ReloadServerRpc(float time)
     {
 
         isNotShoot = true;
@@ -258,7 +283,7 @@ public class GunShot : NetworkBehaviour
 
         Debug.Log("リロード中");
         //AmmoCount = 0;
-        yield return new WaitForSeconds(time);
+       // yield return new WaitForSeconds(time);
        //int actualReloadAmount = Mathf.Min(reloadAmount, TotalAmmo);
 
        // AmmoCount = currentAmmo + actualReloadAmount;
