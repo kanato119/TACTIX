@@ -25,6 +25,11 @@ public enum eWeapons
     Invalid = -1,
 
     /// <summary>
+    /// ナイフ（近接武器）
+    /// </summary>
+    Knife,
+
+    /// <summary>
     /// ピストル
     /// </summary>
     Pistol,
@@ -34,8 +39,5 @@ public enum eWeapons
     /// </summary>
     Assault,
 
-    /// <summary>
-    /// ナイフ（近接武器）
-    /// </summary>
-    Knife,
+
 }
