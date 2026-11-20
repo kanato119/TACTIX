@@ -21,6 +21,7 @@ public class GameConst
     //最大人数
     public const int MAX_MATCH_COUNT = 6;
     
+    public const float MAX_DEATHMATCH_TIME = 300.0f;
 
 
 

@@ -12,8 +12,7 @@ public class SystemManager : MonoBehaviour
         await SessionManager.instance.Initalize();
 
 
-        //Nullチェック
-        if (SessionManager.instance == null) return;
+
         if (SceneSelectManager.instance == null) return;
 
     }

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Unity.Services.Multiplayer;
 using UnityEngine;
@@ -17,7 +18,8 @@ public class SessionCreator : MonoBehaviour
     /// </summary>
     private IHostSession _session;
 
-   
+    private ISession _sessionJoiner;
+
 
     void Start()
     {
@@ -27,23 +29,6 @@ public class SessionCreator : MonoBehaviour
 
         _playerID = SessionManager.instance.GetPlayerID();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    /// <summary>
-    /// セッション作成ボタン
-    /// </summary>
-    public async void CreateSessionButton()
-    {
-
-
-        await CreateSession();
-    }
-
 
     /// <summary>
     /// 他プレイヤーが参加できるセッションの作成
@@ -58,16 +43,70 @@ public class SessionCreator : MonoBehaviour
         _session = await MultiplayerService.Instance.CreateSessionAsync(options);
 
         SceneSelectManager.instance.ChangeNetSceneSingle(GameConst.SCENE_TEST_PLAYER);
-
-     
     }
 
-    //自身がホストかの可否
-    public bool GetHost()
+    /// <summary>
+    /// 自動マッチメイキング
+    /// </summary>
+    /// <returns></returns>
+    public async Task AutoSession()
     {
-        return _session != null;
+        //先に参加できるサーバーがあるか確認して参加する
+        //参加できるサーバーがなかった場合自分がサーバーを開く
+        await JoinServer();
     }
 
+
+    /// <summary>
+    /// ゲームモードにあったセッションのマッチメイキング
+    /// </summary>
+    /// <returns></returns>
+    private async Task JoinServer()
+    {
+        // ゲームモードの取得
+        string gameType = SessionManager.instance.GetGameTypeString();
+
+        var queryOptions = new QuerySessionsOptions
+        {
+            Count = 20,
+
+            //検索条件
+            FilterOptions = new List<FilterOption>
+            {
+                new FilterOption(
+                FilterField.NumberIndex1,//gametypeで
+                gameType,
+                FilterOperation.Equal
+                )
+            }
+        };
+
+        //セッションの検索
+        var result = await MultiplayerService.Instance.QuerySessionsAsync(queryOptions);
+
+        if (result.Sessions.Count == 0)
+        {
+            Debug.Log("参加できるセッションがありません");
+            await CreateSession();
+            return;
+        }
+
+
+        foreach (var sessionInfo in result.Sessions)
+        {
+
+            //条件に合ったセッションに参加
+            _sessionJoiner = await MultiplayerService.Instance.JoinSessionByIdAsync(sessionInfo.Id);
+
+            SceneSelectManager.instance.ChangeNetSceneSingle(GameConst.SCENE_TEST_PLAYER);
+
+            return;
+        }
+
+    }
+
+
+    
 
 
 }
