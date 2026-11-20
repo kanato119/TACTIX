@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangeWeapon
   ShowTopMostFoldoutHeaderGroup: 1
   gameObjects:
-  - {fileID: 6789617670541925641}
   - {fileID: 682337375138225668}
+  - {fileID: 6789617670541925641}
   - {fileID: 8644126445019784342}
   AmmoCountText: {fileID: 8700603990888884122}
   Weapons:
@@ -225,7 +225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7042122565511280334
 Transform:
   m_ObjectHideFlags: 0
@@ -307,6 +307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5335470994994894466}
+  - component: {fileID: 8042209951028253485}
   m_Layer: 0
   m_Name: Wepon
   m_TagString: Untagged
@@ -332,6 +333,19 @@ Transform:
   - {fileID: 7042122565511280334}
   m_Father: {fileID: 5090806878408485980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8042209951028253485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249514246511777802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac9877afda7a0b4cb92ab352d679749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponManager
+  ShowTopMostFoldoutHeaderGroup: 1
 --- !u!1 &1328332401474334611
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,7 +709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 598a7ecab8fe09141980a42a11db6ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Attack
-  playerPrefab: {fileID: 5315236170500659714}
 --- !u!1 &2209158578081044677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,7 +2064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8427150338887515791}
-  - component: {fileID: 41287160035057402}
+  - component: {fileID: 4822397851884973309}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -2079,7 +2092,7 @@ Transform:
   - {fileID: 6786270325830148686}
   m_Father: {fileID: 5335470994994894466}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &41287160035057402
+--- !u!114 &4822397851884973309
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2091,20 +2104,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b559325984775a4eb78987a3be3d73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunShot
+  ShowTopMostFoldoutHeaderGroup: 1
   bulletPrefab: {fileID: 6755963417441443916, guid: daba6eebd65656e4cbafd31a74fd1c7b,
     type: 3}
   muzzle: {fileID: 6786270325830148686}
-  fireRate: 0.18
   maxDistance: 1000
-  nextFireTime: 0.5
-  RemainingBullets: 25
-  TotalAmmo: 50
-  isRapidFire: 0
-  Damage: 28
   cam: {fileID: 5691235860072095602}
   RemainingBulletsText: {fileID: 5897814029516440348}
   MaxRemainingBulletsText: {fileID: 3345924589129090624}
   recoil: {fileID: 2629231458147769710}
+  currentWeapon: 1
+  AmmoCount:
+    UpdateTraits:
+      MinSecondsBetweenUpdates: 0
+      MaxSecondsBetweenUpdates: 0
+    m_InternalValue: 25
+  TotalAmmo:
+    UpdateTraits:
+      MinSecondsBetweenUpdates: 0
+      MaxSecondsBetweenUpdates: 0
+    m_InternalValue: 100
 --- !u!1 &7194090975157745889
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,7 +2895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1821507186432197681
 Transform:
   m_ObjectHideFlags: 0
@@ -2912,20 +2931,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b559325984775a4eb78987a3be3d73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunShot
+  ShowTopMostFoldoutHeaderGroup: 1
   bulletPrefab: {fileID: 6755963417441443916, guid: daba6eebd65656e4cbafd31a74fd1c7b,
     type: 3}
   muzzle: {fileID: 3282648730748337605}
-  fireRate: 0.13
   maxDistance: 1000
-  nextFireTime: 0
-  RemainingBullets: 50
-  TotalAmmo: 100
-  isRapidFire: 1
-  Damage: 40
   cam: {fileID: 5691235860072095602}
   RemainingBulletsText: {fileID: 5897814029516440348}
   MaxRemainingBulletsText: {fileID: 3345924589129090624}
   recoil: {fileID: 2629231458147769710}
+  currentWeapon: 2
+  AmmoCount:
+    UpdateTraits:
+      MinSecondsBetweenUpdates: 0
+      MaxSecondsBetweenUpdates: 0
+    m_InternalValue: 25
+  TotalAmmo:
+    UpdateTraits:
+      MinSecondsBetweenUpdates: 0
+      MaxSecondsBetweenUpdates: 0
+    m_InternalValue: 100
 --- !u!1 &8688144303463091500
 GameObject:
   m_ObjectHideFlags: 0
