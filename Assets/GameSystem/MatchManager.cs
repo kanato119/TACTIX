@@ -17,7 +17,7 @@ public class MatchManager
 
 
 
-    private void GameUpdate(int value)
+    private void SetGameType(int value)
     {
         if (selectGame != null) return;
 
@@ -26,14 +26,24 @@ public class MatchManager
         switch (value)
         {
             case (int)eGameType.Deathmatch:
+                //ここでセットする
 
                 break;
             case (int)eGameType.Unrated:
-
+                //ここでセットする
+                
                 break;
         }
 
+
+                PlayMatch();
     }
 
+    private void PlayMatch()
+    {
+
+
+
+    }
 
 }

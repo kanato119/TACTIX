@@ -123,12 +123,20 @@ public class SessionManager
 
     }
     /// <summary>
-    /// 選択したゲームモードの値を取得
+    /// 選択したゲームモードのStrngを取得
     /// </summary>
-    public string GetGameTypeValue()
+    public string GetGameTypeString()
     {
         return ((int)selectGameType).ToString();
     }
+    /// <summary>
+    /// 選択したゲームモードのStrngを取得
+    /// </summary>
+    public int GetGameTypeValue()
+    {
+        return ((int)selectGameType);
+    }
+
 
     /// <summary>
     /// じぶんが選択したゲームの種類の取得
@@ -148,7 +156,7 @@ public class SessionManager
                 {
                     "GameType",
                     new SessionProperty(
-                        GetGameTypeValue(),
+                        GetGameTypeString(),
                         VisibilityPropertyOptions.Public,//他プレイヤーから参照できるように
                         PropertyIndex.Number1
                     )

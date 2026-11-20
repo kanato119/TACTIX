@@ -30,7 +30,7 @@ public class SessionJoin:MonoBehaviour
     private async Task JoinServer()
     {
         // ゲームモードの取得
-        string gameType = SessionManager.instance.GetGameTypeValue();
+        string gameType = SessionManager.instance.GetGameTypeString();
 
         var queryOptions = new QuerySessionsOptions
         {
