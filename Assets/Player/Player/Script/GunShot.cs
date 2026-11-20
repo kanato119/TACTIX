@@ -7,7 +7,6 @@ using Unity.Netcode;
 
 public class GunShot : NetworkBehaviour
 {
-    public static GunShot instance { get; private set; }
 
     [Header("弾")]
     [SerializeField] GameObject bulletPrefab;
@@ -25,11 +24,16 @@ public class GunShot : NetworkBehaviour
 
     [SerializeField] private RecoilControl recoil;
 
+    [SerializeField]
+     private eWeapons currentWeapon;
+
     float pressetStartTime;
 
     Vector3 defalutPoition;
 
     private bool isNotShoot = false;
+
+    private float nextFireTime;
 
     // private int AmmoCount;
 
@@ -38,8 +42,11 @@ public class GunShot : NetworkBehaviour
     private bool isReloading = false;
 
     WeaponManager weaponManager;
+    WeaponData weaponData;
+
     ChangeWeapon weaponChange;
 
+    //private NetworkObject playerNetworkObject;
 
     ///networkvariable
     ///弾数の同機
@@ -58,51 +65,61 @@ public class GunShot : NetworkBehaviour
 
     private void Awake()
     {
-        instance = this;
+        // WeaponManagerを取得
+        weaponManager = GetComponentInParent<WeaponManager>();
+
+        // 武器データを取得
+        weaponData = weaponManager.GetWeaponData(currentWeapon);
+
     }
     // Start is called before the first frame update
     void Start()
     {
+
+        if (!IsOwner) return;
+
+        Debug.Log("Updateに入りました");
         defalutPoition = transform.localPosition;
 
         if (cam == null)
                 cam = UnityEngine.Camera.main;
-        
+
+
         //武器のタイプによって初期弾数が違うのでここで初期化（TotalAmmo・AmmoCount）
 
+        //playerNetworkObject = GetComponentInParent<NetworkObject>();
     }
 
-    ///// <summary>
-    ///// 最初にServer側で弾薬をセットする
-    ///// </summary>
+    /// <summary>
+    /// 最初にServer側で弾薬をセットする
+    /// </summary>
     //[ServerRpc]
     //private void SetWeaponServerRpc(WeaponManager weapon)
     //{
-    //    //weaponManager = weapon.GetWeaponData(weapon);
+         //weaponManager = weapon.GetWeaponData(weapon);
 
 
-    //    return;
+
     //}
     
     // Update is called once per frame
     void Update()
     {
-        if (!IsOwner) return;
 
-        if (Time.timeScale == 0) return;
+        if (!/*playerNetworkObject.*/IsOwner) return;
 
-        //押した瞬間だけ記録
-        if (Input.GetMouseButtonDown(0))
+        Shooting();
+
         {
-            pressetStartTime = Time.time;
+            //if (!isNotShoot)
+            //{
 
-        }
-
-        if (!isNotShoot)
-        {
-
+            //    if (Input.GetMouseButton(0))
+            //    {
+            //        Fire();
+            //    }
             ////フルオート
-            //if (isRapidFire)
+            //if (idFirisRape)
             //{
             //    if (Input.GetMouseButton(0))
             //    {
@@ -110,16 +127,12 @@ public class GunShot : NetworkBehaviour
             //        {
             //            if (Time.time >= nextFireTime)
             //            {
-
-            Fire();
-
             //                nextFireTime = Time.time + fireRate;
             //            }
             //        }
             //    }
 
             //}
-
             ////単発
             //if (Input.GetMouseButtonUp(0))
             //{
@@ -133,6 +146,7 @@ public class GunShot : NetworkBehaviour
             //    }
             //}
 
+            //}
         }
 
         //リロード
@@ -140,6 +154,8 @@ public class GunShot : NetworkBehaviour
         {
             if (Input.GetKeyDown(KeyCode.R) && !isReloading)
             {
+
+
                 isReloading = true;
 
                 StartCoroutine(Reload(2f));
@@ -150,10 +166,32 @@ public class GunShot : NetworkBehaviour
         ShowRemainingBullets();
     }
 
+    private void Shooting()
+    {
+        if (Time.timeScale == 0) return;
+        if (weaponData == null) return;
+
+        bool isFire = weaponData.IsRapidFire
+            ? Input.GetMouseButton(0)
+            : Input.GetMouseButtonDown(0);
+
+        if (isFire && Time.time >= nextFireTime)
+        {
+            Debug.Log("左クリックを検知しました");
+
+            Fire();
+            nextFireTime = Time.time + weaponData.ShootInterval;
+        }
+    }
+
     private void Fire()
     {
 
-        if (!IsOwner) return;
+        if (!/*playerNetworkObject.*/IsOwner) return;
+
+        Debug.Log("ServerRpcを呼び出します");
+
+
         //画面中央からRay
         Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
 
@@ -183,60 +221,48 @@ public class GunShot : NetworkBehaviour
         Quaternion rotation = Quaternion.LookRotation(direction);
 
 
-
-        //FireServerRpc(ray, rotation, targetPoint);
+        FireServerRpc(muzzle.position,rotation);
     }
 
-    //[ServerRpc]
-    //private void FireServerRpc(Ray ray, Quaternion rotation, Vector3 target)
-    //{
-    //    GameObject bullet = Instantiate
-    //        (bulletPrefab,
-    //        muzzle.position,
-    //        rotation);
+    [ServerRpc]
+    private void FireServerRpc(Vector3 position, Quaternion rotation)
+    {
+        Debug.Log("ServerRpcに入りました");
 
-    //    recoil.RecoilMath();
+        GameObject bullet = Instantiate
+            (bulletPrefab,
+            position,
+            rotation);
 
-    //    Reloading();
+        Debug.Log("弾を生成しました");
 
-    //    Collider[] playerCollider = transform.root.GetComponentsInChildren<Collider>();
+        recoil.RecoilMath();
 
-    //    Collider[] bulletCollider = bullet.GetComponentsInChildren<Collider>();
+        //Reloading();
 
-    //    foreach (Collider playerCol in playerCollider)
-    //    {
-    //        foreach (Collider bulletCol in bulletCollider)
-    //        {
-    //            Physics.IgnoreCollision(playerCol, bulletCol);
-    //        }
-    //    }
+        Collider[] playerCollider = transform.root.GetComponentsInChildren<Collider>();
 
-    //}
-    //[ServerRpc]
-    //private void FireServerRpc(Ray ray, Quaternion rotation, Vector3 target)
-    //{
-    //    GameObject bullet = Instantiate
-    //        (bulletPrefab,
-    //        muzzle.position,
-    //        rotation);
+        Collider[] bulletCollider = bullet.GetComponentsInChildren<Collider>();
 
-    //    recoil.RecoilMath();
+        foreach (Collider playerCol in playerCollider)
+        {
+            foreach (Collider bulletCol in bulletCollider)
+            {
+                Physics.IgnoreCollision(playerCol, bulletCol);
+            }
+        }
 
-    //    Reloading();
+    }
 
-    //    Collider[] playerCollider = transform.root.GetComponentsInChildren<Collider>();
+    public void ChangeWeponData(eWeapons weapon)
+    {
+        currentWeapon = weapon;
 
-    //    Collider[] bulletCollider = bullet.GetComponentsInChildren<Collider>();
+        // 武器データを取得
+        weaponData = weaponManager.GetWeaponData(currentWeapon);
 
-    //    foreach (Collider playerCol in playerCollider)
-    //    {
-    //        foreach (Collider bulletCol in bulletCollider)
-    //        {
-    //            Physics.IgnoreCollision(playerCol, bulletCol);
-    //        }
-    //    }
-
-    //}
+        nextFireTime = 0;
+    }
 
     private void ShowRemainingBullets()
     {
@@ -270,7 +296,7 @@ public class GunShot : NetworkBehaviour
     {
         if (!IsOwner) yield return false;
 
-       // ReloadServerRpc(time);
+        //ReloadServerRpc(time);
     }
     [ServerRpc]
     void ReloadServerRpc(float time)
@@ -283,7 +309,7 @@ public class GunShot : NetworkBehaviour
 
         Debug.Log("リロード中");
         //AmmoCount = 0;
-       // yield return new WaitForSeconds(time);
+        //yield return new WaitForSeconds(time);
        //int actualReloadAmount = Mathf.Min(reloadAmount, TotalAmmo);
 
        // AmmoCount = currentAmmo + actualReloadAmount;
