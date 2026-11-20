@@ -3,9 +3,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class DebugText : MonoBehaviour
+public class DebugUIText : MonoBehaviour
 {
-    public static DebugText Instance;
+    public static DebugUIText Instance;
 
     public TextMeshProUGUI debugText;
 

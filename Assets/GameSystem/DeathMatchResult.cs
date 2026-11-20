@@ -4,27 +4,36 @@ using UnityEngine;
 
 public class DeathMatchResult : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI TimerText;
+    // インスタンス化
+    public static DeathMatchResult Instance;
+    // プレイヤーリスト
     public RulesDeathMatch[] players;
+
     // 試合開始判定
     public static bool GameStarted = false;
-    // 制限時間（5分）
-    public float timeLimit = 300f;
-
 
     // ゲーム終了判定（全プレイヤーで共有）
     public static bool GameEnded = false;
 
     void Start()
     {
-        TimerText.text = timeLimit.ToString("F0");
-
         GameStarted = false;
         GameEnded = false;
 
         GetPlayers();
     }
-
+    void Awake()
+    {
+        // 重複していないか
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     // プレイヤーを全員取得
     void GetPlayers()
     {
@@ -48,27 +57,18 @@ public class DeathMatchResult : MonoBehaviour
             if (player.Kills >= 25)
             {
                 Debug.Log(player.gameObject.name + " の勝ち！");
+                TimeManager.Gameended=true;
                 GameEnded = true;
                 return;
             }
         }
-        // 時間を減らす
-        timeLimit -= Time.deltaTime;
-
-        // テキストを更新
-        TimerText.text = timeLimit.ToString("F0");
-        // 5分経過
-        if (timeLimit <= 0)
-        {
-            timeLimit = 0;
-            CheckWinner();
-        }
+ 
         if (Input.GetKeyDown(KeyCode.C)){ 
         
         GetPlayers();
         }
     }
-
+    // 勝ちを探す
     public void CheckWinner()
     {
         GameEnded = true;

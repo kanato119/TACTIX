@@ -42,7 +42,7 @@ public class RulesDeathMatch : MonoBehaviour
             Kills++;
 
             Debug.Log(gameObject.name + "残機：" + LivesLeft);
-            DebugText.Instance.Show(gameObject.name + 
+            DebugUIText.Instance.Show(gameObject.name + 
                 " Kills " + Kills);
          
         }
@@ -52,7 +52,7 @@ public class RulesDeathMatch : MonoBehaviour
             Kills += 2;
 
             Debug.Log(gameObject.name + "残機：" + LivesLeft);
-            DebugText.Instance.Show(gameObject.name +
+            DebugUIText.Instance.Show(gameObject.name +
                 " Kills " + Kills);
           
         }
@@ -63,7 +63,7 @@ public class RulesDeathMatch : MonoBehaviour
 
             Debug.Log(gameObject.name + "残機：" + LivesLeft);
       
-            DebugText.Instance.Show(gameObject.name + 
+            DebugUIText.Instance.Show(gameObject.name + 
                 " Kills " + Kills);
          
         }
