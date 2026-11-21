@@ -29,6 +29,30 @@ public class SessionCreator : MonoBehaviour
 
         _playerID = SessionManager.instance.GetPlayerID();
     }
+    /// <summary>
+    /// Buttonから呼び出す関数
+    /// </summary>
+    public async void OnClickAutoSession()
+    {
+        try
+        {
+            await AutoSession();
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"マッチメイキング失敗: {e}");
+        }
+    }
+    /// <summary>
+    /// 自動マッチメイキング
+    /// </summary>
+    /// <returns></returns>
+    public async Task AutoSession()
+    {
+        //先に参加できるサーバーがあるか確認して参加する
+        //参加できるサーバーがなかった場合自分がサーバーを開く
+        await JoinServer();
+    }
 
     /// <summary>
     /// 他プレイヤーが参加できるセッションの作成
@@ -45,16 +69,6 @@ public class SessionCreator : MonoBehaviour
         SceneSelectManager.instance.ChangeNetSceneSingle(GameConst.SCENE_TEST_PLAYER);
     }
 
-    /// <summary>
-    /// 自動マッチメイキング
-    /// </summary>
-    /// <returns></returns>
-    public async Task AutoSession()
-    {
-        //先に参加できるサーバーがあるか確認して参加する
-        //参加できるサーバーがなかった場合自分がサーバーを開く
-        await JoinServer();
-    }
 
 
     /// <summary>
@@ -104,9 +118,6 @@ public class SessionCreator : MonoBehaviour
         }
 
     }
-
-
-    
 
 
 }

@@ -111,6 +111,24 @@ public class TimeManager : NetworkBehaviour
 
 
 
+       
+
+    }
+
+    private void Update()
+    {
+        if (!IsServer) return;
+        // 試合開始前は処理しない
+      
+          
+        // 時間を減らす
+        Timer.Value -= Time.deltaTime;
+        // 5分経過
+        if (Timer.Value <= 0)
+        {
+            Timer.Value = 0;
+            DeathMatchResult.Instance.CheckWinner();
+        }
     }
 
 
