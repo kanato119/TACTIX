@@ -40,7 +40,7 @@ public class DeathMatctCountDown : MonoBehaviour
 
         // ここで試合開始！
         DeathMatchResult.GameStarted = true;
-         TimeManager.Gamestarted = true;
+         //TimeManager.Gamestarted = true;
         yield return new WaitForSeconds(2f);
 
         TimerText.enabled = false;

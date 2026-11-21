@@ -57,7 +57,7 @@ public class DeathMatchResult : MonoBehaviour
             if (player.Kills >= 25)
             {
                 Debug.Log(player.gameObject.name + " の勝ち！");
-                TimeManager.Gameended=true;
+                //TimeManager.Gameended=true;
                 GameEnded = true;
                 return;
             }
