@@ -44,7 +44,6 @@ public class GunShot : NetworkBehaviour
     WeaponManager weaponManager;
     WeaponData weaponData;
 
-    ChangeWeapon weaponChange;
 
     //private NetworkObject playerNetworkObject;
 
@@ -78,7 +77,7 @@ public class GunShot : NetworkBehaviour
 
         if (!IsOwner) return;
 
-        Debug.Log("Updateに入りました");
+
         defalutPoition = transform.localPosition;
 
         if (cam == null)
@@ -96,17 +95,19 @@ public class GunShot : NetworkBehaviour
     //[ServerRpc]
     //private void SetWeaponServerRpc(WeaponManager weapon)
     //{
-         //weaponManager = weapon.GetWeaponData(weapon);
+    //weaponManager = weapon.GetWeaponData(weapon);
 
 
 
     //}
-    
+
     // Update is called once per frame
+
     void Update()
     {
-
         if (!/*playerNetworkObject.*/IsOwner) return;
+
+        Debug.Log("Updateに入りました");
 
         Shooting();
 
@@ -165,6 +166,7 @@ public class GunShot : NetworkBehaviour
 
         ShowRemainingBullets();
     }
+
 
     private void Shooting()
     {
@@ -254,15 +256,6 @@ public class GunShot : NetworkBehaviour
 
     }
 
-    public void ChangeWeponData(eWeapons weapon)
-    {
-        currentWeapon = weapon;
-
-        // 武器データを取得
-        weaponData = weaponManager.GetWeaponData(currentWeapon);
-
-        nextFireTime = 0;
-    }
 
     private void ShowRemainingBullets()
     {

@@ -130,11 +130,11 @@ public class ChangeWeapon : NetworkBehaviour
         switch (numbers)
         {
             case (int)eWeapons.Assault:
-                AmmoCountText.SetActive(false);
+                AmmoCountText.SetActive(true);
                 break;
 
             case (int)eWeapons.Knife:
-                AmmoCountText.SetActive(true);
+                AmmoCountText.SetActive(false);
                 break;
 
             case (int)eWeapons.Pistol:
