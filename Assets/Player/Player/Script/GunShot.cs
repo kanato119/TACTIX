@@ -54,7 +54,7 @@ public class GunShot : NetworkBehaviour
         NetworkVariableReadPermission.Everyone,
         NetworkVariableWritePermission.Server
         );
-
+    
     public NetworkVariable<int> TotalAmmo = new NetworkVariable<int>(
         100,//仮数値
         NetworkVariableReadPermission.Everyone,
@@ -103,9 +103,18 @@ public class GunShot : NetworkBehaviour
 
     // Update is called once per frame
 
+    public override void OnNetworkSpawn()
+    {
+        if(IsServer)
+        {
+            AmmoCount.Value = weaponData.MaxAmmo;
+            TotalAmmo.Value = weaponData.MaxTotalAmmo;
+        }
+    }
+
     void Update()
     {
-        if (!/*playerNetworkObject.*/IsOwner) return;
+        if (!IsOwner) return;
 
         Debug.Log("Updateに入りました");
 
@@ -151,17 +160,14 @@ public class GunShot : NetworkBehaviour
         }
 
         //リロード
-        if ( isReloading) //AmmoCount = 25/*RemainingBullets*/)
+        if (Input.GetKeyDown(KeyCode.R) && !isReloading)
         {
-            if (Input.GetKeyDown(KeyCode.R) && !isReloading)
+            if (AmmoCount.Value < weaponData.MaxAmmo && TotalAmmo.Value > 0)
             {
-
-
                 isReloading = true;
 
-                StartCoroutine(Reload(2f));
+                StartCoroutine(Reload(weaponData.ReloadTime));
             }
-
         }
 
         ShowRemainingBullets();
@@ -172,6 +178,8 @@ public class GunShot : NetworkBehaviour
     {
         if (Time.timeScale == 0) return;
         if (weaponData == null) return;
+        if (isReloading) return;
+        if (isNotShoot) return;
 
         bool isFire = weaponData.IsRapidFire
             ? Input.GetMouseButton(0)
@@ -189,7 +197,7 @@ public class GunShot : NetworkBehaviour
     private void Fire()
     {
 
-        if (!/*playerNetworkObject.*/IsOwner) return;
+        if (!IsOwner) return;
 
         Debug.Log("ServerRpcを呼び出します");
 
@@ -201,13 +209,10 @@ public class GunShot : NetworkBehaviour
 
         //狙った場所を決める
         if (Physics.Raycast(ray, out RaycastHit hit, maxDistance))
-        {
             targetPoint = hit.point;
-        }
         else
-        {
             targetPoint = ray.GetPoint(maxDistance);
-        }
+
 
         //銃口の狙った場所への方向
         Vector3 direction = (targetPoint - muzzle.position).normalized;
@@ -231,6 +236,16 @@ public class GunShot : NetworkBehaviour
     {
         Debug.Log("ServerRpcに入りました");
 
+        if(AmmoCount.Value <= 0)
+        {
+            Debug.Log("弾切れ");
+            return;
+        }
+
+        AmmoCount.Value--;
+
+        Debug.Log("現在の弾数：" + AmmoCount.Value);
+
         GameObject bullet = Instantiate
             (bulletPrefab,
             position,
@@ -239,8 +254,6 @@ public class GunShot : NetworkBehaviour
         Debug.Log("弾を生成しました");
 
         recoil.RecoilMath();
-
-        //Reloading();
 
         Collider[] playerCollider = transform.root.GetComponentsInChildren<Collider>();
 
@@ -259,8 +272,8 @@ public class GunShot : NetworkBehaviour
 
     private void ShowRemainingBullets()
     {
-        RemainingBulletsText.text = AmmoCount.ToString();
-        MaxRemainingBulletsText.text = TotalAmmo.ToString();
+        RemainingBulletsText.text = AmmoCount.Value.ToString();
+        MaxRemainingBulletsText.text = TotalAmmo.Value.ToString();
     }
 
     private void Reloading()
@@ -289,25 +302,29 @@ public class GunShot : NetworkBehaviour
     {
         if (!IsOwner) yield return false;
 
-        //ReloadServerRpc(time);
-    }
-    [ServerRpc]
-    void ReloadServerRpc(float time)
-    {
+        Debug.Log("リロード開始");
 
         isNotShoot = true;
-        //int reloadAmount = RemainingBullets - AmmoCount;
 
-        //int currentAmmo = AmmoCount;
+        yield return new WaitForSeconds(time);
+
+        ReloadServerRpc();
+    }
+
+    [ServerRpc]
+    void ReloadServerRpc()
+    {
 
         Debug.Log("リロード中");
-        //AmmoCount = 0;
-        //yield return new WaitForSeconds(time);
-       //int actualReloadAmount = Mathf.Min(reloadAmount, TotalAmmo);
 
-       // AmmoCount = currentAmmo + actualReloadAmount;
+        int reloadAmount = weaponData.MaxAmmo - AmmoCount.Value;
 
-        //TotalAmmo -= actualReloadAmount;
+
+        int actualReloadAmount = Mathf.Min(reloadAmount, TotalAmmo.Value);
+
+        AmmoCount.Value += actualReloadAmount;
+
+        TotalAmmo.Value -= actualReloadAmount;
 
         isNotShoot = false;
         isReloading = false;
