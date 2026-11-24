@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7207803925572677373}
   - component: {fileID: 2817381905230170684}
   - component: {fileID: 4006234335705766895}
+  - component: {fileID: 9216772326332350057}
   - component: {fileID: 8038015327297288701}
   m_Layer: 5
   m_Name: Time
@@ -138,6 +139,33 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &9216772326332350057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661894901588765550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 44767496
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  m_InScenePlacedDisabledByDefault: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  m_InScenePlaced: 0
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!114 &8038015327297288701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,5 +178,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4327b8a2bb7ad844b9bd18b3d2810f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeManager
-  TimerText: {fileID: 4006234335705766895}
-  timeLimit: 300
+  ShowTopMostFoldoutHeaderGroup: 1
+  Timer:
+    UpdateTraits:
+      MinSecondsBetweenUpdates: 0
+      MaxSecondsBetweenUpdates: 0
+    m_InternalValue: 300

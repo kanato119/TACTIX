@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.1278739, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'TAROU:'
+  m_text: TAROU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.1278739, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1096,6 +1096,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 487059986}
+  - component: {fileID: 487059987}
+  - component: {fileID: 487059988}
   m_Layer: 0
   m_Name: Timer
   m_TagString: Untagged
@@ -1118,6 +1120,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &487059987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487059985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 3692901484
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  m_InScenePlacedDisabledByDefault: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  m_InScenePlaced: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &487059988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487059985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4327b8a2bb7ad844b9bd18b3d2810f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimeManager
+  ShowTopMostFoldoutHeaderGroup: 1
+  Timer:
+    UpdateTraits:
+      MinSecondsBetweenUpdates: 0
+      MaxSecondsBetweenUpdates: 0
+    m_InternalValue: 300
 --- !u!1 &542348803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,6 +1598,66 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 206028201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &811114814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 811114816}
+  - component: {fileID: 811114815}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &811114815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811114814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3f83075044638045ae4ae6c9e342a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerNameColor
+  myPlayerName: KOTAKE
+  selfColor: {r: 0.18039216, g: 0.49019608, b: 0.19607843, a: 1}
+  otherColor: {r: 1, g: 0, b: 0, a: 1}
+  changeTextColor: 0
+  selfTextColor: {r: 1, g: 1, b: 1, a: 1}
+  otherTextColor: {r: 1, g: 1, b: 1, a: 1}
+  playerSlots:
+  - playerName: KOTAKE
+    backgroundImage: {fileID: 1591297763}
+    labelText: {fileID: 137699057}
+  - playerName: KOUME
+    backgroundImage: {fileID: 107500815}
+    labelText: {fileID: 1073215405}
+  - playerName: HACHI
+    backgroundImage: {fileID: 348543456}
+    labelText: {fileID: 1648109417}
+--- !u!4 &811114816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811114814}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 423.5115, y: 1310.7532, z: 356.65854}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &834552431 stripped
 Transform:
@@ -4123,6 +4230,7 @@ GameObject:
   - component: {fileID: 1591297762}
   - component: {fileID: 1591297764}
   - component: {fileID: 1591297763}
+  - component: {fileID: 1591297765}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -4164,7 +4272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21782662, g: 0.5188679, b: 0.25108117, a: 1}
+  m_Color: {r: 0.18039216, g: 0.49019608, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4189,6 +4297,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591297761}
   m_CullTransparentMesh: 1
+--- !u!114 &1591297765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591297761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3f83075044638045ae4ae6c9e342a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerNameColor
+  myPlayerName: TAROU
+  selfColor: {r: 0.18039216, g: 0.49019608, b: 0.19607843, a: 1}
+  otherColor: {r: 1, g: 0, b: 0, a: 1}
+  changeTextColor: 0
+  selfTextColor: {r: 1, g: 1, b: 1, a: 1}
+  otherTextColor: {r: 1, g: 1, b: 1, a: 1}
+  playerSlots:
+  - playerName: TAROU
+    backgroundImage: {fileID: 0}
+    labelText: {fileID: 0}
+  - playerName: ANNA
+    backgroundImage: {fileID: 0}
+    labelText: {fileID: 0}
 --- !u!1 &1620149071
 GameObject:
   m_ObjectHideFlags: 0
@@ -5540,6 +5673,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9216772326332350057, guid: b833175e4ddab8047a8a453572a3f3e7,
+        type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216772326332350057, guid: b833175e4ddab8047a8a453572a3f3e7,
+        type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3466510808
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216772326332350057, guid: b833175e4ddab8047a8a453572a3f3e7,
+        type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216772326332350057, guid: b833175e4ddab8047a8a453572a3f3e7,
+        type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 44767496
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5563,3 +5716,4 @@ SceneRoots:
   - {fileID: 1908837870}
   - {fileID: 487059986}
   - {fileID: 1211897678}
+  - {fileID: 811114816}
