@@ -1,9 +1,10 @@
+using InfimaGames.LowPolyShooterPack;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
-using Unity.Netcode;
 
 public class GunShot : NetworkBehaviour
 {
@@ -77,30 +78,14 @@ public class GunShot : NetworkBehaviour
 
         if (!IsOwner) return;
 
-
         defalutPoition = transform.localPosition;
 
         if (cam == null)
             cam = UnityEngine.Camera.main;
-
-
     }
-
-
-
-
-
 
     // Update is called once per frame
 
-    public override void OnNetworkSpawn()
-    {
-        if (IsServer)
-        {
-            AmmoCount.Value = weaponData.MaxAmmo;
-            TotalAmmo.Value = weaponData.MaxTotalAmmo;
-        }
-    }
 
     void Update()
     {
@@ -178,8 +163,10 @@ public class GunShot : NetworkBehaviour
 
         Quaternion rotation = Quaternion.LookRotation(direction);
 
-
         FireServerRpc(muzzle.position, rotation);
+
+        recoil.RecoilMath();
+
     }
 
     [ServerRpc]
@@ -204,7 +191,6 @@ public class GunShot : NetworkBehaviour
 
         Debug.Log("弾を生成しました");
 
-        recoil.RecoilMath();
 
         Collider[] playerCollider = transform.root.GetComponentsInChildren<Collider>();
 
@@ -216,10 +202,13 @@ public class GunShot : NetworkBehaviour
             {
                 Physics.IgnoreCollision(playerCol, bulletCol);
             }
+            // ネットワーク上に生成
+            NetworkObject networkObject =
+                bullet.GetComponent<NetworkObject>();
+
+            networkObject.Spawn();
         }
-
     }
-
 
     private void ShowRemainingBullets()
     {
@@ -263,7 +252,6 @@ public class GunShot : NetworkBehaviour
 
 
         Debug.Log("リロード完了");
-
     }
 
 

@@ -11,7 +11,7 @@ using Unity.Mathematics;
 /// </summary>
 public class TimeManager : NetworkBehaviour
 {
-    /*
+
     // 制限時間用のテキスト
     [SerializeField] TextMeshProUGUI TimerText;
 
@@ -49,7 +49,7 @@ public class TimeManager : NetworkBehaviour
     }
 
 
-     */
+
 
     public static TimeManager Instance { get; private set; }
   
