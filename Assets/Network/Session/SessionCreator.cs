@@ -5,7 +5,6 @@ using Unity.Services.Multiplayer;
 using Unity.Netcode;
 using UnityEngine;
 
-
 public class SessionCreator : MonoBehaviour
 {
 
@@ -49,19 +48,28 @@ public class SessionCreator : MonoBehaviour
 
         _isMatching = true;
 
+        ///try（実行）
+        ///例外が発生する可能性のある処理を実行する
+        ///参考 https://feynman.co.jp/unityforest/unity-introduction/unity-csharp-programming/throw-try-catch-finally/
         try
         {
             await AutoSession();
         }
+        ///catch（エラーを受け取る）
+        ///発生したエラーを e という変数に格納して処理する
+        ///エラー情報を受け取るための変数を宣言している
         catch (System.Exception e)
         {
             Debug.LogError($"マッチメイキング失敗:\n{e}");
 
+            //InnerException
+            //発生したエラーの原因となっている、さらに内側のエラー情報を取得することができる
             if (e.InnerException != null)
             {
                 Debug.LogError($"InnerException:\n{e.InnerException}");
             }
         }
+        ///finally（成功・失敗に関わらず必ず実行）
         finally
         {
             _isMatching = false;
@@ -85,11 +93,10 @@ public class SessionCreator : MonoBehaviour
     /// </summary>
     private async Task CreateSession()
     {
-
+        //sessionの作成したオプションを取得
         SessionOptions options = null;
 
         options = SessionManager.instance.GetSessionOptions();
-
 
         _session = await MultiplayerService.Instance.CreateSessionAsync(options);
 
@@ -125,6 +132,7 @@ public class SessionCreator : MonoBehaviour
 
         Debug.Log($"検索するGameType: {gameType}");
 
+        ///MPS（Multiplayer Services）で参加可能なセッションを検索するために使用するクラス
         var queryOptions = new QuerySessionsOptions
         {
             Count = 20,
@@ -132,10 +140,11 @@ public class SessionCreator : MonoBehaviour
             //検索条件
             FilterOptions = new List<FilterOption>
             {
+                //ここでList<FilterOption>に検索条件を設定する
                 new FilterOption(
                 FilterField.NumberIndex1,//gametypeで
-                gameType,
-                FilterOperation.Equal
+                gameType,//自分が選択したゲームモードの値
+                FilterOperation.Equal//等しい
                 )
             }
         };

@@ -108,7 +108,7 @@ public class TimeManager : NetworkBehaviour
     public override void OnNetworkSpawn()
     {
         if (!IsServer) return;
-        //SetTime(GameConst.MAX_DEATHMATCH_TIME);
+        SetTime(GameConst.MAX_DEATHMATCH_TIME);
         
     }
 
@@ -132,7 +132,7 @@ public class TimeManager : NetworkBehaviour
         // 5分経過
         if (timer.Value <= 0)
         {
-            //TimeUp();
+            TimeUp();
             DeathMatchResult.Instance.CheckWinner();
         }
     }
