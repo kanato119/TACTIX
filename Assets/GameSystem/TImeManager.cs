@@ -12,46 +12,46 @@ using Unity.Mathematics;
 public class TimeManager : NetworkBehaviour
 {
 
-    // 制限時間用のテキスト
-    [SerializeField] TextMeshProUGUI TimerText;
+    //// 制限時間用のテキスト
+    //[SerializeField] TextMeshProUGUI TimerText;
 
-    public static bool Gamestarted = false;
+    //public static bool Gamestarted = false;
 
-    public static bool Gameended = false;
-    // 制限時間（5分）
-    public float timeLimit = 300f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        Gameended = false;
-        Gamestarted = false;
-        TimerText.text = timeLimit.ToString("F0");
-    }
+    //public static bool Gameended = false;
+    //// 制限時間（5分）
+    //public float timeLimit = 300f;
+    //// Start is called once before the first execution of Update after the MonoBehaviour is created
+    //void Start()
+    //{
+    //    Gameended = false;
+    //    Gamestarted = false;
+    //    TimerText.text = timeLimit.ToString("F0");
+    //}
 
-    // Update is called once per frame
-    void Update()
-    {
+    //// Update is called once per frame
+    //void Update()
+    //{
 
-        // 試合開始前は処理しない
-        if (!Gamestarted || Gameended)
-            return;
-        // 時間を減らす
-        timeLimit -= Time.deltaTime;
+    //    // 試合開始前は処理しない
+    //    if (!Gamestarted || Gameended)
+    //        return;
+    //    // 時間を減らす
+    //    timeLimit -= Time.deltaTime;
 
-        // テキストを更新
-        TimerText.text = timeLimit.ToString("F0");
-        // 5分経過
-        if (timeLimit <= 0)
-        {
-            timeLimit = 0;
-            DeathMatchResult.Instance.CheckWinner();
-        }
-    }
-
-
+    //    // テキストを更新
+    //    TimerText.text = timeLimit.ToString("F0");
+    //    // 5分経過
+    //    if (timeLimit <= 0)
+    //    {
+    //        timeLimit = 0;
+    //        DeathMatchResult.Instance.CheckWinner();
+    //    }
+    
 
 
-    public static TimeManager Instance { get; private set; }
+
+
+   public static TimeManager Instance { get; private set; }
   
     public bool isGames { get; private set; }
 
@@ -108,7 +108,7 @@ public class TimeManager : NetworkBehaviour
     public override void OnNetworkSpawn()
     {
         if (!IsServer) return;
-        SetTime(GameConst.MAX_DEATHMATCH_TIME);
+        //SetTime(GameConst.MAX_DEATHMATCH_TIME);
         
     }
 
@@ -132,7 +132,7 @@ public class TimeManager : NetworkBehaviour
         // 5分経過
         if (timer.Value <= 0)
         {
-            TimeUp();
+            //TimeUp();
             DeathMatchResult.Instance.CheckWinner();
         }
     }
