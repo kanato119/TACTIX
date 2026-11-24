@@ -174,40 +174,56 @@ public class GunShot : NetworkBehaviour
     {
         Debug.Log("ServerRpcに入りました");
 
+        // 弾数チェック
         if (AmmoCount.Value <= 0)
         {
             Debug.Log("弾切れ");
             return;
         }
 
+        // 弾数を減らす
         AmmoCount.Value--;
 
         Debug.Log("現在の弾数：" + AmmoCount.Value);
 
-        GameObject bullet = Instantiate
-            (bulletPrefab,
+        // サーバー側で弾を生成
+        GameObject bullet = Instantiate(
+            bulletPrefab,
             position,
-            rotation);
+            rotation
+        );
 
-        Debug.Log("弾を生成しました");
+        // Collider取得
+        Collider[] playerCollider =
+            transform.root.GetComponentsInChildren<Collider>();
 
+        Collider[] bulletCollider =
+            bullet.GetComponentsInChildren<Collider>();
 
-        Collider[] playerCollider = transform.root.GetComponentsInChildren<Collider>();
-
-        Collider[] bulletCollider = bullet.GetComponentsInChildren<Collider>();
-
+        // 自分自身との衝突を無効化
         foreach (Collider playerCol in playerCollider)
         {
             foreach (Collider bulletCol in bulletCollider)
             {
                 Physics.IgnoreCollision(playerCol, bulletCol);
             }
-            // ネットワーク上に生成
-            NetworkObject networkObject =
-                bullet.GetComponent<NetworkObject>();
-
-            networkObject.Spawn();
         }
+
+        // NetworkObject取得
+        NetworkObject networkObject =
+            bullet.GetComponent<NetworkObject>();
+
+        if (networkObject == null)
+        {
+            Debug.LogError("弾にNetworkObjectがありません！");
+            Destroy(bullet);
+            return;
+        }
+
+        // ネットワーク上に生成
+        networkObject.Spawn();
+
+        Debug.Log("ネットワーク上に弾を生成しました");
     }
 
     private void ShowRemainingBullets()

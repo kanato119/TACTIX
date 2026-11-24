@@ -1,6 +1,8 @@
+
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Unity.Services.Multiplayer;
+using Unity.Netcode;
 using UnityEngine;
 
 
@@ -20,6 +22,9 @@ public class SessionCreator : MonoBehaviour
 
     private ISession _sessionJoiner;
 
+    //マッチメイキングの二重実行を防止
+    private bool _isMatching;
+
 
     void Start()
     {
@@ -29,20 +34,40 @@ public class SessionCreator : MonoBehaviour
 
         _playerID = SessionManager.instance.GetPlayerID();
     }
+
     /// <summary>
     /// Buttonから呼び出す関数
     /// </summary>
     public async void OnClickAutoSession()
     {
+        //すでにマッチメイキング中なら実行しない
+        if (_isMatching)
+        {
+            Debug.LogWarning("マッチメイキング中です");
+            return;
+        }
+
+        _isMatching = true;
+
         try
         {
             await AutoSession();
         }
         catch (System.Exception e)
         {
-            Debug.LogError($"マッチメイキング失敗: {e}");
+            Debug.LogError($"マッチメイキング失敗:\n{e}");
+
+            if (e.InnerException != null)
+            {
+                Debug.LogError($"InnerException:\n{e.InnerException}");
+            }
+        }
+        finally
+        {
+            _isMatching = false;
         }
     }
+
     /// <summary>
     /// 自動マッチメイキング
     /// </summary>
@@ -60,13 +85,30 @@ public class SessionCreator : MonoBehaviour
     /// </summary>
     private async Task CreateSession()
     {
+
         SessionOptions options = null;
 
         options = SessionManager.instance.GetSessionOptions();
 
+
         _session = await MultiplayerService.Instance.CreateSessionAsync(options);
 
-        SceneSelectManager.instance.ChangeNetSceneSingle(GameConst.SCENE_TEST_PLAYER);
+
+        //ネットワークの起動状態を確認
+        DebugNetworkState();
+
+        //Host側だけがネットワークシーンを変更する
+        if (NetworkManager.Singleton != null &&
+            NetworkManager.Singleton.IsServer)
+        {
+            SceneSelectManager.instance.ChangeNetSceneSingle(
+                GameConst.SCENE_TEST_PLAYER
+            );
+        }
+        else
+        {
+            Debug.LogError("セッション作成後、Hostとして起動できていません");
+        }
     }
 
 
@@ -77,8 +119,11 @@ public class SessionCreator : MonoBehaviour
     /// <returns></returns>
     private async Task JoinServer()
     {
+
         // ゲームモードの取得
         string gameType = SessionManager.instance.GetGameTypeString();
+
+        Debug.Log($"検索するGameType: {gameType}");
 
         var queryOptions = new QuerySessionsOptions
         {
@@ -98,6 +143,7 @@ public class SessionCreator : MonoBehaviour
         //セッションの検索
         var result = await MultiplayerService.Instance.QuerySessionsAsync(queryOptions);
 
+
         if (result.Sessions.Count == 0)
         {
             Debug.Log("参加できるセッションがありません");
@@ -112,12 +158,36 @@ public class SessionCreator : MonoBehaviour
             //条件に合ったセッションに参加
             _sessionJoiner = await MultiplayerService.Instance.JoinSessionByIdAsync(sessionInfo.Id);
 
-            SceneSelectManager.instance.ChangeNetSceneSingle(GameConst.SCENE_TEST_PLAYER);
+
+            //ネットワークの起動状態を確認
+            DebugNetworkState();
+
+            //Client側ではシーン遷移を実行しない
+            //Host側のネットワークシーン遷移に同期させる
 
             return;
         }
 
     }
 
+    /// <summary>
+    /// NGOのネットワーク状態を確認する
+    /// </summary>
+    private void DebugNetworkState()
+    {
+        NetworkManager manager = NetworkManager.Singleton;
+
+        if (manager == null)
+        {
+            Debug.LogError("NetworkManager.Singletonが存在しません");
+            return;
+        }
+
+        Debug.Log($"IsListening: {manager.IsListening}");
+        Debug.Log($"IsHost: {manager.IsHost}");
+        Debug.Log($"IsServer: {manager.IsServer}");
+        Debug.Log($"IsClient: {manager.IsClient}");
+        Debug.Log($"ClientID: {manager.LocalClientId}");
+    }
 
 }
