@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.Analytics;
 using Unity.Netcode;
 using UnityEngine.Rendering;
+using Unity.VisualScripting;
+using Unity.Mathematics;
 
 /// <summary>
 /// サーバー側から処理する時間処理
@@ -50,6 +52,8 @@ public class TimeManager : NetworkBehaviour
      */
 
     public static TimeManager Instance { get; private set; }
+  
+    public bool isGames { get; private set; }
 
     private void Awake()
     {
@@ -78,10 +82,12 @@ public class TimeManager : NetworkBehaviour
     /// <summary>
     /// サーバ側でしかTimerをいじれないようにする
     /// </summary>
-    public NetworkVariable<float> Timer = new NetworkVariable<float>(
+    public NetworkVariable<float> timer = new NetworkVariable<float>(
         GameConst.MAX_DEATHMATCH_TIME,
         NetworkVariableReadPermission.Everyone,
         NetworkVariableWritePermission.Server);
+
+    
 
     /// <summary>
     /// 時間をサーバーにセットする関数
@@ -89,8 +95,11 @@ public class TimeManager : NetworkBehaviour
     private void SetTime(float time)
     {
         if ((!IsServer)) return;
-        Timer.Value = time;
+        timer.Value = time;
        
+        //０以下にならないよう
+        timer.Value = Mathf.Max(timer.Value,0.0f); 
+
     }
 
     /// <summary>
@@ -108,25 +117,22 @@ public class TimeManager : NetworkBehaviour
     /// </summary>
     private void TimeUp()
     {
-
-
-
-       
-
+        isGames = false;
     }
 
     private void Update()
     {
         if (!IsServer) return;
-        // 試合開始前は処理しない
-      
-          
+        
+        // 試合開始前・試合終了後は処理しない
+        if (!isGames) return;
+
         // 時間を減らす
-        Timer.Value -= Time.deltaTime;
+        timer.Value -= Time.deltaTime;
         // 5分経過
-        if (Timer.Value <= 0)
+        if (timer.Value <= 0)
         {
-            Timer.Value = 0;
+            TimeUp();
             DeathMatchResult.Instance.CheckWinner();
         }
     }

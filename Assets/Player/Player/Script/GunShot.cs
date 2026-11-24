@@ -25,7 +25,7 @@ public class GunShot : NetworkBehaviour
     [SerializeField] private RecoilControl recoil;
 
     [SerializeField]
-     private eWeapons currentWeapon;
+    private eWeapons currentWeapon;
 
     float pressetStartTime;
 
@@ -54,7 +54,7 @@ public class GunShot : NetworkBehaviour
         NetworkVariableReadPermission.Everyone,
         NetworkVariableWritePermission.Server
         );
-    
+
     public NetworkVariable<int> TotalAmmo = new NetworkVariable<int>(
         100,//仮数値
         NetworkVariableReadPermission.Everyone,
@@ -81,31 +81,21 @@ public class GunShot : NetworkBehaviour
         defalutPoition = transform.localPosition;
 
         if (cam == null)
-                cam = UnityEngine.Camera.main;
+            cam = UnityEngine.Camera.main;
 
 
-        //武器のタイプによって初期弾数が違うのでここで初期化（TotalAmmo・AmmoCount）
-
-        //playerNetworkObject = GetComponentInParent<NetworkObject>();
     }
 
-    /// <summary>
-    /// 最初にServer側で弾薬をセットする
-    /// </summary>
-    //[ServerRpc]
-    //private void SetWeaponServerRpc(WeaponManager weapon)
-    //{
-    //weaponManager = weapon.GetWeaponData(weapon);
 
 
 
-    //}
+
 
     // Update is called once per frame
 
     public override void OnNetworkSpawn()
     {
-        if(IsServer)
+        if (IsServer)
         {
             AmmoCount.Value = weaponData.MaxAmmo;
             TotalAmmo.Value = weaponData.MaxTotalAmmo;
@@ -119,45 +109,6 @@ public class GunShot : NetworkBehaviour
         Debug.Log("Updateに入りました");
 
         Shooting();
-
-        {
-            //if (!isNotShoot)
-            //{
-
-            //    if (Input.GetMouseButton(0))
-            //    {
-            //        Fire();
-            //    }
-            ////フルオート
-            //if (idFirisRape)
-            //{
-            //    if (Input.GetMouseButton(0))
-            //    {
-            //        if (Time.time - pressetStartTime > 0.2f)
-            //        {
-            //            if (Time.time >= nextFireTime)
-            //            {
-            //                nextFireTime = Time.time + fireRate;
-            //            }
-            //        }
-            //    }
-
-            //}
-            ////単発
-            //if (Input.GetMouseButtonUp(0))
-            //{
-            //    if (Time.time - pressetStartTime <= 0.2f)
-            //    {
-            //        if (Time.time >= nextFireTime)
-            //        {
-            //            Fire();
-            //            nextFireTime = Time.time + fireRate;
-            //        }
-            //    }
-            //}
-
-            //}
-        }
 
         //リロード
         if (Input.GetKeyDown(KeyCode.R) && !isReloading)
@@ -228,7 +179,7 @@ public class GunShot : NetworkBehaviour
         Quaternion rotation = Quaternion.LookRotation(direction);
 
 
-        FireServerRpc(muzzle.position,rotation);
+        FireServerRpc(muzzle.position, rotation);
     }
 
     [ServerRpc]
@@ -236,7 +187,7 @@ public class GunShot : NetworkBehaviour
     {
         Debug.Log("ServerRpcに入りました");
 
-        if(AmmoCount.Value <= 0)
+        if (AmmoCount.Value <= 0)
         {
             Debug.Log("弾切れ");
             return;
@@ -272,29 +223,10 @@ public class GunShot : NetworkBehaviour
 
     private void ShowRemainingBullets()
     {
+
+        if (!IsOwner) return;
         RemainingBulletsText.text = AmmoCount.Value.ToString();
         MaxRemainingBulletsText.text = TotalAmmo.Value.ToString();
-    }
-
-    private void Reloading()
-    {
-        if (!IsOwner) return;
-        //AmmoCount -= 1;
-        ShotNumber += 1;
-
-        //if (AmmoCount <= 0)
-        //{
-           // AmmoCount = 0;
-
-            isNotShoot = true;
-       // }
-
-        //if (TotalAmmo <= 0)
-        //{
-       //TotalAmmo = 0;
-
-  //          isReloading = true;
-//        }
 
     }
 
@@ -308,6 +240,9 @@ public class GunShot : NetworkBehaviour
 
         yield return new WaitForSeconds(time);
 
+        isNotShoot = false;
+        isReloading = false;
+
         ReloadServerRpc();
     }
 
@@ -319,15 +254,13 @@ public class GunShot : NetworkBehaviour
 
         int reloadAmount = weaponData.MaxAmmo - AmmoCount.Value;
 
-
         int actualReloadAmount = Mathf.Min(reloadAmount, TotalAmmo.Value);
 
         AmmoCount.Value += actualReloadAmount;
 
         TotalAmmo.Value -= actualReloadAmount;
 
-        isNotShoot = false;
-        isReloading = false;
+
 
         Debug.Log("リロード完了");
 
