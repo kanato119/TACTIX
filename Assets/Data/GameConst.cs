@@ -14,6 +14,8 @@ public class GameConst
     public static readonly string SCENE_TEST_NET = "Test_NetScene";
     public static readonly string SCENE_TEST_PLAYER = "Player";
 
+    public static readonly string SCENE_TEST_DesumaMap = "DeathMatch";
+
     //=======================================================================
     //   デスマッチの定数
     //=======================================================================
