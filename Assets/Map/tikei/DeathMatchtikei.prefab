@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 60636502579333656}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 5750221767649876551}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 5750221767215626032}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 5750221767373125497}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 5750221766820653284}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -579,7 +579,7 @@ GameObject:
   - component: {fileID: 5750221766397762429}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -692,7 +692,7 @@ GameObject:
   - component: {fileID: 5750221766302584342}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -805,7 +805,7 @@ GameObject:
   - component: {fileID: 22279240670204819}
   m_Layer: 0
   m_Name: Road_block_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -918,7 +918,7 @@ GameObject:
   - component: {fileID: 136647763705225276}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1030,7 +1030,7 @@ GameObject:
   - component: {fileID: 6672522623044506986}
   m_Layer: 0
   m_Name: Roof_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1143,7 +1143,7 @@ GameObject:
   - component: {fileID: 6576851296677366480}
   m_Layer: 0
   m_Name: Roof_Tiles
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1256,7 +1256,7 @@ GameObject:
   - component: {fileID: 97871228526342852}
   m_Layer: 0
   m_Name: Concrete_fence_v2_S_half
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1365,7 +1365,7 @@ GameObject:
   - component: {fileID: 122562054783193192}
   m_Layer: 0
   m_Name: Concrete_fence_v2_S_half
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1401,7 +1401,7 @@ GameObject:
   - component: {fileID: 97871229778953390}
   m_Layer: 0
   m_Name: Concrete_fence_v2_lattice_S_half
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1513,7 +1513,7 @@ GameObject:
   - component: {fileID: 182512695222923091}
   m_Layer: 0
   m_Name: Barrel_v3_single
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1626,7 +1626,7 @@ GameObject:
   - component: {fileID: 3283756857379375718}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1738,7 +1738,7 @@ GameObject:
   - component: {fileID: 6380669389455569045}
   m_Layer: 0
   m_Name: Roof_Tiles
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1851,7 +1851,7 @@ GameObject:
   - component: {fileID: 171077522476164107}
   m_Layer: 0
   m_Name: Electric_box_v3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1963,7 +1963,7 @@ GameObject:
   - component: {fileID: 8607211530365797618}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2076,7 +2076,7 @@ GameObject:
   - component: {fileID: 268283297797385219}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2188,7 +2188,7 @@ GameObject:
   - component: {fileID: 5276317579322631745}
   m_Layer: 0
   m_Name: Palet_v1_set_5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2300,7 +2300,7 @@ GameObject:
   - component: {fileID: 427671139479380418}
   m_Layer: 0
   m_Name: Barrel_v2_quadro_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2413,7 +2413,7 @@ GameObject:
   - component: {fileID: 2102649936066394978}
   m_Layer: 0
   m_Name: H_A_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2526,7 +2526,7 @@ GameObject:
   - component: {fileID: 411089894431394642}
   m_Layer: 0
   m_Name: Barrel_v2_quadro_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2639,7 +2639,7 @@ GameObject:
   - component: {fileID: 388548141188332864}
   m_Layer: 0
   m_Name: Object085
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2749,7 +2749,7 @@ GameObject:
   - component: {fileID: 398863411360223774}
   m_Layer: 0
   m_Name: Hangar_v2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2785,7 +2785,7 @@ GameObject:
   - component: {fileID: 388548159896786442}
   m_Layer: 0
   m_Name: Object084
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2898,7 +2898,7 @@ GameObject:
   - component: {fileID: 372697801552040635}
   m_Layer: 0
   m_Name: Conditioner_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3124,7 +3124,7 @@ GameObject:
   - component: {fileID: 2720318998364208082}
   m_Layer: 0
   m_Name: Window (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3241,7 +3241,7 @@ GameObject:
   - component: {fileID: 2720318998294902888}
   m_Layer: 0
   m_Name: Window (8)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3354,7 +3354,7 @@ GameObject:
   - component: {fileID: 985988175726234589}
   m_Layer: 0
   m_Name: H_B
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3396,7 +3396,7 @@ GameObject:
   - component: {fileID: 2720318998091071182}
   m_Layer: 0
   m_Name: Window (11)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3509,7 +3509,7 @@ GameObject:
   - component: {fileID: 985988175576742442}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3545,7 +3545,7 @@ GameObject:
   - component: {fileID: 2720318998884837963}
   m_Layer: 0
   m_Name: Window (10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3661,7 +3661,7 @@ GameObject:
   - component: {fileID: 2720318998831286878}
   m_Layer: 0
   m_Name: Window (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3778,7 +3778,7 @@ GameObject:
   - component: {fileID: 2720318998871752557}
   m_Layer: 0
   m_Name: Roof_Floor
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3891,7 +3891,7 @@ GameObject:
   - component: {fileID: 2720318998861363774}
   m_Layer: 0
   m_Name: Window (6)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4005,7 +4005,7 @@ GameObject:
   - component: {fileID: 985988176193144335}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4042,7 +4042,7 @@ GameObject:
   - component: {fileID: 2720318997284888181}
   m_Layer: 0
   m_Name: Window (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4158,7 +4158,7 @@ GameObject:
   - component: {fileID: 2720318997202726482}
   m_Layer: 0
   m_Name: Window (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4275,7 +4275,7 @@ GameObject:
   - component: {fileID: 2720318997364190854}
   m_Layer: 0
   m_Name: Window (7)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4389,7 +4389,7 @@ GameObject:
   - component: {fileID: 985988176512830000}
   m_Layer: 0
   m_Name: H_A
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4432,7 +4432,7 @@ GameObject:
   - component: {fileID: 2720318997751264961}
   m_Layer: 0
   m_Name: Window
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4548,7 +4548,7 @@ GameObject:
   - component: {fileID: 2720318997891848373}
   m_Layer: 0
   m_Name: Window (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4665,7 +4665,7 @@ GameObject:
   - component: {fileID: 2720318997924120155}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4778,7 +4778,7 @@ GameObject:
   - component: {fileID: 2720318997553867573}
   m_Layer: 0
   m_Name: Window (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4891,7 +4891,7 @@ GameObject:
   - component: {fileID: 985988177113543543}
   m_Layer: 0
   m_Name: Roof_Floor_Gate
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4928,7 +4928,7 @@ GameObject:
   - component: {fileID: 7927125232330979562}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5153,7 +5153,7 @@ GameObject:
   - component: {fileID: 565763235700156076}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5265,7 +5265,7 @@ GameObject:
   - component: {fileID: 2261034345102390759}
   m_Layer: 0
   m_Name: Cube_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5377,7 +5377,7 @@ GameObject:
   - component: {fileID: 535712598259723054}
   m_Layer: 0
   m_Name: Barrel_v1_LD1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5490,7 +5490,7 @@ GameObject:
   - component: {fileID: 1320789153864088228}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5603,7 +5603,7 @@ GameObject:
   - component: {fileID: 2132024606428206969}
   m_Layer: 0
   m_Name: Door_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5716,7 +5716,7 @@ GameObject:
   - component: {fileID: 2129853409426819560}
   m_Layer: 0
   m_Name: Roof_Floor
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5829,7 +5829,7 @@ GameObject:
   - component: {fileID: 622557420967089001}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5941,7 +5941,7 @@ GameObject:
   - component: {fileID: 6152188576256814667}
   m_Layer: 0
   m_Name: Roof_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6054,7 +6054,7 @@ GameObject:
   - component: {fileID: 8542677973346208440}
   m_Layer: 0
   m_Name: Cube_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6166,7 +6166,7 @@ GameObject:
   - component: {fileID: 707519958798466627}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_13
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6278,7 +6278,7 @@ GameObject:
   - component: {fileID: 4070090414257653366}
   m_Layer: 0
   m_Name: Stairs
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6391,7 +6391,7 @@ GameObject:
   - component: {fileID: 667522340392779924}
   m_Layer: 0
   m_Name: Barrel_v3_quadro_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6501,7 +6501,7 @@ GameObject:
   - component: {fileID: 730804115086799167}
   m_Layer: 0
   m_Name: House_8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6541,7 +6541,7 @@ GameObject:
   - component: {fileID: 758539090031262198}
   m_Layer: 0
   m_Name: Barrel_v3_quadro_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6654,7 +6654,7 @@ GameObject:
   - component: {fileID: 5869817677218220980}
   m_Layer: 0
   m_Name: Roof_Tiles
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6767,7 +6767,7 @@ GameObject:
   - component: {fileID: 6244782403222524942}
   m_Layer: 0
   m_Name: Roof_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6880,7 +6880,7 @@ GameObject:
   - component: {fileID: 8756510605587179018}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6992,7 +6992,7 @@ GameObject:
   - component: {fileID: 816095029322399847}
   m_Layer: 0
   m_Name: Hangar_v1_full_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7104,7 +7104,7 @@ GameObject:
   - component: {fileID: 7320827685726060198}
   m_Layer: 0
   m_Name: "\u30B3\u30F3\u30C6\u30CA\u30C8\u30F3\u30CD\u30EB_3"
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7198,7 +7198,7 @@ GameObject:
   - component: {fileID: 1062088787071258870}
   m_Layer: 0
   m_Name: Cube_12
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7403,7 +7403,7 @@ GameObject:
   - component: {fileID: 979812130848854229}
   m_Layer: 0
   m_Name: Palet_v1_set
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7516,7 +7516,7 @@ GameObject:
   - component: {fileID: 1704078569403013635}
   m_Layer: 0
   m_Name: Door_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7629,7 +7629,7 @@ GameObject:
   - component: {fileID: 1757531711263291358}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7742,7 +7742,7 @@ GameObject:
   - component: {fileID: 970461109531244899}
   m_Layer: 0
   m_Name: Barrel_v2_quadro_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7855,7 +7855,7 @@ GameObject:
   - component: {fileID: 972605390572248849}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7967,7 +7967,7 @@ GameObject:
   - component: {fileID: 2355222002673125006}
   m_Layer: 0
   m_Name: Cube_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8079,7 +8079,7 @@ GameObject:
   - component: {fileID: 937330598309708907}
   m_Layer: 0
   m_Name: Electric_box_v3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8191,7 +8191,7 @@ GameObject:
   - component: {fileID: 6116516551740135167}
   m_Layer: 0
   m_Name: Palet_v1_set_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8303,7 +8303,7 @@ GameObject:
   - component: {fileID: 1472395630456332358}
   m_Layer: 0
   m_Name: Door_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8416,7 +8416,7 @@ GameObject:
   - component: {fileID: 1994280652453023131}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8529,7 +8529,7 @@ GameObject:
   - component: {fileID: 1027113624886653905}
   m_Layer: 0
   m_Name: Barrel_v2_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8642,7 +8642,7 @@ GameObject:
   - component: {fileID: 1149774283745857168}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8754,7 +8754,7 @@ GameObject:
   - component: {fileID: 1106395274555887958}
   m_Layer: 0
   m_Name: Oil_tank_v2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8866,7 +8866,7 @@ GameObject:
   - component: {fileID: 1602002106214803803}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2through_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8880,8 +8880,8 @@ Transform:
   m_GameObject: {fileID: 1134725931226018489}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 450.38, y: -5.58, z: -209.92}
-  m_LocalScale: {x: 0.7823, y: 1, z: 1}
+  m_LocalPosition: {x: 450.38, y: -5.4835, z: -210}
+  m_LocalScale: {x: 0.7823, y: 1.0643, z: 1.0576}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4079876696896766660}
@@ -8958,7 +8958,7 @@ GameObject:
   - component: {fileID: 1082826697529217066}
   m_Layer: 0
   m_Name: Electric_box_v3_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9070,7 +9070,7 @@ GameObject:
   - component: {fileID: 1212985145877560271}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9183,7 +9183,7 @@ GameObject:
   - component: {fileID: 5297610142735901527}
   m_Layer: 0
   m_Name: Palet_v1_set_8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9292,7 +9292,7 @@ GameObject:
   - component: {fileID: 1878015025163525795}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9325,7 +9325,7 @@ GameObject:
   - component: {fileID: 1878015025051266712}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9362,7 +9362,7 @@ GameObject:
   - component: {fileID: 3638451127345221302}
   m_Layer: 0
   m_Name: Roof_Floor
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9475,7 +9475,7 @@ GameObject:
   - component: {fileID: 3638451127556682097}
   m_Layer: 0
   m_Name: Window
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9591,7 +9591,7 @@ GameObject:
   - component: {fileID: 3638451125719505999}
   m_Layer: 0
   m_Name: Window (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9708,7 +9708,7 @@ GameObject:
   - component: {fileID: 3638451125839256582}
   m_Layer: 0
   m_Name: Window (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9824,7 +9824,7 @@ GameObject:
   - component: {fileID: 3638451126756484384}
   m_Layer: 0
   m_Name: Window (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9941,7 +9941,7 @@ GameObject:
   - component: {fileID: 3638451126690672715}
   m_Layer: 0
   m_Name: Window (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10058,7 +10058,7 @@ GameObject:
   - component: {fileID: 3638451126267773906}
   m_Layer: 0
   m_Name: Window (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10175,7 +10175,7 @@ GameObject:
   - component: {fileID: 3638451126239637667}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10285,7 +10285,7 @@ GameObject:
   - component: {fileID: 1878015026399621266}
   m_Layer: 0
   m_Name: H_A
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10328,7 +10328,7 @@ GameObject:
   - component: {fileID: 1245190967284031391}
   m_Layer: 0
   m_Name: Electric_box_v3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10440,7 +10440,7 @@ GameObject:
   - component: {fileID: 1235985971860402238}
   m_Layer: 0
   m_Name: Dumpsters_v1_garbadge
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10552,7 +10552,7 @@ GameObject:
   - component: {fileID: 4042308035228598935}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10661,7 +10661,7 @@ GameObject:
   - component: {fileID: 1862545068462017239}
   m_Layer: 0
   m_Name: H_A
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10704,7 +10704,7 @@ GameObject:
   - component: {fileID: 3582466640882645399}
   m_Layer: 0
   m_Name: Window (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10821,7 +10821,7 @@ GameObject:
   - component: {fileID: 3582466640867134182}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10934,7 +10934,7 @@ GameObject:
   - component: {fileID: 3582466640517057038}
   m_Layer: 0
   m_Name: Window (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11051,7 +11051,7 @@ GameObject:
   - component: {fileID: 3582466640425525093}
   m_Layer: 0
   m_Name: Window (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11168,7 +11168,7 @@ GameObject:
   - component: {fileID: 3582466641276200515}
   m_Layer: 0
   m_Name: Window (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11284,7 +11284,7 @@ GameObject:
   - component: {fileID: 3582466641420690954}
   m_Layer: 0
   m_Name: Window (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11401,7 +11401,7 @@ GameObject:
   - component: {fileID: 3582466639617198900}
   m_Layer: 0
   m_Name: Window
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11517,7 +11517,7 @@ GameObject:
   - component: {fileID: 3582466639829447923}
   m_Layer: 0
   m_Name: Roof_Floor
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11627,7 +11627,7 @@ GameObject:
   - component: {fileID: 1862545069802149085}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11661,7 +11661,7 @@ GameObject:
   - component: {fileID: 1862545069622912230}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11697,7 +11697,7 @@ GameObject:
   - component: {fileID: 1306542541118740017}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11711,8 +11711,8 @@ Transform:
   m_GameObject: {fileID: 1352387411975908127}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 456.00418, y: -5.3699303, z: -207.19165}
-  m_LocalScale: {x: 8.238776, y: 4.0674324, z: -3.1944}
+  m_LocalPosition: {x: 456.00418, y: -5.4645, z: -207.19165}
+  m_LocalScale: {x: 8.238776, y: 3.8347752, z: 3.1944}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8456472812972072645}
@@ -11809,7 +11809,7 @@ GameObject:
   - component: {fileID: 9009636877805846431}
   m_Layer: 0
   m_Name: Cube_5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11921,7 +11921,7 @@ GameObject:
   - component: {fileID: 1398509782732148224}
   m_Layer: 0
   m_Name: Generator_v1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12033,7 +12033,7 @@ GameObject:
   - component: {fileID: 1508694345751726689}
   m_Layer: 0
   m_Name: Palet_v1_set
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12146,7 +12146,7 @@ GameObject:
   - component: {fileID: 1497228297043415406}
   m_Layer: 0
   m_Name: Electric_box_v3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12258,7 +12258,7 @@ GameObject:
   - component: {fileID: 5090890157834901365}
   m_Layer: 0
   m_Name: Cube_7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12369,7 +12369,7 @@ GameObject:
   - component: {fileID: 1506763801919016854}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2through
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12573,7 +12573,7 @@ GameObject:
   - component: {fileID: 1563384858983048620}
   m_Layer: 0
   m_Name: Hangar_v1_full_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12686,7 +12686,7 @@ GameObject:
   - component: {fileID: 73314568888347}
   m_Layer: 0
   m_Name: Roof_Floor
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12799,7 +12799,7 @@ GameObject:
   - component: {fileID: 1641138848143895049}
   m_Layer: 0
   m_Name: Electric_box_v3_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12911,7 +12911,7 @@ GameObject:
   - component: {fileID: 1633380048085624998}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13023,7 +13023,7 @@ GameObject:
   - component: {fileID: 1628528986640525811}
   m_Layer: 0
   m_Name: Hangar_v4_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13135,7 +13135,7 @@ GameObject:
   - component: {fileID: 5547107468229288519}
   m_Layer: 0
   m_Name: Roof_Tiles
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13248,7 +13248,7 @@ GameObject:
   - component: {fileID: 1708781052336956977}
   m_Layer: 0
   m_Name: Electric_box_v3_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13357,7 +13357,7 @@ GameObject:
   - component: {fileID: 1705411466028112076}
   m_Layer: 0
   m_Name: House_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13541,7 +13541,7 @@ GameObject:
   - component: {fileID: 8286266252331511485}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13653,7 +13653,7 @@ GameObject:
   - component: {fileID: 1787651352496704372}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_12
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13765,7 +13765,7 @@ GameObject:
   - component: {fileID: 4804390810959024365}
   m_Layer: 0
   m_Name: Roof_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13878,7 +13878,7 @@ GameObject:
   - component: {fileID: 6893781688603964409}
   m_Layer: 0
   m_Name: Barrel_v1_LD3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13989,7 +13989,7 @@ GameObject:
   - component: {fileID: 1755721512535734570}
   m_Layer: 0
   m_Name: Barrel_v1_LD1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14079,7 +14079,7 @@ GameObject:
   - component: {fileID: 1755721512535734564}
   m_Layer: 0
   m_Name: Barrel_v1_LD2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14167,7 +14167,7 @@ GameObject:
   - component: {fileID: 1755721512533441484}
   m_Layer: 0
   m_Name: Barrel_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14204,7 +14204,7 @@ GameObject:
   - component: {fileID: 1772900208834337126}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14316,7 +14316,7 @@ GameObject:
   - component: {fileID: 1737120324757404824}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14428,7 +14428,7 @@ GameObject:
   - component: {fileID: 4039363903803475564}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14540,7 +14540,7 @@ GameObject:
   - component: {fileID: 1142540673922753212}
   m_Layer: 0
   m_Name: Cube_11
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14652,7 +14652,7 @@ GameObject:
   - component: {fileID: 2940387745333080522}
   m_Layer: 0
   m_Name: Hangar_v4_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14764,7 +14764,7 @@ GameObject:
   - component: {fileID: 1928860199879879872}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14876,7 +14876,7 @@ GameObject:
   - component: {fileID: 1142474447750320983}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14989,7 +14989,7 @@ GameObject:
   - component: {fileID: 7030125729431178}
   m_Layer: 0
   m_Name: Door_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15102,7 +15102,7 @@ GameObject:
   - component: {fileID: 1888428620181070604}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15214,7 +15214,7 @@ GameObject:
   - component: {fileID: 4411072423821940680}
   m_Layer: 0
   m_Name: Cube_5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15326,7 +15326,7 @@ GameObject:
   - component: {fileID: 2013575049085792918}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15438,7 +15438,7 @@ GameObject:
   - component: {fileID: 8371865750656569368}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15550,7 +15550,7 @@ GameObject:
   - component: {fileID: 5956223000355756091}
   m_Layer: 0
   m_Name: Cube_8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15662,7 +15662,7 @@ GameObject:
   - component: {fileID: 1995738958673709958}
   m_Layer: 0
   m_Name: Hangar_v1_full_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15772,7 +15772,7 @@ GameObject:
   - component: {fileID: 1162051626120766403}
   m_Layer: 0
   m_Name: H_A
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15815,7 +15815,7 @@ GameObject:
   - component: {fileID: 4057184157302540193}
   m_Layer: 0
   m_Name: Window (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15932,7 +15932,7 @@ GameObject:
   - component: {fileID: 4057184157241325446}
   m_Layer: 0
   m_Name: Window (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16048,7 +16048,7 @@ GameObject:
   - component: {fileID: 4057184157464004469}
   m_Layer: 0
   m_Name: Window (7)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16165,7 +16165,7 @@ GameObject:
   - component: {fileID: 4057184158046110406}
   m_Layer: 0
   m_Name: Window (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16278,7 +16278,7 @@ GameObject:
   - component: {fileID: 1162051626862238340}
   m_Layer: 0
   m_Name: Roof_Floor_Gate
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16315,7 +16315,7 @@ GameObject:
   - component: {fileID: 4057184157848723250}
   m_Layer: 0
   m_Name: Window
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16431,7 +16431,7 @@ GameObject:
   - component: {fileID: 4057184157989122374}
   m_Layer: 0
   m_Name: Window (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16548,7 +16548,7 @@ GameObject:
   - component: {fileID: 4057184158023954344}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16658,7 +16658,7 @@ GameObject:
   - component: {fileID: 1162051627329459161}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16694,7 +16694,7 @@ GameObject:
   - component: {fileID: 4057184156435175229}
   m_Layer: 0
   m_Name: Window (11)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16810,7 +16810,7 @@ GameObject:
   - component: {fileID: 4057184156243890587}
   m_Layer: 0
   m_Name: Window (8)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16926,7 +16926,7 @@ GameObject:
   - component: {fileID: 4057184156178780705}
   m_Layer: 0
   m_Name: Window (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17040,7 +17040,7 @@ GameObject:
   - component: {fileID: 1162051626945110574}
   m_Layer: 0
   m_Name: H_B
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17082,7 +17082,7 @@ GameObject:
   - component: {fileID: 4057184156781274029}
   m_Layer: 0
   m_Name: Window (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17199,7 +17199,7 @@ GameObject:
   - component: {fileID: 4057184156812088990}
   m_Layer: 0
   m_Name: Roof_Floor
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17312,7 +17312,7 @@ GameObject:
   - component: {fileID: 4057184156805698509}
   m_Layer: 0
   m_Name: Window (6)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17429,7 +17429,7 @@ GameObject:
   - component: {fileID: 4057184156694168504}
   m_Layer: 0
   m_Name: Window (10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17542,7 +17542,7 @@ GameObject:
   - component: {fileID: 1162051627551944700}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17579,7 +17579,7 @@ GameObject:
   - component: {fileID: 2066446835776982370}
   m_Layer: 0
   m_Name: Generator_v1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17691,7 +17691,7 @@ GameObject:
   - component: {fileID: 2061342108511176783}
   m_Layer: 0
   m_Name: Electric_box_v3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17803,7 +17803,7 @@ GameObject:
   - component: {fileID: 1851578136020939591}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17915,7 +17915,7 @@ GameObject:
   - component: {fileID: 4690234239152356505}
   m_Layer: 0
   m_Name: Roof_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18028,7 +18028,7 @@ GameObject:
   - component: {fileID: 2022115694914720629}
   m_Layer: 0
   m_Name: Barrel_v1_LD1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18141,7 +18141,7 @@ GameObject:
   - component: {fileID: 2122967783756085757}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square_5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18250,7 +18250,7 @@ GameObject:
   - component: {fileID: 2133217254138997316}
   m_Layer: 0
   m_Name: House_0
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18288,7 +18288,7 @@ GameObject:
   - component: {fileID: 2113135241704368609}
   m_Layer: 0
   m_Name: Barrel_v2_quadro_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18401,7 +18401,7 @@ GameObject:
   - component: {fileID: 847126043380091853}
   m_Layer: 0
   m_Name: Cube_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18510,7 +18510,7 @@ GameObject:
   - component: {fileID: 2185283355212304385}
   m_Layer: 0
   m_Name: House_0
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18548,7 +18548,7 @@ GameObject:
   - component: {fileID: 6893725356450423500}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18660,7 +18660,7 @@ GameObject:
   - component: {fileID: 546409257493014519}
   m_Layer: 0
   m_Name: Cube_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18773,7 +18773,7 @@ GameObject:
   - component: {fileID: 5853221954208732521}
   m_Layer: 0
   m_Name: Cube_9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18885,7 +18885,7 @@ GameObject:
   - component: {fileID: 2374712094637444004}
   m_Layer: 0
   m_Name: Conditioner_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18997,7 +18997,7 @@ GameObject:
   - component: {fileID: 2365997002311096687}
   m_Layer: 0
   m_Name: Electric_box_v3_5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19109,7 +19109,7 @@ GameObject:
   - component: {fileID: 264304918661298602}
   m_Layer: 0
   m_Name: Window (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19225,7 +19225,7 @@ GameObject:
   - component: {fileID: 264304918614875388}
   m_Layer: 0
   m_Name: Window (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19342,7 +19342,7 @@ GameObject:
   - component: {fileID: 264304918502245057}
   m_Layer: 0
   m_Name: Window
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19455,7 +19455,7 @@ GameObject:
   - component: {fileID: 3153807673245871518}
   m_Layer: 0
   m_Name: Roof_Floor_Gate
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19492,7 +19492,7 @@ GameObject:
   - component: {fileID: 264304919237168545}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19605,7 +19605,7 @@ GameObject:
   - component: {fileID: 264304919342724074}
   m_Layer: 0
   m_Name: Window (10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19718,7 +19718,7 @@ GameObject:
   - component: {fileID: 3153807673976831250}
   m_Layer: 0
   m_Name: H_A
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19758,7 +19758,7 @@ GameObject:
   - component: {fileID: 3153807674041129462}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19794,7 +19794,7 @@ GameObject:
   - component: {fileID: 264304918949106042}
   m_Layer: 0
   m_Name: Window (11)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19910,7 +19910,7 @@ GameObject:
   - component: {fileID: 264304919077836770}
   m_Layer: 0
   m_Name: Window (6)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20024,7 +20024,7 @@ GameObject:
   - component: {fileID: 3153807673760093840}
   m_Layer: 0
   m_Name: H_B
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20066,7 +20066,7 @@ GameObject:
   - component: {fileID: 264304917319880722}
   m_Layer: 0
   m_Name: Window (8)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20179,7 +20179,7 @@ GameObject:
   - component: {fileID: 3153807674398199491}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20216,7 +20216,7 @@ GameObject:
   - component: {fileID: 264304917315128013}
   m_Layer: 0
   m_Name: Window (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20333,7 +20333,7 @@ GameObject:
   - component: {fileID: 264304917350518927}
   m_Layer: 0
   m_Name: Window (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20450,7 +20450,7 @@ GameObject:
   - component: {fileID: 264304917347133660}
   m_Layer: 0
   m_Name: Window (7)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20567,7 +20567,7 @@ GameObject:
   - component: {fileID: 264304917238979406}
   m_Layer: 0
   m_Name: Window (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20684,7 +20684,7 @@ GameObject:
   - component: {fileID: 264304917243328663}
   m_Layer: 0
   m_Name: Roof_Floor (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20797,7 +20797,7 @@ GameObject:
   - component: {fileID: 264304918297371024}
   m_Layer: 0
   m_Name: Window (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20913,7 +20913,7 @@ GameObject:
   - component: {fileID: 2340796173576489997}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21025,7 +21025,7 @@ GameObject:
   - component: {fileID: 8846998475135753190}
   m_Layer: 0
   m_Name: Roof_Tiles
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21138,7 +21138,7 @@ GameObject:
   - component: {fileID: 2427963605567360789}
   m_Layer: 0
   m_Name: Conditioner_v1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21250,7 +21250,7 @@ GameObject:
   - component: {fileID: 2413108438316272860}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21362,7 +21362,7 @@ GameObject:
   - component: {fileID: 6909164901939152814}
   m_Layer: 0
   m_Name: Cube_13
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21474,7 +21474,7 @@ GameObject:
   - component: {fileID: 6168911978728823329}
   m_Layer: 0
   m_Name: Cube_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21586,7 +21586,7 @@ GameObject:
   - component: {fileID: 2496483539861515864}
   m_Layer: 0
   m_Name: Electric_box_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21698,7 +21698,7 @@ GameObject:
   - component: {fileID: 8874290127875797867}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21810,7 +21810,7 @@ GameObject:
   - component: {fileID: 2480569177730897112}
   m_Layer: 0
   m_Name: Industrial_pipe_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21923,7 +21923,7 @@ GameObject:
   - component: {fileID: 9180084835828053542}
   m_Layer: 0
   m_Name: Roof_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22036,7 +22036,7 @@ GameObject:
   - component: {fileID: 2470519699061796453}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square_7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22148,7 +22148,7 @@ GameObject:
   - component: {fileID: 2464402505257428357}
   m_Layer: 0
   m_Name: Dumpsters_v1_empty
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22261,7 +22261,7 @@ GameObject:
   - component: {fileID: 2562203670847396208}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22373,7 +22373,7 @@ GameObject:
   - component: {fileID: 5138073664063131219}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22485,7 +22485,7 @@ GameObject:
   - component: {fileID: 2543713858523331988}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22594,7 +22594,7 @@ GameObject:
   - component: {fileID: 2587110322780001380}
   m_Layer: 0
   m_Name: House_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22745,7 +22745,7 @@ GameObject:
   - component: {fileID: 3385543817939836312}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2doorR_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22857,7 +22857,7 @@ GameObject:
   - component: {fileID: 4497337261550912403}
   m_Layer: 0
   m_Name: Door_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22970,7 +22970,7 @@ GameObject:
   - component: {fileID: 2630845087862303523}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23082,7 +23082,7 @@ GameObject:
   - component: {fileID: 2634450799229313983}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_10
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23194,7 +23194,7 @@ GameObject:
   - component: {fileID: 1196021520674625345}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23306,7 +23306,7 @@ GameObject:
   - component: {fileID: 2628960018852254442}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23418,7 +23418,7 @@ GameObject:
   - component: {fileID: 2687933692190296791}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23530,7 +23530,7 @@ GameObject:
   - component: {fileID: 4392574363106136601}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23643,7 +23643,7 @@ GameObject:
   - component: {fileID: 4392574363250496080}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23756,7 +23756,7 @@ GameObject:
   - component: {fileID: 4392574363952065343}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23869,7 +23869,7 @@ GameObject:
   - component: {fileID: 4392574363890450004}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23982,7 +23982,7 @@ GameObject:
   - component: {fileID: 4392574363801914829}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24095,7 +24095,7 @@ GameObject:
   - component: {fileID: 4392574362604781422}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24208,7 +24208,7 @@ GameObject:
   - component: {fileID: 2666903042174156558}
   m_Layer: 0
   m_Name: Oil_tank_v2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24321,7 +24321,7 @@ GameObject:
   - component: {fileID: 2868937730809104375}
   m_Layer: 0
   m_Name: Barrel_v3_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24433,7 +24433,7 @@ GameObject:
   - component: {fileID: 6281828820463785424}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2through_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24525,7 +24525,7 @@ GameObject:
   - component: {fileID: 2862157067941352243}
   m_Layer: 0
   m_Name: Electric_box_v3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24637,7 +24637,7 @@ GameObject:
   - component: {fileID: 2841408856458332268}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24749,7 +24749,7 @@ GameObject:
   - component: {fileID: 2835075429860360922}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24861,7 +24861,7 @@ GameObject:
   - component: {fileID: 2921491924194267342}
   m_Layer: 0
   m_Name: Palet_v1_set
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24974,7 +24974,7 @@ GameObject:
   - component: {fileID: 2909913856225859326}
   m_Layer: 0
   m_Name: Industrial_pipe_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25087,7 +25087,7 @@ GameObject:
   - component: {fileID: 248061296216059640}
   m_Layer: 0
   m_Name: Cube_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25199,7 +25199,7 @@ GameObject:
   - component: {fileID: 8253533992621369592}
   m_Layer: 0
   m_Name: Roof_Tiles
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25312,7 +25312,7 @@ GameObject:
   - component: {fileID: 3508390483009409824}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25424,7 +25424,7 @@ GameObject:
   - component: {fileID: 6955773542206287236}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25536,7 +25536,7 @@ GameObject:
   - component: {fileID: 3065995102590684758}
   m_Layer: 0
   m_Name: Palet_v1_set_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25649,7 +25649,7 @@ GameObject:
   - component: {fileID: 2975733931968087270}
   m_Layer: 0
   m_Name: Cube_14
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25761,7 +25761,7 @@ GameObject:
   - component: {fileID: 4283574937080447781}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25873,7 +25873,7 @@ GameObject:
   - component: {fileID: 8586849189136581944}
   m_Layer: 0
   m_Name: Roof_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25986,7 +25986,7 @@ GameObject:
   - component: {fileID: 2317347197809769884}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26098,7 +26098,7 @@ GameObject:
   - component: {fileID: 3901642557300402067}
   m_Layer: 0
   m_Name: Door_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26211,7 +26211,7 @@ GameObject:
   - component: {fileID: 3240621405914063900}
   m_Layer: 0
   m_Name: Oil_tank_v2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26324,7 +26324,7 @@ GameObject:
   - component: {fileID: 3241353069024371752}
   m_Layer: 0
   m_Name: Barrel_v1_LD3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26437,7 +26437,7 @@ GameObject:
   - component: {fileID: 3226031922855503172}
   m_Layer: 0
   m_Name: Barrel_v2_single
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26547,7 +26547,7 @@ GameObject:
   - component: {fileID: 3192535519108307941}
   m_Layer: 0
   m_Name: House_5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26587,7 +26587,7 @@ GameObject:
   - component: {fileID: 2020257737176169774}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2close_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26699,7 +26699,7 @@ GameObject:
   - component: {fileID: 2319410521262766413}
   m_Layer: 0
   m_Name: Cube_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26714,7 +26714,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: -0.5407186, y: -0.01999998, z: 1.3399963}
-  m_LocalScale: {x: 7.860034, y: 2.9822023, z: -0.061834063}
+  m_LocalScale: {x: 7.860034, y: 2.9822023, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9110344769967639837}
@@ -26812,7 +26812,7 @@ GameObject:
   - component: {fileID: 3210310773483126646}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_13
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26924,7 +26924,7 @@ GameObject:
   - component: {fileID: 6248110709196585715}
   m_Layer: 0
   m_Name: Palet_v1_set_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27036,7 +27036,7 @@ GameObject:
   - component: {fileID: 5277764978699210295}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27148,7 +27148,7 @@ GameObject:
   - component: {fileID: 6468283590658058555}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27259,7 +27259,7 @@ GameObject:
   - component: {fileID: 4956430538115956822}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2through
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27352,7 +27352,7 @@ GameObject:
   - component: {fileID: 14365958777262130}
   m_Layer: 0
   m_Name: Cube_8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27464,7 +27464,7 @@ GameObject:
   - component: {fileID: 3285996929154493019}
   m_Layer: 0
   m_Name: Barrel_v2_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27577,7 +27577,7 @@ GameObject:
   - component: {fileID: 811569897035845938}
   m_Layer: 0
   m_Name: Cube_11
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27689,7 +27689,7 @@ GameObject:
   - component: {fileID: 3961227178675622585}
   m_Layer: 0
   m_Name: Palet_v1_set_9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27801,7 +27801,7 @@ GameObject:
   - component: {fileID: 4315783522207176449}
   m_Layer: 0
   m_Name: Roof_Floor
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -27914,7 +27914,7 @@ GameObject:
   - component: {fileID: 3339019697384273767}
   m_Layer: 0
   m_Name: Barrel_v2_single
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28024,7 +28024,7 @@ GameObject:
   - component: {fileID: 2625029433486220532}
   m_Layer: 0
   m_Name: H_A
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28067,7 +28067,7 @@ GameObject:
   - component: {fileID: 865701503792425001}
   m_Layer: 0
   m_Name: Window (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28183,7 +28183,7 @@ GameObject:
   - component: {fileID: 865701503922241411}
   m_Layer: 0
   m_Name: Window (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28300,7 +28300,7 @@ GameObject:
   - component: {fileID: 865701503521544282}
   m_Layer: 0
   m_Name: Window (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28417,7 +28417,7 @@ GameObject:
   - component: {fileID: 865701503434782223}
   m_Layer: 0
   m_Name: Window
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28533,7 +28533,7 @@ GameObject:
   - component: {fileID: 865701503994934031}
   m_Layer: 0
   m_Name: Roof_Floor
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28643,7 +28643,7 @@ GameObject:
   - component: {fileID: 2625029434398286594}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28680,7 +28680,7 @@ GameObject:
   - component: {fileID: 865701502360891229}
   m_Layer: 0
   m_Name: Window (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28797,7 +28797,7 @@ GameObject:
   - component: {fileID: 865701502502249843}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28907,7 +28907,7 @@ GameObject:
   - component: {fileID: 2625029434660233293}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28942,7 +28942,7 @@ GameObject:
   - component: {fileID: 865701503018214923}
   m_Layer: 0
   m_Name: Window (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29059,7 +29059,7 @@ GameObject:
   - component: {fileID: 2035536796575638584}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2close_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29171,7 +29171,7 @@ GameObject:
   - component: {fileID: 3440538716777536504}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29396,7 +29396,7 @@ GameObject:
   - component: {fileID: 3429653050095087796}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_11
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29508,7 +29508,7 @@ GameObject:
   - component: {fileID: 3415303199134638177}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29620,7 +29620,7 @@ GameObject:
   - component: {fileID: 4769201712641595182}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29733,7 +29733,7 @@ GameObject:
   - component: {fileID: 4769201712354357724}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29846,7 +29846,7 @@ GameObject:
   - component: {fileID: 4769201712284312759}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29959,7 +29959,7 @@ GameObject:
   - component: {fileID: 4769201712114288819}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30072,7 +30072,7 @@ GameObject:
   - component: {fileID: 4769201711994931450}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30185,7 +30185,7 @@ GameObject:
   - component: {fileID: 4769201711552325005}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30298,7 +30298,7 @@ GameObject:
   - component: {fileID: 2166690954577320095}
   m_Layer: 0
   m_Name: Stairs
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30411,7 +30411,7 @@ GameObject:
   - component: {fileID: 3812971472958135612}
   m_Layer: 0
   m_Name: Cube_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30523,7 +30523,7 @@ GameObject:
   - component: {fileID: 3508292486290649312}
   m_Layer: 0
   m_Name: Barrel_v2_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30611,7 +30611,7 @@ GameObject:
   - component: {fileID: 3508292486292550148}
   m_Layer: 0
   m_Name: Barrel_v2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30647,7 +30647,7 @@ GameObject:
   - component: {fileID: 7678976569479834251}
   m_Layer: 0
   m_Name: Roof_Tiles
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30760,7 +30760,7 @@ GameObject:
   - component: {fileID: 111028436437918079}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30872,7 +30872,7 @@ GameObject:
   - component: {fileID: 1440326492698247477}
   m_Layer: 0
   m_Name: Window (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30989,7 +30989,7 @@ GameObject:
   - component: {fileID: 1440326492632921839}
   m_Layer: 0
   m_Name: Window (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31106,7 +31106,7 @@ GameObject:
   - component: {fileID: 1440326491418821025}
   m_Layer: 0
   m_Name: Roof_Floor
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31216,7 +31216,7 @@ GameObject:
   - component: {fileID: 4292913282968256430}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31250,7 +31250,7 @@ GameObject:
   - component: {fileID: 4292913282974966579}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31285,7 +31285,7 @@ GameObject:
   - component: {fileID: 1440326491632588681}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31398,7 +31398,7 @@ GameObject:
   - component: {fileID: 1440326491190808843}
   m_Layer: 0
   m_Name: Window (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31514,7 +31514,7 @@ GameObject:
   - component: {fileID: 1440326492009542758}
   m_Layer: 0
   m_Name: Window
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31630,7 +31630,7 @@ GameObject:
   - component: {fileID: 1440326491971178652}
   m_Layer: 0
   m_Name: Window (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31747,7 +31747,7 @@ GameObject:
   - component: {fileID: 1440326491826299080}
   m_Layer: 0
   m_Name: Window (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31861,7 +31861,7 @@ GameObject:
   - component: {fileID: 4292913283279904451}
   m_Layer: 0
   m_Name: H_A
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32017,7 +32017,7 @@ GameObject:
   - component: {fileID: 260963829322461548}
   m_Layer: 0
   m_Name: Stairs
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32130,7 +32130,7 @@ GameObject:
   - component: {fileID: 6995920244415721016}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32242,7 +32242,7 @@ GameObject:
   - component: {fileID: 3680154852981227725}
   m_Layer: 0
   m_Name: Barrel_v3_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32355,7 +32355,7 @@ GameObject:
   - component: {fileID: 3016264435170190573}
   m_Layer: 0
   m_Name: Door_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32465,7 +32465,7 @@ GameObject:
   - component: {fileID: 3771043189591944858}
   m_Layer: 0
   m_Name: House_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32503,7 +32503,7 @@ GameObject:
   - component: {fileID: 9153940268766071115}
   m_Layer: 0
   m_Name: Cube_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32616,7 +32616,7 @@ GameObject:
   - component: {fileID: 3773047466057358027}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32728,7 +32728,7 @@ GameObject:
   - component: {fileID: 3762428041560517781}
   m_Layer: 0
   m_Name: Barrel_v2_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32841,7 +32841,7 @@ GameObject:
   - component: {fileID: 7553691516149406100}
   m_Layer: 0
   m_Name: Roof_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32954,7 +32954,7 @@ GameObject:
   - component: {fileID: 3839090759988196983}
   m_Layer: 0
   m_Name: Electric_box_v3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33066,7 +33066,7 @@ GameObject:
   - component: {fileID: 3835960618800913529}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33178,7 +33178,7 @@ GameObject:
   - component: {fileID: 5558132828070845388}
   m_Layer: 0
   m_Name: Cube_9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33289,7 +33289,7 @@ GameObject:
   - component: {fileID: 8760579243022118674}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2through_6
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33381,7 +33381,7 @@ GameObject:
   - component: {fileID: 3979169534475347080}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33493,7 +33493,7 @@ GameObject:
   - component: {fileID: 4098778250018496680}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33605,7 +33605,7 @@ GameObject:
   - component: {fileID: 4074476788339312364}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33717,7 +33717,7 @@ GameObject:
   - component: {fileID: 1995580631309814502}
   m_Layer: 0
   m_Name: Window (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33833,7 +33833,7 @@ GameObject:
   - component: {fileID: 1995580630887491803}
   m_Layer: 0
   m_Name: Window (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33950,7 +33950,7 @@ GameObject:
   - component: {fileID: 1995580631031293318}
   m_Layer: 0
   m_Name: Roof_Floor
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34063,7 +34063,7 @@ GameObject:
   - component: {fileID: 1995580631772256475}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34176,7 +34176,7 @@ GameObject:
   - component: {fileID: 1995580631880462971}
   m_Layer: 0
   m_Name: Window
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34292,7 +34292,7 @@ GameObject:
   - component: {fileID: 1995580631447903046}
   m_Layer: 0
   m_Name: Window (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34409,7 +34409,7 @@ GameObject:
   - component: {fileID: 1995580629924034420}
   m_Layer: 0
   m_Name: Window (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34523,7 +34523,7 @@ GameObject:
   - component: {fileID: 3737942269032024289}
   m_Layer: 0
   m_Name: H_A
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34563,7 +34563,7 @@ GameObject:
   - component: {fileID: 3737942268937914163}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34598,7 +34598,7 @@ GameObject:
   - component: {fileID: 1995580630563699777}
   m_Layer: 0
   m_Name: Window (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34712,7 +34712,7 @@ GameObject:
   - component: {fileID: 3737942268884913328}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34749,7 +34749,7 @@ GameObject:
   - component: {fileID: 4059121526606732139}
   m_Layer: 0
   m_Name: Electric_box_v3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34861,7 +34861,7 @@ GameObject:
   - component: {fileID: 4058339815541353949}
   m_Layer: 0
   m_Name: Barrel_v2_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34974,7 +34974,7 @@ GameObject:
   - component: {fileID: 6694356492275591530}
   m_Layer: 0
   m_Name: Cube_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35086,7 +35086,7 @@ GameObject:
   - component: {fileID: 726771559506988915}
   m_Layer: 0
   m_Name: Palet_v1_set_10
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35198,7 +35198,7 @@ GameObject:
   - component: {fileID: 7457243464394175573}
   m_Layer: 0
   m_Name: Roof_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35311,7 +35311,7 @@ GameObject:
   - component: {fileID: 4260582179711676470}
   m_Layer: 0
   m_Name: Hangar_v3_outbuilding_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35421,7 +35421,7 @@ GameObject:
   - component: {fileID: 4330708708160419943}
   m_Layer: 0
   m_Name: House_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35459,7 +35459,7 @@ GameObject:
   - component: {fileID: 4370240868899866972}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35571,7 +35571,7 @@ GameObject:
   - component: {fileID: 3004074872935395467}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35684,7 +35684,7 @@ GameObject:
   - component: {fileID: 2770423537972272470}
   m_Layer: 0
   m_Name: Door_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35797,7 +35797,7 @@ GameObject:
   - component: {fileID: 4367446023859214352}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35909,7 +35909,7 @@ GameObject:
   - component: {fileID: 5506971136748600050}
   m_Layer: 0
   m_Name: H_A_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36021,7 +36021,7 @@ GameObject:
   - component: {fileID: 1912756041141346509}
   m_Layer: 0
   m_Name: Barrel_v2_quadro_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36112,7 +36112,7 @@ GameObject:
   - component: {fileID: 4098884993834503607}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36224,7 +36224,7 @@ GameObject:
   - component: {fileID: 38537287623606215}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36336,7 +36336,7 @@ GameObject:
   - component: {fileID: 7623094166562268491}
   m_Layer: 0
   m_Name: Palet_v1_set_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36448,7 +36448,7 @@ GameObject:
   - component: {fileID: 6897032752027793728}
   m_Layer: 0
   m_Name: Cube_15
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36557,7 +36557,7 @@ GameObject:
   - component: {fileID: 8456472812972072645}
   m_Layer: 0
   m_Name: DeathMatchtikei
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36714,6 +36714,8 @@ Transform:
   - {fileID: 7638544851739097954}
   - {fileID: 8646214872052925297}
   - {fileID: 7942239521947247807}
+  - {fileID: 3099279266933876332}
+  - {fileID: 5831117640239994992}
   - {fileID: 7121403710807896745}
   - {fileID: 4016385218405836113}
   - {fileID: 6373740288766052659}
@@ -36802,6 +36804,8 @@ Transform:
   - {fileID: 3426466350984175745}
   - {fileID: 4021715894226183272}
   - {fileID: 3411449694404057880}
+  - {fileID: 3914720245164196559}
+  - {fileID: 8223257468549675304}
   - {fileID: 5116091628275732897}
   - {fileID: 664638770343001763}
   - {fileID: 2420066329584700476}
@@ -36850,7 +36854,7 @@ GameObject:
   - component: {fileID: 7293682415330019146}
   m_Layer: 0
   m_Name: Roof_Tiles
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36963,7 +36967,7 @@ GameObject:
   - component: {fileID: 951584169846504714}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37061,6 +37065,118 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 8.000002, y: 3, z: 3.0000007}
   m_Center: {x: -0.0000004768373, y: 0, z: 0}
+--- !u!1 &4650261537721390327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3099279266933876332}
+  - component: {fileID: 2140195123886003021}
+  - component: {fileID: 58560753945848322}
+  - component: {fileID: 651783577116067362}
+  m_Layer: 0
+  m_Name: Cargo_container_v1_LD2close_5
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3099279266933876332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650261537721390327}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 450.84, y: -2.24, z: -210.15}
+  m_LocalScale: {x: 1, y: 1.0505, z: 1.2813}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8456472812972072645}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2140195123886003021
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650261537721390327}
+  m_Mesh: {fileID: 4300022, guid: 856f086268c2c1b4f8f1d4b9bc614217, type: 3}
+--- !u!23 &58560753945848322
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650261537721390327}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bb0d1d0eb18293f4a8d2ded5e4ee4e46, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &651783577116067362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650261537721390327}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8, y: 3.0000007, z: 3.000002}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4660639709065319016
 GameObject:
   m_ObjectHideFlags: 0
@@ -37075,7 +37191,7 @@ GameObject:
   - component: {fileID: 4633422492156651460}
   m_Layer: 0
   m_Name: Barrel_v3_quadro_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37187,7 +37303,7 @@ GameObject:
   - component: {fileID: 4867349520198241152}
   m_Layer: 0
   m_Name: Smoke_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41946,7 +42062,7 @@ GameObject:
   - component: {fileID: 6442070930317198924}
   m_Layer: 0
   m_Name: H_A_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42059,7 +42175,7 @@ GameObject:
   - component: {fileID: 4712392870167419294}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_10
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42170,7 +42286,7 @@ GameObject:
   - component: {fileID: 9130582958809050961}
   m_Layer: 0
   m_Name: H_B_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42261,7 +42377,7 @@ GameObject:
   - component: {fileID: 4817234326706635367}
   m_Layer: 0
   m_Name: Palet_v1_set_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42374,7 +42490,7 @@ GameObject:
   - component: {fileID: 4895511835106074390}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42486,7 +42602,7 @@ GameObject:
   - component: {fileID: 3729125730877315341}
   m_Layer: 0
   m_Name: H_A_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42599,7 +42715,7 @@ GameObject:
   - component: {fileID: 2233525426090148459}
   m_Layer: 0
   m_Name: Roof_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42712,7 +42828,7 @@ GameObject:
   - component: {fileID: 4957976252171633764}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42824,7 +42940,7 @@ GameObject:
   - component: {fileID: 829838413507500377}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42937,7 +43053,7 @@ GameObject:
   - component: {fileID: 829838413414818354}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43050,7 +43166,7 @@ GameObject:
   - component: {fileID: 829838413401950052}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43163,7 +43279,7 @@ GameObject:
   - component: {fileID: 829838413063801978}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43276,7 +43392,7 @@ GameObject:
   - component: {fileID: 829838413203507938}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43389,7 +43505,7 @@ GameObject:
   - component: {fileID: 829838412741486706}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43502,7 +43618,7 @@ GameObject:
   - component: {fileID: 829838412645174039}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43615,7 +43731,7 @@ GameObject:
   - component: {fileID: 829838412658570052}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43728,7 +43844,7 @@ GameObject:
   - component: {fileID: 829838412610276234}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43841,7 +43957,7 @@ GameObject:
   - component: {fileID: 829838412622369109}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43954,7 +44070,7 @@ GameObject:
   - component: {fileID: 829838412562989270}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44067,7 +44183,7 @@ GameObject:
   - component: {fileID: 829838411696273928}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44180,7 +44296,7 @@ GameObject:
   - component: {fileID: 4908917895570457968}
   m_Layer: 0
   m_Name: Conditioner_v1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44292,7 +44408,7 @@ GameObject:
   - component: {fileID: 1869140290308290363}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44404,7 +44520,7 @@ GameObject:
   - component: {fileID: 5016514744567146624}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44516,7 +44632,7 @@ GameObject:
   - component: {fileID: 4039872286568368237}
   m_Layer: 0
   m_Name: Cube_5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44629,7 +44745,7 @@ GameObject:
   - component: {fileID: 5063470143828816035}
   m_Layer: 0
   m_Name: Electric_box_v3_8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44741,7 +44857,7 @@ GameObject:
   - component: {fileID: 5181632083137188161}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_12
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44853,7 +44969,7 @@ GameObject:
   - component: {fileID: 1423146361748135288}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44966,7 +45082,7 @@ GameObject:
   - component: {fileID: 5162160249690151281}
   m_Layer: 0
   m_Name: Oil_tank_v2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45079,7 +45195,7 @@ GameObject:
   - component: {fileID: 6833995692582948919}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45192,7 +45308,7 @@ GameObject:
   - component: {fileID: 6833995692723441891}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45305,7 +45421,7 @@ GameObject:
   - component: {fileID: 6833995692663300292}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45418,7 +45534,7 @@ GameObject:
   - component: {fileID: 6833995693107996164}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45531,7 +45647,7 @@ GameObject:
   - component: {fileID: 6833995693269616752}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45644,7 +45760,7 @@ GameObject:
   - component: {fileID: 6833995692930143620}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45757,7 +45873,7 @@ GameObject:
   - component: {fileID: 6833995691632248537}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45870,7 +45986,7 @@ GameObject:
   - component: {fileID: 6833995691567203683}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45983,7 +46099,7 @@ GameObject:
   - component: {fileID: 6833995691319197823}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -46096,7 +46212,7 @@ GameObject:
   - component: {fileID: 6833995692226626703}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -46209,7 +46325,7 @@ GameObject:
   - component: {fileID: 6833995692168623343}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -46322,7 +46438,7 @@ GameObject:
   - component: {fileID: 6833995692115072250}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -46435,7 +46551,7 @@ GameObject:
   - component: {fileID: 1912500473921194577}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1through
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46547,7 +46663,7 @@ GameObject:
   - component: {fileID: 5124142622523483691}
   m_Layer: 0
   m_Name: Hangar_v4_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46659,7 +46775,7 @@ GameObject:
   - component: {fileID: 5124829437624358760}
   m_Layer: 0
   m_Name: Barrel_v3_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46758,6 +46874,118 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300006, guid: 8bf7537d27999d4448c4145cad1f47e7, type: 3}
+--- !u!1 &5213750005029907890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5831117640239994992}
+  - component: {fileID: 8750986998658625774}
+  - component: {fileID: 3679962985135489948}
+  - component: {fileID: 329473166199003877}
+  m_Layer: 0
+  m_Name: Cargo_container_v1_LD2close_6
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5831117640239994992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5213750005029907890}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 460.3535, y: 0.45, z: -218.32}
+  m_LocalScale: {x: 1.6153688, y: 1.0505, z: 0.9433536}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8456472812972072645}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!33 &8750986998658625774
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5213750005029907890}
+  m_Mesh: {fileID: 4300022, guid: 856f086268c2c1b4f8f1d4b9bc614217, type: 3}
+--- !u!23 &3679962985135489948
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5213750005029907890}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bb0d1d0eb18293f4a8d2ded5e4ee4e46, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &329473166199003877
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5213750005029907890}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8, y: 3.0000007, z: 3.000002}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5233153909536860444
 GameObject:
   m_ObjectHideFlags: 0
@@ -46772,7 +47000,7 @@ GameObject:
   - component: {fileID: 5759955837627870758}
   m_Layer: 0
   m_Name: Palet_v1_set
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46884,7 +47112,7 @@ GameObject:
   - component: {fileID: 8091645021572509581}
   m_Layer: 0
   m_Name: Roof_Floor_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -47108,7 +47336,7 @@ GameObject:
   - component: {fileID: 5340911540695741546}
   m_Layer: 0
   m_Name: Smoke_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51867,7 +52095,7 @@ GameObject:
   - component: {fileID: 4086611795361825187}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51980,7 +52208,7 @@ GameObject:
   - component: {fileID: 5319442325980427308}
   m_Layer: 0
   m_Name: Oil_tank_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52093,7 +52321,7 @@ GameObject:
   - component: {fileID: 4175091268525017692}
   m_Layer: 0
   m_Name: H_A_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -52206,7 +52434,7 @@ GameObject:
   - component: {fileID: 5290387140601136354}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52318,7 +52546,7 @@ GameObject:
   - component: {fileID: 5293114884489409910}
   m_Layer: 0
   m_Name: Palet_v1_set_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52431,7 +52659,7 @@ GameObject:
   - component: {fileID: 9041622560168290448}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2close_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52543,7 +52771,7 @@ GameObject:
   - component: {fileID: 5803303430628908829}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52768,7 +52996,7 @@ GameObject:
   - component: {fileID: 4195662752128462873}
   m_Layer: 0
   m_Name: H_A_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -52881,7 +53109,7 @@ GameObject:
   - component: {fileID: 6205077018783882468}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52993,7 +53221,7 @@ GameObject:
   - component: {fileID: 5341187943890591021}
   m_Layer: 0
   m_Name: Hangar_v4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53105,7 +53333,7 @@ GameObject:
   - component: {fileID: 300972212667401154}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -53218,7 +53446,7 @@ GameObject:
   - component: {fileID: 300972212551282071}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -53331,7 +53559,7 @@ GameObject:
   - component: {fileID: 300972212266984475}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -53444,7 +53672,7 @@ GameObject:
   - component: {fileID: 300972212388639665}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -53557,7 +53785,7 @@ GameObject:
   - component: {fileID: 300972211473200325}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -53670,7 +53898,7 @@ GameObject:
   - component: {fileID: 300972210821905811}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -53783,7 +54011,7 @@ GameObject:
   - component: {fileID: 8640022764760334667}
   m_Layer: 0
   m_Name: Barrel_v2_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53892,7 +54120,7 @@ GameObject:
   - component: {fileID: 5461340688300125492}
   m_Layer: 0
   m_Name: Barrel_v2_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53928,7 +54156,7 @@ GameObject:
   - component: {fileID: 5992364619415240112}
   m_Layer: 0
   m_Name: Barrel_v2_single
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54040,7 +54268,7 @@ GameObject:
   - component: {fileID: 5412920671429452315}
   m_Layer: 0
   m_Name: Electric_box_v3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54152,7 +54380,7 @@ GameObject:
   - component: {fileID: 1635854328185319797}
   m_Layer: 0
   m_Name: Roof_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -54265,7 +54493,7 @@ GameObject:
   - component: {fileID: 5527900124842723997}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54377,7 +54605,7 @@ GameObject:
   - component: {fileID: 1510610284253796136}
   m_Layer: 0
   m_Name: Cube_7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54489,7 +54717,7 @@ GameObject:
   - component: {fileID: 5612135231092888696}
   m_Layer: 0
   m_Name: Conditioner_v1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54601,7 +54829,7 @@ GameObject:
   - component: {fileID: 5615774662311724790}
   m_Layer: 0
   m_Name: Barrel_v2_quadro_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54714,7 +54942,7 @@ GameObject:
   - component: {fileID: 5606569600467708503}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54826,7 +55054,7 @@ GameObject:
   - component: {fileID: 5608552328883172802}
   m_Layer: 0
   m_Name: Dumpsters_v1_empty
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54939,7 +55167,7 @@ GameObject:
   - component: {fileID: 4588048937545779493}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55051,7 +55279,7 @@ GameObject:
   - component: {fileID: 2309553259568680807}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55164,7 +55392,7 @@ GameObject:
   - component: {fileID: 2309553259362898579}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55277,7 +55505,7 @@ GameObject:
   - component: {fileID: 2309553259251580135}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55390,7 +55618,7 @@ GameObject:
   - component: {fileID: 2309553258833496576}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55503,7 +55731,7 @@ GameObject:
   - component: {fileID: 2309553258763893287}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55616,7 +55844,7 @@ GameObject:
   - component: {fileID: 2309553258709748436}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55729,7 +55957,7 @@ GameObject:
   - component: {fileID: 2309553258261028460}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55842,7 +56070,7 @@ GameObject:
   - component: {fileID: 2309553258312232460}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55955,7 +56183,7 @@ GameObject:
   - component: {fileID: 2309553258233384473}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -56068,7 +56296,7 @@ GameObject:
   - component: {fileID: 2309553257957612188}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -56181,7 +56409,7 @@ GameObject:
   - component: {fileID: 2309553257774783546}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -56294,7 +56522,7 @@ GameObject:
   - component: {fileID: 2309553257709608832}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -56407,7 +56635,7 @@ GameObject:
   - component: {fileID: 5570630966853330075}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1doorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56519,7 +56747,7 @@ GameObject:
   - component: {fileID: 5551826767414442050}
   m_Layer: 0
   m_Name: Barrel_v2_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56632,7 +56860,7 @@ GameObject:
   - component: {fileID: 8205847766573332593}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56743,7 +56971,7 @@ GameObject:
   - component: {fileID: 5716787436426897286}
   m_Layer: 0
   m_Name: H_B
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -56834,7 +57062,7 @@ GameObject:
   - component: {fileID: 6255425540858275754}
   m_Layer: 0
   m_Name: H_A_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -56947,7 +57175,7 @@ GameObject:
   - component: {fileID: 5632063060447089019}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57059,7 +57287,7 @@ GameObject:
   - component: {fileID: 5759704296021880600}
   m_Layer: 0
   m_Name: Conditioner_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57171,7 +57399,7 @@ GameObject:
   - component: {fileID: 5761335890171105259}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57283,7 +57511,7 @@ GameObject:
   - component: {fileID: 729043772071304188}
   m_Layer: 0
   m_Name: Barrel_v1_LD2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57395,7 +57623,7 @@ GameObject:
   - component: {fileID: 8704020856620719117}
   m_Layer: 0
   m_Name: Barrel_v1_LD1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57507,7 +57735,7 @@ GameObject:
   - component: {fileID: 1723366637706016581}
   m_Layer: 0
   m_Name: Barrel_v1_LD3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57616,7 +57844,7 @@ GameObject:
   - component: {fileID: 5732047027131232971}
   m_Layer: 0
   m_Name: Barrel_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57653,7 +57881,7 @@ GameObject:
   - component: {fileID: 5703081991784638794}
   m_Layer: 0
   m_Name: Palet_v1_set_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57765,7 +57993,7 @@ GameObject:
   - component: {fileID: 4150958964274839838}
   m_Layer: 0
   m_Name: "\u30B3\u30F3\u30C6\u30CA\u30C8\u30F3\u30CD\u30EB"
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57857,7 +58085,7 @@ GameObject:
   - component: {fileID: 4432578574272653290}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -57970,7 +58198,7 @@ GameObject:
   - component: {fileID: 4432578574165292959}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58083,7 +58311,7 @@ GameObject:
   - component: {fileID: 4432578574227359743}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58196,7 +58424,7 @@ GameObject:
   - component: {fileID: 4432578573760411251}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58309,7 +58537,7 @@ GameObject:
   - component: {fileID: 4432578573691041225}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58422,7 +58650,7 @@ GameObject:
   - component: {fileID: 4432578573462106991}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58535,7 +58763,7 @@ GameObject:
   - component: {fileID: 4432578573130562400}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58648,7 +58876,7 @@ GameObject:
   - component: {fileID: 4432578573019550996}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58761,7 +58989,7 @@ GameObject:
   - component: {fileID: 4432578572924774036}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58874,7 +59102,7 @@ GameObject:
   - component: {fileID: 4432578572655793108}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58987,7 +59215,7 @@ GameObject:
   - component: {fileID: 4432578572598797299}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59100,7 +59328,7 @@ GameObject:
   - component: {fileID: 4432578572475048743}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59213,7 +59441,7 @@ GameObject:
   - component: {fileID: 5289998300656935607}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59326,7 +59554,7 @@ GameObject:
   - component: {fileID: 5289998300780880638}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59439,7 +59667,7 @@ GameObject:
   - component: {fileID: 5289998301483175674}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59552,7 +59780,7 @@ GameObject:
   - component: {fileID: 5289998301438401425}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59665,7 +59893,7 @@ GameObject:
   - component: {fileID: 5289998301319986531}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59778,7 +60006,7 @@ GameObject:
   - component: {fileID: 5289998300101332928}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59891,7 +60119,7 @@ GameObject:
   - component: {fileID: 5814707297911955256}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60003,7 +60231,7 @@ GameObject:
   - component: {fileID: 2456466249573479774}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60114,7 +60342,7 @@ GameObject:
   - component: {fileID: 4137995498010182044}
   m_Layer: 0
   m_Name: "\u30B3\u30F3\u30C6\u30CA\u30C8\u30F3\u30CD\u30EB_2"
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60207,7 +60435,7 @@ GameObject:
   - component: {fileID: 5274062461137528221}
   m_Layer: 0
   m_Name: H_A_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -60320,7 +60548,7 @@ GameObject:
   - component: {fileID: 5854387098771242252}
   m_Layer: 0
   m_Name: Electric_box_v3_7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60432,7 +60660,7 @@ GameObject:
   - component: {fileID: 5838236585660581638}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60544,7 +60772,7 @@ GameObject:
   - component: {fileID: 1310183241090464097}
   m_Layer: 0
   m_Name: Cube_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60657,7 +60885,7 @@ GameObject:
   - component: {fileID: 7944138665563300012}
   m_Layer: 0
   m_Name: Palet_v1_set_7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60769,7 +60997,7 @@ GameObject:
   - component: {fileID: 3898539879592854742}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60881,7 +61109,7 @@ GameObject:
   - component: {fileID: 6024829745719734693}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60992,7 +61220,7 @@ GameObject:
   - component: {fileID: 5969691917766332021}
   m_Layer: 0
   m_Name: H_B
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61083,7 +61311,7 @@ GameObject:
   - component: {fileID: 670261627528195545}
   m_Layer: 0
   m_Name: Roof_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61196,7 +61424,7 @@ GameObject:
   - component: {fileID: 5377512382921012613}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61309,7 +61537,7 @@ GameObject:
   - component: {fileID: 5377512381593700134}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61422,7 +61650,7 @@ GameObject:
   - component: {fileID: 5377512381575815636}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61535,7 +61763,7 @@ GameObject:
   - component: {fileID: 5377512381505320127}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61648,7 +61876,7 @@ GameObject:
   - component: {fileID: 5377512382140930235}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61761,7 +61989,7 @@ GameObject:
   - component: {fileID: 5377512382289615090}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61874,7 +62102,7 @@ GameObject:
   - component: {fileID: 2005160800854776493}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61987,7 +62215,7 @@ GameObject:
   - component: {fileID: 2005160800785378679}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -62100,7 +62328,7 @@ GameObject:
   - component: {fileID: 2005160800202967699}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -62213,7 +62441,7 @@ GameObject:
   - component: {fileID: 2005160799441894224}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -62326,7 +62554,7 @@ GameObject:
   - component: {fileID: 2005160799394443262}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -62439,7 +62667,7 @@ GameObject:
   - component: {fileID: 2005160799356013316}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -62552,7 +62780,7 @@ GameObject:
   - component: {fileID: 6064837397512847302}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62664,7 +62892,7 @@ GameObject:
   - component: {fileID: 7909953236226573950}
   m_Layer: 0
   m_Name: Roof_Floor_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -62777,7 +63005,7 @@ GameObject:
   - component: {fileID: 6181649480590354206}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62889,7 +63117,7 @@ GameObject:
   - component: {fileID: 6260610459204806386}
   m_Layer: 0
   m_Name: Palet_v1_set_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63002,7 +63230,7 @@ GameObject:
   - component: {fileID: 6252551858589381893}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63114,7 +63342,7 @@ GameObject:
   - component: {fileID: 6325408534056178196}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63226,7 +63454,7 @@ GameObject:
   - component: {fileID: 6285515735186957302}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63338,7 +63566,7 @@ GameObject:
   - component: {fileID: 3996021719969240238}
   m_Layer: 0
   m_Name: Cube_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63450,7 +63678,7 @@ GameObject:
   - component: {fileID: 7963790136302239719}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63562,7 +63790,7 @@ GameObject:
   - component: {fileID: 7980851553001538910}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63674,7 +63902,7 @@ GameObject:
   - component: {fileID: 4719086932346614719}
   m_Layer: 0
   m_Name: H_A_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -63787,7 +64015,7 @@ GameObject:
   - component: {fileID: 6455498704786254439}
   m_Layer: 0
   m_Name: Generator_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63899,7 +64127,7 @@ GameObject:
   - component: {fileID: 6454914672334508475}
   m_Layer: 0
   m_Name: Barrel_v2_single
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64012,7 +64240,7 @@ GameObject:
   - component: {fileID: 3781571959264653158}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -64125,7 +64353,7 @@ GameObject:
   - component: {fileID: 3781571958692004369}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -64238,7 +64466,7 @@ GameObject:
   - component: {fileID: 3781571958568583768}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -64351,7 +64579,7 @@ GameObject:
   - component: {fileID: 3781571958464723767}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -64464,7 +64692,7 @@ GameObject:
   - component: {fileID: 3781571958402641500}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -64577,7 +64805,7 @@ GameObject:
   - component: {fileID: 3781571958045482437}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -64803,7 +65031,7 @@ GameObject:
   - component: {fileID: 4853114678697404812}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -64916,7 +65144,7 @@ GameObject:
   - component: {fileID: 4853114678399102096}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65029,7 +65257,7 @@ GameObject:
   - component: {fileID: 4853114678329863978}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65142,7 +65370,7 @@ GameObject:
   - component: {fileID: 4853114678954310921}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65255,7 +65483,7 @@ GameObject:
   - component: {fileID: 4853114678930861436}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65368,7 +65596,7 @@ GameObject:
   - component: {fileID: 4853114678867205404}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65481,7 +65709,7 @@ GameObject:
   - component: {fileID: 4853114677131704772}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65594,7 +65822,7 @@ GameObject:
   - component: {fileID: 4853114677353335095}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65707,7 +65935,7 @@ GameObject:
   - component: {fileID: 4853114677272197392}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65820,7 +66048,7 @@ GameObject:
   - component: {fileID: 4853114678160211063}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65933,7 +66161,7 @@ GameObject:
   - component: {fileID: 4853114677659422711}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66046,7 +66274,7 @@ GameObject:
   - component: {fileID: 4853114677820727683}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66159,7 +66387,7 @@ GameObject:
   - component: {fileID: 6556955834997542552}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66271,7 +66499,7 @@ GameObject:
   - component: {fileID: 4013777923865683840}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66384,7 +66612,7 @@ GameObject:
   - component: {fileID: 4013777923434239001}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66497,7 +66725,7 @@ GameObject:
   - component: {fileID: 4013777923347480946}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66610,7 +66838,7 @@ GameObject:
   - component: {fileID: 4013777923336026141}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66723,7 +66951,7 @@ GameObject:
   - component: {fileID: 4013777923186817108}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66836,7 +67064,7 @@ GameObject:
   - component: {fileID: 4013777922538902819}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66949,7 +67177,7 @@ GameObject:
   - component: {fileID: 6502396182903391273}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_11
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67061,7 +67289,7 @@ GameObject:
   - component: {fileID: 6626590896613680999}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67173,7 +67401,7 @@ GameObject:
   - component: {fileID: 496616847475621912}
   m_Layer: 0
   m_Name: Roof_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -67286,7 +67514,7 @@ GameObject:
   - component: {fileID: 8582086929909502965}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67399,7 +67627,7 @@ GameObject:
   - component: {fileID: 1413963489970713411}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -67512,7 +67740,7 @@ GameObject:
   - component: {fileID: 1413963489558303102}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -67625,7 +67853,7 @@ GameObject:
   - component: {fileID: 1413963489478410462}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -67738,7 +67966,7 @@ GameObject:
   - component: {fileID: 1413963489051142627}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -67851,7 +68079,7 @@ GameObject:
   - component: {fileID: 1413963488994536684}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -67964,7 +68192,7 @@ GameObject:
   - component: {fileID: 1413963488288024537}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -68077,7 +68305,7 @@ GameObject:
   - component: {fileID: 9172371695541040053}
   m_Layer: 0
   m_Name: Cube_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68189,7 +68417,7 @@ GameObject:
   - component: {fileID: 6735866316437640212}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68301,7 +68529,7 @@ GameObject:
   - component: {fileID: 4385837653085944477}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68413,7 +68641,7 @@ GameObject:
   - component: {fileID: 3936159339433739660}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68525,7 +68753,7 @@ GameObject:
   - component: {fileID: 2494496650511472342}
   m_Layer: 0
   m_Name: Cube_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68637,7 +68865,7 @@ GameObject:
   - component: {fileID: 3336609673849188606}
   m_Layer: 0
   m_Name: H_A_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -68750,7 +68978,7 @@ GameObject:
   - component: {fileID: 6777754547703171907}
   m_Layer: 0
   m_Name: Barrel_v2_quadro_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68863,7 +69091,7 @@ GameObject:
   - component: {fileID: 6893520453739929679}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68975,7 +69203,7 @@ GameObject:
   - component: {fileID: 6868940362701999677}
   m_Layer: 0
   m_Name: Barrel_v3_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69088,7 +69316,7 @@ GameObject:
   - component: {fileID: 1013613507024982455}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1doorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69200,7 +69428,7 @@ GameObject:
   - component: {fileID: 6955488178179366718}
   m_Layer: 0
   m_Name: Oil_tank_v1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69313,7 +69541,7 @@ GameObject:
   - component: {fileID: 6671621021386701919}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69425,7 +69653,7 @@ GameObject:
   - component: {fileID: 1404277447654967993}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69537,7 +69765,7 @@ GameObject:
   - component: {fileID: 1170721929166041647}
   m_Layer: 0
   m_Name: H_A_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -69650,7 +69878,7 @@ GameObject:
   - component: {fileID: 6926557196847075876}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69762,7 +69990,7 @@ GameObject:
   - component: {fileID: 7054346175806573614}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69874,7 +70102,7 @@ GameObject:
   - component: {fileID: 7212509488081056397}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69986,7 +70214,7 @@ GameObject:
   - component: {fileID: 7051053112981078634}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70098,7 +70326,7 @@ GameObject:
   - component: {fileID: 1248175755599732008}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2close_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70210,7 +70438,7 @@ GameObject:
   - component: {fileID: 7269316665584120335}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70322,7 +70550,7 @@ GameObject:
   - component: {fileID: 8700187591342581247}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70435,7 +70663,7 @@ GameObject:
   - component: {fileID: 8700187591314118253}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70548,7 +70776,7 @@ GameObject:
   - component: {fileID: 8700187591292907070}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70661,7 +70889,7 @@ GameObject:
   - component: {fileID: 8700187591282160764}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70774,7 +71002,7 @@ GameObject:
   - component: {fileID: 8700187591261744803}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70887,7 +71115,7 @@ GameObject:
   - component: {fileID: 8700187591973510945}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71000,7 +71228,7 @@ GameObject:
   - component: {fileID: 8700187590570730061}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71113,7 +71341,7 @@ GameObject:
   - component: {fileID: 8700187590456149787}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71226,7 +71454,7 @@ GameObject:
   - component: {fileID: 8700187590162152560}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71339,7 +71567,7 @@ GameObject:
   - component: {fileID: 8700187590862097755}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71452,7 +71680,7 @@ GameObject:
   - component: {fileID: 8700187590639397203}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71565,7 +71793,7 @@ GameObject:
   - component: {fileID: 8700187590769176523}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71678,7 +71906,7 @@ GameObject:
   - component: {fileID: 7114547303998441024}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71790,7 +72018,7 @@ GameObject:
   - component: {fileID: 3309672906007995734}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71903,7 +72131,7 @@ GameObject:
   - component: {fileID: 3309672905727483978}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72016,7 +72244,7 @@ GameObject:
   - component: {fileID: 3309672905662309360}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72129,7 +72357,7 @@ GameObject:
   - component: {fileID: 3309672905212129747}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72242,7 +72470,7 @@ GameObject:
   - component: {fileID: 3309672905167675814}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72355,7 +72583,7 @@ GameObject:
   - component: {fileID: 3309672905124893126}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72468,7 +72696,7 @@ GameObject:
   - component: {fileID: 3309672904442131742}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72581,7 +72809,7 @@ GameObject:
   - component: {fileID: 3309672904664810989}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72694,7 +72922,7 @@ GameObject:
   - component: {fileID: 3309672904603629002}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72807,7 +73035,7 @@ GameObject:
   - component: {fileID: 3309672904396927149}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72920,7 +73148,7 @@ GameObject:
   - component: {fileID: 3309672903917077293}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -73033,7 +73261,7 @@ GameObject:
   - component: {fileID: 3309672904057449817}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -73146,7 +73374,7 @@ GameObject:
   - component: {fileID: 7073126793456103795}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73258,7 +73486,7 @@ GameObject:
   - component: {fileID: 7185905286364106091}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73370,7 +73598,7 @@ GameObject:
   - component: {fileID: 7260727114105054738}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73482,7 +73710,7 @@ GameObject:
   - component: {fileID: 706567247253078617}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -73595,7 +73823,7 @@ GameObject:
   - component: {fileID: 706567246861830927}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -73708,7 +73936,7 @@ GameObject:
   - component: {fileID: 706567245792170589}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -73821,7 +74049,7 @@ GameObject:
   - component: {fileID: 706567245676051464}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -73934,7 +74162,7 @@ GameObject:
   - component: {fileID: 706567245426297979}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74047,7 +74275,7 @@ GameObject:
   - component: {fileID: 706567245271161809}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74159,7 +74387,7 @@ GameObject:
   - component: {fileID: 6403032936995009052}
   m_Layer: 0
   m_Name: H_B_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74250,7 +74478,7 @@ GameObject:
   - component: {fileID: 1388251238887207907}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1through_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74471,7 +74699,7 @@ GameObject:
   - component: {fileID: 8037899241916050957}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74503,7 +74731,7 @@ GameObject:
   - component: {fileID: 8037899241742966326}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74540,7 +74768,7 @@ GameObject:
   - component: {fileID: 5179762397123345944}
   m_Layer: 0
   m_Name: Roof_Floor
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74653,7 +74881,7 @@ GameObject:
   - component: {fileID: 5179762397197156831}
   m_Layer: 0
   m_Name: Window
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74769,7 +74997,7 @@ GameObject:
   - component: {fileID: 5179762395528031457}
   m_Layer: 0
   m_Name: Window (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74886,7 +75114,7 @@ GameObject:
   - component: {fileID: 5179762395676585128}
   m_Layer: 0
   m_Name: Window (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75002,7 +75230,7 @@ GameObject:
   - component: {fileID: 5179762396435710181}
   m_Layer: 0
   m_Name: Window (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75119,7 +75347,7 @@ GameObject:
   - component: {fileID: 5179762396386743694}
   m_Layer: 0
   m_Name: Window (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75236,7 +75464,7 @@ GameObject:
   - component: {fileID: 5179762396081438733}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75349,7 +75577,7 @@ GameObject:
   - component: {fileID: 5179762396070278012}
   m_Layer: 0
   m_Name: Window (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75463,7 +75691,7 @@ GameObject:
   - component: {fileID: 8037899243079024700}
   m_Layer: 0
   m_Name: H_A
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75619,7 +75847,7 @@ GameObject:
   - component: {fileID: 4214415509013027629}
   m_Layer: 0
   m_Name: Cube_11
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75730,7 +75958,7 @@ GameObject:
   - component: {fileID: 4497277869412495351}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2through_7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75822,7 +76050,7 @@ GameObject:
   - component: {fileID: 7411506240882531716}
   m_Layer: 0
   m_Name: Barrel_v1_LD1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75935,7 +76163,7 @@ GameObject:
   - component: {fileID: 7359203281677069763}
   m_Layer: 0
   m_Name: Barrel_v3_quadro_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76048,7 +76276,7 @@ GameObject:
   - component: {fileID: 9154878210720084334}
   m_Layer: 0
   m_Name: H_A_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -76147,6 +76375,118 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1728287211222193699, guid: 3dbe768a5401d4947ba8e2b3d4a6b066, type: 3}
+--- !u!1 &7433820187874363849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3914720245164196559}
+  - component: {fileID: 6806805431914583103}
+  - component: {fileID: 6415344765027835719}
+  - component: {fileID: 879142781844175910}
+  m_Layer: 0
+  m_Name: Cube_11
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3914720245164196559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7433820187874363849}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 391.6006, y: -4.4908304, z: -224.19946}
+  m_LocalScale: {x: 2.9323823, y: 5.0797353, z: 5.9162207}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8456472812972072645}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!33 &6806805431914583103
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7433820187874363849}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6415344765027835719
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7433820187874363849}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d40e29484caa88c4891e1e09bf80ad8c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &879142781844175910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7433820187874363849}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7465354151451346317
 GameObject:
   m_ObjectHideFlags: 0
@@ -76161,7 +76501,7 @@ GameObject:
   - component: {fileID: 7457719810197319287}
   m_Layer: 0
   m_Name: Electric_box_v3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76273,7 +76613,7 @@ GameObject:
   - component: {fileID: 4395701212331139367}
   m_Layer: 0
   m_Name: Roof_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -76383,7 +76723,7 @@ GameObject:
   - component: {fileID: 7495929023492397802}
   m_Layer: 0
   m_Name: House_0
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -76420,7 +76760,7 @@ GameObject:
   - component: {fileID: 7583049918028118731}
   m_Layer: 0
   m_Name: H_B
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -76511,7 +76851,7 @@ GameObject:
   - component: {fileID: 7505389368865071698}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76623,7 +76963,7 @@ GameObject:
   - component: {fileID: 1761917041584219149}
   m_Layer: 0
   m_Name: H_A_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -76735,7 +77075,7 @@ GameObject:
   - component: {fileID: 2917406392109189303}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2through_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76827,7 +77167,7 @@ GameObject:
   - component: {fileID: 7703768650946464512}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76939,7 +77279,7 @@ GameObject:
   - component: {fileID: 7691208182135906137}
   m_Layer: 0
   m_Name: Hangar_v1_full
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77052,7 +77392,7 @@ GameObject:
   - component: {fileID: 7650481754215509550}
   m_Layer: 0
   m_Name: Barrel_v2_quadro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77165,7 +77505,7 @@ GameObject:
   - component: {fileID: 7766220959927421778}
   m_Layer: 0
   m_Name: Barrel_v3_quadro_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77278,7 +77618,7 @@ GameObject:
   - component: {fileID: 7732761336258300205}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77390,7 +77730,7 @@ GameObject:
   - component: {fileID: 461427822357824962}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -77503,7 +77843,7 @@ GameObject:
   - component: {fileID: 461427822321549084}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -77616,7 +77956,7 @@ GameObject:
   - component: {fileID: 461427822209223822}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -77729,7 +78069,7 @@ GameObject:
   - component: {fileID: 461427822230975709}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -77842,7 +78182,7 @@ GameObject:
   - component: {fileID: 461427822245392031}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -77955,7 +78295,7 @@ GameObject:
   - component: {fileID: 461427822265873472}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -78068,7 +78408,7 @@ GameObject:
   - component: {fileID: 461427821681030440}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -78181,7 +78521,7 @@ GameObject:
   - component: {fileID: 461427821543945136}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -78294,7 +78634,7 @@ GameObject:
   - component: {fileID: 461427821320968120}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -78407,7 +78747,7 @@ GameObject:
   - component: {fileID: 461427821083436691}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -78520,7 +78860,7 @@ GameObject:
   - component: {fileID: 461427820945717422}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -78633,7 +78973,7 @@ GameObject:
   - component: {fileID: 461427820924493304}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -78746,7 +79086,7 @@ GameObject:
   - component: {fileID: 4070164512839091439}
   m_Layer: 0
   m_Name: Cube_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78859,7 +79199,7 @@ GameObject:
   - component: {fileID: 7853816993691759190}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78971,7 +79311,7 @@ GameObject:
   - component: {fileID: 2554790038163216261}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79083,7 +79423,7 @@ GameObject:
   - component: {fileID: 7787891507925550456}
   m_Layer: 0
   m_Name: Barrel_v3_quadro_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79196,7 +79536,7 @@ GameObject:
   - component: {fileID: 7786831486532171810}
   m_Layer: 0
   m_Name: Conditioner_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79308,7 +79648,7 @@ GameObject:
   - component: {fileID: 3976900082256797763}
   m_Layer: 0
   m_Name: Roof_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79421,7 +79761,7 @@ GameObject:
   - component: {fileID: 7870748552186194452}
   m_Layer: 0
   m_Name: Oil_tank_v2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79534,7 +79874,7 @@ GameObject:
   - component: {fileID: 3817315142267558406}
   m_Layer: 0
   m_Name: Roof_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79647,7 +79987,7 @@ GameObject:
   - component: {fileID: 8580535446057603564}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79760,7 +80100,7 @@ GameObject:
   - component: {fileID: 8580535446474021050}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79873,7 +80213,7 @@ GameObject:
   - component: {fileID: 8580535445096038706}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79986,7 +80326,7 @@ GameObject:
   - component: {fileID: 8580535445208094360}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -80099,7 +80439,7 @@ GameObject:
   - component: {fileID: 8580535444978469054}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -80212,7 +80552,7 @@ GameObject:
   - component: {fileID: 8580535444964058859}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -80325,7 +80665,7 @@ GameObject:
   - component: {fileID: 7930800414254404262}
   m_Layer: 0
   m_Name: Barrel_v2_quadro_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80438,7 +80778,7 @@ GameObject:
   - component: {fileID: 5556421553896546929}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1doorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80662,7 +81002,7 @@ GameObject:
   - component: {fileID: 6613643584561385645}
   m_Layer: 0
   m_Name: Cube_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80775,7 +81115,7 @@ GameObject:
   - component: {fileID: 8122165475243499223}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1square
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80887,7 +81227,7 @@ GameObject:
   - component: {fileID: 7544174277956881356}
   m_Layer: 0
   m_Name: H_A_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -81000,7 +81340,7 @@ GameObject:
   - component: {fileID: 7560039886344171450}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -81113,7 +81453,7 @@ GameObject:
   - component: {fileID: 7560039887258365485}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -81226,7 +81566,7 @@ GameObject:
   - component: {fileID: 7560039887152827095}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -81339,7 +81679,7 @@ GameObject:
   - component: {fileID: 7560039886803394169}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -81452,7 +81792,7 @@ GameObject:
   - component: {fileID: 7560039885460949086}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -81565,7 +81905,7 @@ GameObject:
   - component: {fileID: 7560039885391429508}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -81678,7 +82018,7 @@ GameObject:
   - component: {fileID: 8275700830419893260}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81790,7 +82130,7 @@ GameObject:
   - component: {fileID: 4523227058362885447}
   m_Layer: 0
   m_Name: Cube_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81902,7 +82242,7 @@ GameObject:
   - component: {fileID: 8341535435519689870}
   m_Layer: 0
   m_Name: Hangar_v4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82014,7 +82354,7 @@ GameObject:
   - component: {fileID: 5453772099138246807}
   m_Layer: 0
   m_Name: Roof_Floor_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -82127,7 +82467,7 @@ GameObject:
   - component: {fileID: 7744872909443887497}
   m_Layer: 0
   m_Name: H_A_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -82240,7 +82580,7 @@ GameObject:
   - component: {fileID: 2196656859366561811}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -82353,7 +82693,7 @@ GameObject:
   - component: {fileID: 2196656858928485158}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -82466,7 +82806,7 @@ GameObject:
   - component: {fileID: 2196656858436222740}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -82579,7 +82919,7 @@ GameObject:
   - component: {fileID: 2196656858049828393}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -82692,7 +83032,7 @@ GameObject:
   - component: {fileID: 2196656857927175305}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -82805,7 +83145,7 @@ GameObject:
   - component: {fileID: 2196656857542635188}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -82918,7 +83258,7 @@ GameObject:
   - component: {fileID: 3376007682065169022}
   m_Layer: 0
   m_Name: Roof_Tiles
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -83030,7 +83370,7 @@ GameObject:
   - component: {fileID: 1105403999083691281}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2through_8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83122,7 +83462,7 @@ GameObject:
   - component: {fileID: 4202054484693822185}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -83235,7 +83575,7 @@ GameObject:
   - component: {fileID: 4202054484071106462}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -83348,7 +83688,7 @@ GameObject:
   - component: {fileID: 4202054484181911511}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -83461,7 +83801,7 @@ GameObject:
   - component: {fileID: 4202054483643865162}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -83574,7 +83914,7 @@ GameObject:
   - component: {fileID: 4202054483356761784}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -83687,7 +84027,7 @@ GameObject:
   - component: {fileID: 4202054483278425043}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -83800,7 +84140,7 @@ GameObject:
   - component: {fileID: 8492228214153676736}
   m_Layer: 0
   m_Name: Hangar_v4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83912,7 +84252,7 @@ GameObject:
   - component: {fileID: 8528144839069417799}
   m_Layer: 0
   m_Name: Electric_box_v3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84024,7 +84364,7 @@ GameObject:
   - component: {fileID: 8520647407226505241}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84136,7 +84476,7 @@ GameObject:
   - component: {fileID: 4150533397696303510}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84249,7 +84589,7 @@ GameObject:
   - component: {fileID: 4150533397659354365}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84362,7 +84702,7 @@ GameObject:
   - component: {fileID: 4150533397273289231}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84475,7 +84815,7 @@ GameObject:
   - component: {fileID: 4150533396725022098}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84588,7 +84928,7 @@ GameObject:
   - component: {fileID: 4150533396878458331}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84701,7 +85041,7 @@ GameObject:
   - component: {fileID: 4150533396314165420}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84811,7 +85151,7 @@ GameObject:
   - component: {fileID: 499452783345896263}
   m_Layer: 0
   m_Name: syougaibutu
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84888,7 +85228,7 @@ GameObject:
   - component: {fileID: 544110408576132666}
   m_Layer: 0
   m_Name: H_A_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -85001,7 +85341,7 @@ GameObject:
   - component: {fileID: 1647473028066349683}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2close_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85113,7 +85453,7 @@ GameObject:
   - component: {fileID: 8593800440561168292}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85225,7 +85565,7 @@ GameObject:
   - component: {fileID: 8580868337814369043}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85337,7 +85677,7 @@ GameObject:
   - component: {fileID: 7078053460962257581}
   m_Layer: 0
   m_Name: Door_Frame
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -85450,7 +85790,7 @@ GameObject:
   - component: {fileID: 8692667264330104361}
   m_Layer: 0
   m_Name: Palet_v1_set_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85562,7 +85902,7 @@ GameObject:
   - component: {fileID: 8709462606536317990}
   m_Layer: 0
   m_Name: Oil_tank_v1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85789,7 +86129,7 @@ GameObject:
   - component: {fileID: 586726387972032476}
   m_Layer: 0
   m_Name: H_A_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -85902,7 +86242,7 @@ GameObject:
   - component: {fileID: 8778439056761073002}
   m_Layer: 0
   m_Name: Barrel_v2_quadro_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86015,7 +86355,7 @@ GameObject:
   - component: {fileID: 8737803931189566517}
   m_Layer: 0
   m_Name: Electric_box_v3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86127,7 +86467,7 @@ GameObject:
   - component: {fileID: 6964257628819212741}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -86240,7 +86580,7 @@ GameObject:
   - component: {fileID: 6964257629190308592}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -86353,7 +86693,7 @@ GameObject:
   - component: {fileID: 6964257627920954455}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -86466,7 +86806,7 @@ GameObject:
   - component: {fileID: 6964257627809617514}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -86579,7 +86919,7 @@ GameObject:
   - component: {fileID: 6964257628494302410}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -86692,7 +87032,7 @@ GameObject:
   - component: {fileID: 6964257628370068983}
   m_Layer: 0
   m_Name: Window_DoorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -86804,7 +87144,7 @@ GameObject:
   - component: {fileID: 4995235539459841007}
   m_Layer: 0
   m_Name: H_B_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -86895,7 +87235,7 @@ GameObject:
   - component: {fileID: 2345858907179567316}
   m_Layer: 0
   m_Name: Roof_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -87008,7 +87348,7 @@ GameObject:
   - component: {fileID: 7098282088686721181}
   m_Layer: 0
   m_Name: H_A_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -87121,7 +87461,7 @@ GameObject:
   - component: {fileID: 7152506900047105579}
   m_Layer: 0
   m_Name: Dumpsters_v1_empty
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87233,7 +87573,7 @@ GameObject:
   - component: {fileID: 6038218505209608516}
   m_Layer: 0
   m_Name: Cube_1
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87345,7 +87685,7 @@ GameObject:
   - component: {fileID: 1397277008364731660}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87457,7 +87797,7 @@ GameObject:
   - component: {fileID: 8915558636873829785}
   m_Layer: 0
   m_Name: Electric_box_v3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87569,7 +87909,7 @@ GameObject:
   - component: {fileID: 2156740906381490285}
   m_Layer: 0
   m_Name: Cube_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87681,7 +88021,7 @@ GameObject:
   - component: {fileID: 8888475184021554912}
   m_Layer: 0
   m_Name: Wooden_box_v1_LD1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87793,7 +88133,7 @@ GameObject:
   - component: {fileID: 1598985215709676698}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -87906,7 +88246,7 @@ GameObject:
   - component: {fileID: 1598985215518766286}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -88019,7 +88359,7 @@ GameObject:
   - component: {fileID: 1598985215488692276}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -88132,7 +88472,7 @@ GameObject:
   - component: {fileID: 1598985215225460057}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -88245,7 +88585,7 @@ GameObject:
   - component: {fileID: 1598985213829321405}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -88358,7 +88698,7 @@ GameObject:
   - component: {fileID: 1598985213759923559}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -88471,7 +88811,7 @@ GameObject:
   - component: {fileID: 2195667790549916844}
   m_Layer: 0
   m_Name: Cube_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88584,7 +88924,7 @@ GameObject:
   - component: {fileID: 8993536357781031517}
   m_Layer: 0
   m_Name: Oil_tank_v2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88697,7 +89037,7 @@ GameObject:
   - component: {fileID: 8250586867455332617}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2doorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88809,7 +89149,7 @@ GameObject:
   - component: {fileID: 9045235870930809350}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88921,7 +89261,7 @@ GameObject:
   - component: {fileID: 3565003476931002619}
   m_Layer: 0
   m_Name: Palet_v1_set_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89033,7 +89373,7 @@ GameObject:
   - component: {fileID: 9020977355947790034}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89145,7 +89485,7 @@ GameObject:
   - component: {fileID: 6562058320065277925}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2close_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89257,7 +89597,7 @@ GameObject:
   - component: {fileID: 1787775958548562782}
   m_Layer: 0
   m_Name: Cube_10
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89369,7 +89709,7 @@ GameObject:
   - component: {fileID: 9092887377604603875}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89481,7 +89821,7 @@ GameObject:
   - component: {fileID: 1636741722773576787}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD1close_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89593,7 +89933,7 @@ GameObject:
   - component: {fileID: 9095276987662706508}
   m_Layer: 0
   m_Name: Bags_on_pallet_v1_6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89705,7 +90045,7 @@ GameObject:
   - component: {fileID: 2537139519758410912}
   m_Layer: 0
   m_Name: Roof_Wood
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -89818,7 +90158,7 @@ GameObject:
   - component: {fileID: 3486016121920658669}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -89931,7 +90271,7 @@ GameObject:
   - component: {fileID: 3486016122082155577}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -90044,7 +90384,7 @@ GameObject:
   - component: {fileID: 3486016121999961118}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -90157,7 +90497,7 @@ GameObject:
   - component: {fileID: 3486016121392933598}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -90270,7 +90610,7 @@ GameObject:
   - component: {fileID: 3486016121533613226}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -90383,7 +90723,7 @@ GameObject:
   - component: {fileID: 3486016121194142046}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -90496,7 +90836,7 @@ GameObject:
   - component: {fileID: 3486016120989878787}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -90609,7 +90949,7 @@ GameObject:
   - component: {fileID: 3486016120920508857}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -90722,7 +91062,7 @@ GameObject:
   - component: {fileID: 3486016120656809125}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -90835,7 +91175,7 @@ GameObject:
   - component: {fileID: 3486016120490461269}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -90948,7 +91288,7 @@ GameObject:
   - component: {fileID: 3486016120453593141}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -91061,7 +91401,7 @@ GameObject:
   - component: {fileID: 3486016120399910944}
   m_Layer: 0
   m_Name: Window_DoorR
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -91173,7 +91513,7 @@ GameObject:
   - component: {fileID: 6913261335765290487}
   m_Layer: 0
   m_Name: Cargo_container_v1_LD2doorL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91264,7 +91604,7 @@ GameObject:
   - component: {fileID: 9191486699594853735}
   m_Layer: 0
   m_Name: Hangar_v1_full_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91363,3 +91703,70 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300004, guid: 45fb212df42587744bd168b5d46c0910, type: 3}
+--- !u!1001 &8219303397013423564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8456472812972072645}
+    m_Modifications:
+    - target: {fileID: 1000010192389154, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_Name
+      value: Oil_tank_v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010192389154, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010507042020, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 443.84106
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010507042020, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.56917
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010507042020, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -212.6621
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010507042020, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010507042020, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010507042020, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010507042020, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010507042020, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010507042020, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010507042020, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39485138b2c1f4d41bdd3846e259ffea, type: 3}
+--- !u!4 &8223257468549675304 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4000010507042020, guid: 39485138b2c1f4d41bdd3846e259ffea,
+    type: 3}
+  m_PrefabInstance: {fileID: 8219303397013423564}
+  m_PrefabAsset: {fileID: 0}
