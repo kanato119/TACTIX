@@ -46,13 +46,13 @@ public class TimeManager : NetworkBehaviour
     //        timeLimit = 0;
     //        DeathMatchResult.Instance.CheckWinner();
     //    }
-    
 
 
 
 
-   public static TimeManager Instance { get; private set; }
-  
+
+    public static TimeManager Instance { get; private set; }
+
     public bool isGames { get; private set; }
 
     private void Awake()
@@ -87,19 +87,40 @@ public class TimeManager : NetworkBehaviour
         NetworkVariableReadPermission.Everyone,
         NetworkVariableWritePermission.Server);
 
-    
+    private int gameType;
+
+
+    private void GetGameType()
+    {
+        if (SessionManager.instance == null) return;
+        gameType = SessionManager.instance.GetGameTypeValue();
+
+    }
+
 
     /// <summary>
     /// 時間をサーバーにセットする関数
     /// </summary>
-    private void SetTime(float time)
+    private void SetTime()
     {
         if ((!IsServer)) return;
-        timer.Value = time;
-       
-        //０以下にならないよう
-        timer.Value = Mathf.Max(timer.Value,0.0f); 
 
+        GetGameType();
+
+        switch (gameType)
+        {
+            case (int)eGameType.Deathmatch:
+                timer.Value = GameConst.MAX_DEATHMATCH_TIME;
+                break;
+            case (int)eGameType.Unrated:
+                break;
+            default:
+                Debug.LogError("想定していないゲームタイプです!!");
+                break;
+        }
+
+        //０以下にならないよう
+        timer.Value = Mathf.Max(timer.Value, 0.0f);
     }
 
     /// <summary>
@@ -108,8 +129,17 @@ public class TimeManager : NetworkBehaviour
     public override void OnNetworkSpawn()
     {
         if (!IsServer) return;
-        SetTime(GameConst.MAX_DEATHMATCH_TIME);
-        
+
+    }
+
+    public void GameStart()
+    {
+        if (!IsServer) return;
+
+        SetTime();
+
+        isGames = true;
+
     }
 
     /// <summary>
@@ -118,12 +148,25 @@ public class TimeManager : NetworkBehaviour
     private void TimeUp()
     {
         isGames = false;
+
+        switch (gameType)
+        {
+            case (int)eGameType.Deathmatch:
+                DeathMatchResult.Instance.CheckWinner();
+                break;
+            case (int)eGameType.Unrated:
+                break;
+            default:
+                Debug.LogError("想定していないゲームタイプです!!");
+                break;
+        }
+
     }
 
     private void Update()
     {
         if (!IsServer) return;
-        
+
         // 試合開始前・試合終了後は処理しない
         if (!isGames) return;
 
@@ -133,7 +176,7 @@ public class TimeManager : NetworkBehaviour
         if (timer.Value <= 0)
         {
             TimeUp();
-            DeathMatchResult.Instance.CheckWinner();
+
         }
     }
 
