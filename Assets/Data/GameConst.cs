@@ -56,6 +56,9 @@ public class GameConst
     public static readonly string TEXT_LOADSCENE = "読み込み中...";
     public static readonly string TEXT_CONNECTING = "接続中...";
     public static readonly string TEXT_WAITING = "待機中...";
+    public static readonly string TEXT_MATCHING = "マッチング中...";
+    public static readonly string TEXT_GAMESTARTS = "ゲーム開始";
+    public static readonly string TEXT_GAMEENDS = "ゲーム終了";
 
 
 
