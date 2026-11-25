@@ -130,7 +130,7 @@ public class SessionManager
         return ((int)selectGameType).ToString();
     }
     /// <summary>
-    /// 選択したゲームモードのStrngを取得
+    /// 選択したゲームモードのValueを取得
     /// </summary>
     public int GetGameTypeValue()
     {

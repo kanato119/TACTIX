@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2817381905230170684}
   - component: {fileID: 4006234335705766895}
   - component: {fileID: 9216772326332350057}
-  - component: {fileID: 8038015327297288701}
+  - component: {fileID: 7834905505875862609}
   m_Layer: 5
   m_Name: Time
   m_TagString: Untagged
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 44767496
+  GlobalObjectIdHash: 207982922
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
---- !u!114 &8038015327297288701
+--- !u!114 &7834905505875862609
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,11 +175,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 661894901588765550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4327b8a2bb7ad844b9bd18b3d2810f9, type: 3}
+  m_Script: {fileID: 11500000, guid: f2c67b54fd3f87a44b6404fbc2ad91b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeManager
   ShowTopMostFoldoutHeaderGroup: 1
-  Timer:
+  timer:
     UpdateTraits:
       MinSecondsBetweenUpdates: 0
       MaxSecondsBetweenUpdates: 0
