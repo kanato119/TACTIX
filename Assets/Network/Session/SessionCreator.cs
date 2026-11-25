@@ -109,7 +109,7 @@ public class SessionCreator : MonoBehaviour
             NetworkManager.Singleton.IsServer)
         {
             SceneSelectManager.instance.ChangeNetSceneSingle(
-                GameConst.SCENE_TEST_DesumaMap
+                GameConst.SCENE_GAME_DEATHMATCH
             );
         }
         else
