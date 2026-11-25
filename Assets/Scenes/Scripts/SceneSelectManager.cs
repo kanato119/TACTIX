@@ -1,6 +1,6 @@
 using UnityEngine.SceneManagement;
 using Unity.Netcode;
-using System.Collections;
+
 public class SceneSelectManager
 {
 

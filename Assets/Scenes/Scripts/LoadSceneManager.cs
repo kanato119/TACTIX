@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine.UI;
 
 public class LoadSceneManager : MonoBehaviour
 {
@@ -9,6 +9,19 @@ public class LoadSceneManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _laod_Text;
 
+    [SerializeField]
+    private TextMeshProUGUI _laod_Percentage;
+
+    [SerializeField]
+    private GameObject _load_Icon;
+
+    [SerializeField]
+    private GameObject _load_Gauge;
+
+    [SerializeField]
+    private Slider _load_Slider;
+
+    
 
     /*
      やりたいこと
@@ -22,7 +35,7 @@ public class LoadSceneManager : MonoBehaviour
 
     共通の処理＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-    通信中のアイコンをアニメーションさせて
+    通信中のアイコンをアニメーションさせて下に白いゲージを表示させて｛何％｝か表示
     次のシーンの読み込みが完了したらフェードを行い
     次のシーンへ
     ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -36,8 +49,6 @@ public class LoadSceneManager : MonoBehaviour
     /// <returns></returns>
     public void LoadNextScene()
     {
-
-
         LoadScene();
     }
 
