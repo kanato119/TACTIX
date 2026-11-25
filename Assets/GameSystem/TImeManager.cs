@@ -1,56 +1,13 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.Analytics;
 using Unity.Netcode;
-using UnityEngine.Rendering;
-using Unity.VisualScripting;
-using Unity.Mathematics;
+using System.Collections;
 
 /// <summary>
 /// サーバー側から処理する時間処理
 /// </summary>
 public class TimeManager : NetworkBehaviour
 {
-
-    //// 制限時間用のテキスト
-    //[SerializeField] TextMeshProUGUI TimerText;
-
-    //public static bool Gamestarted = false;
-
-    //public static bool Gameended = false;
-    //// 制限時間（5分）
-    //public float timeLimit = 300f;
-    //// Start is called once before the first execution of Update after the MonoBehaviour is created
-    //void Start()
-    //{
-    //    Gameended = false;
-    //    Gamestarted = false;
-    //    TimerText.text = timeLimit.ToString("F0");
-    //}
-
-    //// Update is called once per frame
-    //void Update()
-    //{
-
-    //    // 試合開始前は処理しない
-    //    if (!Gamestarted || Gameended)
-    //        return;
-    //    // 時間を減らす
-    //    timeLimit -= Time.deltaTime;
-
-    //    // テキストを更新
-    //    TimerText.text = timeLimit.ToString("F0");
-    //    // 5分経過
-    //    if (timeLimit <= 0)
-    //    {
-    //        timeLimit = 0;
-    //        DeathMatchResult.Instance.CheckWinner();
-    //    }
-
-
-
-
-
     public static TimeManager Instance { get; private set; }
 
     public bool isGames { get; private set; }
@@ -88,15 +45,11 @@ public class TimeManager : NetworkBehaviour
         NetworkVariableWritePermission.Server);
 
     private int gameType;
-
-
     private void GetGameType()
     {
         if (SessionManager.instance == null) return;
         gameType = SessionManager.instance.GetGameTypeValue();
-
     }
-
 
     /// <summary>
     /// 時間をサーバーにセットする関数
@@ -107,6 +60,7 @@ public class TimeManager : NetworkBehaviour
 
         GetGameType();
 
+        //ゲームタイプに応じてタイマーの初期値や、システムを設定する
         switch (gameType)
         {
             case (int)eGameType.Deathmatch:
@@ -135,11 +89,17 @@ public class TimeManager : NetworkBehaviour
     public void GameStart()
     {
         if (!IsServer) return;
+        if (isGames) return;
 
         SetTime();
 
         isGames = true;
 
+        //StartCoroutine
+        //コルーチンを開始するために使用されるUnityのメソッド
+        //処理を一時停止して、指定された時間が経過した後に再開することができる
+        //今回は、サーバー側でタイマーを管理するために使用される（毎フレーム同機処理を行いたくないから）
+        StartCoroutine(TimerServer());
     }
 
     /// <summary>
@@ -149,6 +109,7 @@ public class TimeManager : NetworkBehaviour
     {
         isGames = false;
 
+        //ゲームタイプに応じて勝者を決定する処理を呼び出す
         switch (gameType)
         {
             case (int)eGameType.Deathmatch:
@@ -163,23 +124,27 @@ public class TimeManager : NetworkBehaviour
 
     }
 
-    private void Update()
+
+    private IEnumerator TimerServer()
     {
-        if (!IsServer) return;
-
         // 試合開始前・試合終了後は処理しない
-        if (!isGames) return;
+        if (!isGames) yield break;
 
-        // 時間を減らす
-        timer.Value -= Time.deltaTime;
-        // 5分経過
-        if (timer.Value <= 0)
+        while (timer.Value > 0)
         {
-            TimeUp();
+            ///1秒ごとにタイマーを減らす
+            yield return new WaitForSeconds(1f);
 
+            // 試合が途中で終了した場合は処理を抜ける
+            if (!isGames) yield break;
+
+            timer.Value--;
+
+            if (timer.Value <= 0)
+            {
+                TimeUp();
+                yield break;
+            }
         }
     }
-
-
-
 }
