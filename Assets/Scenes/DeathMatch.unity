@@ -1097,7 +1097,6 @@ GameObject:
   m_Component:
   - component: {fileID: 487059986}
   - component: {fileID: 487059987}
-  - component: {fileID: 487059988}
   m_Layer: 0
   m_Name: Timer
   m_TagString: Untagged
@@ -1147,24 +1146,6 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
---- !u!114 &487059988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487059985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4327b8a2bb7ad844b9bd18b3d2810f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TimeManager
-  ShowTopMostFoldoutHeaderGroup: 1
-  Timer:
-    UpdateTraits:
-      MinSecondsBetweenUpdates: 0
-      MaxSecondsBetweenUpdates: 0
-    m_InternalValue: 300
 --- !u!1 &542348803
 GameObject:
   m_ObjectHideFlags: 0

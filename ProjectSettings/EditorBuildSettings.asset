@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathMatch.unity
     guid: f0a88a47d386aaa4ab5cce184ae8e186
+  - enabled: 1
+    path: Assets/Scenes/UnRated.unity
+    guid: 993ae7ceba21cd643882ca0e094baf5b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9eb07e2d669e9c94e9d7d3c782a916f7,
       type: 2}
