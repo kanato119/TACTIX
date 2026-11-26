@@ -1,8 +1,5 @@
 using Unity.Netcode;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI;
-
 
 /// <summary>
 /// ゲーム進行のクラス
@@ -16,22 +13,31 @@ public class MatchManager : NetworkBehaviour
 
     SessionManager selectGame;
 
-    public void GetGameMode(int value)
+    private int _gameType;
+  
+    public int GetGameMode()
     {
-
+        _gameType = selectGame.GetGameTypeValue();
+        return _gameType;
 
     }
+    public override void OnNetworkSpawn()
+    {
+        if (!IsServer) return;
+        if (selectGame == null) return;
 
+        _gameType = GetGameMode();
+    }
 
     /// <summary>
     /// マッチ開始までの処理
     /// </summary>
     /// <param name="value"></param>
-    private void WaitMatch(int value)
+    private void WaitMatch()
     {
-        value = selectGame.GetGameTypeValue();
+        if (!IsServer) return;
 
-        switch (value)
+        switch (_gameType)
         {
             case (int)eGameType.Deathmatch:
                 //ここでセットする
@@ -51,11 +57,11 @@ public class MatchManager : NetworkBehaviour
     /// マッチ開始する時に呼ぶ関数
     /// </summary>
     /// <param name="value"></param>
-    private void PlayMatch(int value)
+    private void PlayMatch()
     {
-        value = selectGame.GetGameTypeValue();
 
-        switch (value)
+        if (!IsServer) return;
+        switch (_gameType)
         {
             case (int)eGameType.Deathmatch:
                 //ここでセットする
@@ -76,10 +82,10 @@ public class MatchManager : NetworkBehaviour
     /// マッチ終了時に呼ぶ処理
     /// </summary>
     /// <param name="value"></param>
-    private void MatchFinish(int value)
+    private void MatchFinish()
     {
-        value = selectGame.GetGameTypeValue();
-        switch (value)
+        if (!IsServer) return;
+        switch (_gameType)
         {
             case (int)eGameType.Deathmatch:
                 //ここでセットする
