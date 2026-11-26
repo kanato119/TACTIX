@@ -15,9 +15,19 @@ public class MasterData : MonoBehaviour
     {
         instance = this;
 
-        mainWeapon = Resources.Load("MainWeapon") as Entity_MainWeapon;
+        mainWeapon = Resources.Load<Entity_MainWeapon>("Excel/MainWeapon");
 
-        subWeapon = Resources.Load("SubWeapon") as Entity_SubWeapon;
+        subWeapon = Resources.Load<Entity_SubWeapon>("Excel/SubWeapon");
+
+        if (mainWeapon == null)
+        {
+            Debug.LogError("MainWeaponの読み込みに失敗しました");
+        }
+
+        if (subWeapon == null)
+        {
+            Debug.LogError("SubWeaponの読み込みに失敗しました");
+        }
     }
 
     public void MainWeaponStatus(int weaponID)

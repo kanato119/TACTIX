@@ -8,8 +8,8 @@ using NPOI.XSSF.UserModel;
 using NPOI.SS.UserModel;
 
 public class MainWeapon_importer : AssetPostprocessor {
-	private static readonly string filePath = "Assets/Excel/MainWeapon.xlsx";
-	private static readonly string exportPath = "Assets/Excel/MainWeapon.asset";
+	private static readonly string filePath = "Assets/Resources/Excel/MainWeapon.xlsx";
+	private static readonly string exportPath = "Assets/Resources/Excel/MainWeapon.asset";
 	private static readonly string[] sheetNames = { "MainWeapon", };
 	
 	static void OnPostprocessAllAssets (string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
@@ -59,7 +59,7 @@ public class MainWeapon_importer : AssetPostprocessor {
 					cell = row.GetCell(6); p.Damage = (int)(cell == null ? 0 : cell.NumericCellValue);
 					cell = row.GetCell(7); p.HeadshotDamage = (int)(cell == null ? 0 : cell.NumericCellValue);
 					cell = row.GetCell(8); p.ReloadTime = (int)(cell == null ? 0 : cell.NumericCellValue);
-					cell = row.GetCell(9); p.FireRate = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(9); p.FireRate = (float)(cell == null ? 0 : cell.NumericCellValue);
 					cell = row.GetCell(10); p.RapidFire = (cell == null ? false : cell.BooleanCellValue);
 						s.list.Add (p);
 					}

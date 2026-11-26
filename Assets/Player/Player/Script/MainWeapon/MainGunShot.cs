@@ -6,8 +6,9 @@ using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GunShot : NetworkBehaviour
+public class MainGunShot : NetworkBehaviour
 {
+    public static MainGunShot instance {  get; private set; }
 
     [Header("弾")]
     [SerializeField] GameObject bulletPrefab;
@@ -28,36 +29,28 @@ public class GunShot : NetworkBehaviour
     [SerializeField]
     private eWeapons currentWeapon;
 
-    float pressetStartTime;
-
     Vector3 defalutPoition;
 
     private bool isNotShoot = false;
 
     private float nextFireTime;
 
-    // private int AmmoCount;
-
     private int ShotNumber;
 
     private bool isReloading = false;
 
-    WeaponManager weaponManager;
-    WeaponData weaponData;
-
-
-    //private NetworkObject playerNetworkObject;
+    MainWeaponData weaponData;
 
     ///networkvariable
     ///弾数の同機
     public NetworkVariable<int> AmmoCount = new NetworkVariable<int>(
-        25,//仮数値
+        0,//仮数値
         NetworkVariableReadPermission.Everyone,
         NetworkVariableWritePermission.Server
         );
 
     public NetworkVariable<int> TotalAmmo = new NetworkVariable<int>(
-        100,//仮数値
+        0,//仮数値
         NetworkVariableReadPermission.Everyone,
         NetworkVariableWritePermission.Server
         );
@@ -65,11 +58,9 @@ public class GunShot : NetworkBehaviour
 
     private void Awake()
     {
-        // WeaponManagerを取得
-        weaponManager = GetComponentInParent<WeaponManager>();
+        instance = this;
 
-        // 武器データを取得
-        weaponData = weaponManager.GetWeaponData(currentWeapon);
+        weaponData = GetComponent<MainWeaponData>();
 
     }
     // Start is called before the first frame update
@@ -82,6 +73,10 @@ public class GunShot : NetworkBehaviour
 
         if (cam == null)
             cam = UnityEngine.Camera.main;
+
+
+        AmmoCount.Value = weaponData.MaxAmmo;
+        TotalAmmo.Value = weaponData.MaxTotalAmmo;
     }
 
     // Update is called once per frame
@@ -109,18 +104,28 @@ public class GunShot : NetworkBehaviour
         ShowRemainingBullets();
     }
 
-
+    /// <summary>
+    /// 
+    /// </summary>
     private void Shooting()
     {
         if (Time.timeScale == 0) return;
-        if (weaponData == null) return;
         if (isReloading) return;
         if (isNotShoot) return;
 
+        //メイン武器かどうかで連射できるかできないか
         bool isFire = weaponData.IsRapidFire
             ? Input.GetMouseButton(0)
             : Input.GetMouseButtonDown(0);
 
+        // 弾数チェック
+        if (AmmoCount.Value <= 0)
+        {
+            Debug.Log("弾切れ");
+            return;
+        }
+
+        //射撃ボタン
         if (isFire && Time.time >= nextFireTime)
         {
             Debug.Log("左クリックを検知しました");
@@ -130,6 +135,9 @@ public class GunShot : NetworkBehaviour
         }
     }
 
+    /// <summary>
+    /// 射撃処理
+    /// </summary>
     private void Fire()
     {
 
@@ -169,17 +177,15 @@ public class GunShot : NetworkBehaviour
 
     }
 
+    /// <summary>
+    /// 射撃後の処理
+    /// </summary>
+    /// <param name="position"></param>
+    /// <param name="rotation"></param>
     [ServerRpc]
     private void FireServerRpc(Vector3 position, Quaternion rotation)
     {
         Debug.Log("ServerRpcに入りました");
-
-        // 弾数チェック
-        if (AmmoCount.Value <= 0)
-        {
-            Debug.Log("弾切れ");
-            return;
-        }
 
         // 弾数を減らす
         AmmoCount.Value--;
@@ -226,6 +232,9 @@ public class GunShot : NetworkBehaviour
         Debug.Log("ネットワーク上に弾を生成しました");
     }
 
+    /// <summary>
+    /// 残弾数の表示
+    /// </summary>
     private void ShowRemainingBullets()
     {
 
@@ -235,6 +244,11 @@ public class GunShot : NetworkBehaviour
 
     }
 
+    /// <summary>
+    /// リロード処理
+    /// </summary>
+    /// <param name="time"></param>
+    /// <returns></returns>
     private IEnumerator Reload(float time)
     {
         if (!IsOwner) yield return false;
@@ -251,6 +265,9 @@ public class GunShot : NetworkBehaviour
         ReloadServerRpc();
     }
 
+    /// <summary>
+    /// 弾の補充
+    /// </summary>
     [ServerRpc]
     void ReloadServerRpc()
     {
@@ -270,5 +287,12 @@ public class GunShot : NetworkBehaviour
         Debug.Log("リロード完了");
     }
 
-
+    /// <summary>
+    /// リロード中に武器変更したとき
+    /// </summary>
+    private void OnDisable()
+    {
+        isNotShoot = false;
+        isReloading = false;
+    }
 }

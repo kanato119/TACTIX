@@ -26,7 +26,7 @@ public class Entity_MainWeapon : ScriptableObject
 		public int Damage;
 		public int HeadshotDamage;
 		public int ReloadTime;
-		public int FireRate;
+		public float FireRate;
 		public bool RapidFire;
 	}
 }

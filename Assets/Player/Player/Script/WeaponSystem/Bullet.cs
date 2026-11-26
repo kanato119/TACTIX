@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
 
     [SerializeField] private GameObject bulletHole;
 
-    private Rigidbody rigidbody;
+    private Rigidbody rg;
     private TrailRenderer trail;
 
     private bool hasHit = false;
@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rg = GetComponent<Rigidbody>();
         trail = GetComponent<TrailRenderer>();
 
         if (trail != null)
@@ -34,7 +34,7 @@ public class Bullet : MonoBehaviour
             trail.emitting = true;
         }
 
-        rigidbody.linearVelocity = transform.forward * speed;
+        rg.linearVelocity = transform.forward * speed;
 
         Destroy(gameObject, lifeTime);
     }
@@ -62,8 +62,8 @@ public class Bullet : MonoBehaviour
     {
         hasHit = true;
 
-        rigidbody.linearVelocity = Vector3.zero;
-        rigidbody.isKinematic = true;
+        rg.linearVelocity = Vector3.zero;
+        rg.isKinematic = true;
 
         Collider[] colliders = GetComponentsInChildren<Collider>();
 
