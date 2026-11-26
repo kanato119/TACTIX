@@ -14,7 +14,7 @@ public enum eGameType
     /// <summary>
     /// 通常マッチ
     /// </summary>
-    Unrated,
+    TeamBattle,
 }
 
 /// <summary>

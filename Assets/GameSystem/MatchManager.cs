@@ -14,7 +14,7 @@ public class MatchManager : NetworkBehaviour
     SessionManager selectGame;
 
     private int _gameType;
-  
+
     public int GetGameMode()
     {
         _gameType = selectGame.GetGameTypeValue();
@@ -45,7 +45,7 @@ public class MatchManager : NetworkBehaviour
                 TimeManager.Instance.GameStart();
 
                 break;
-            case (int)eGameType.Unrated:
+            case (int)eGameType.TeamBattle:
                 //ここでセットする
 
                 break;
@@ -69,7 +69,7 @@ public class MatchManager : NetworkBehaviour
                 TimeManager.Instance.GameStart();
 
                 break;
-            case (int)eGameType.Unrated:
+            case (int)eGameType.TeamBattle:
                 //ここでセットする
 
                 break;
@@ -91,7 +91,7 @@ public class MatchManager : NetworkBehaviour
                 //ここでセットする
 
                 break;
-            case (int)eGameType.Unrated:
+            case (int)eGameType.TeamBattle:
                 //ここでセットする
 
                 break;

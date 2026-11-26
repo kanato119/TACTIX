@@ -112,7 +112,7 @@ namespace TerrainStratumPainter
 				if(h>maxHeight)
 					maxHeight = h;
 			}
-			maxHeight = td.heightmapHeight*maxHeight*(td.size.y/td.heightmapHeight);
+			maxHeight = td.heightmapResolution*maxHeight*(td.size.y/td.heightmapResolution);
 		}
 
 		/// <summary>Painting process.</summary>

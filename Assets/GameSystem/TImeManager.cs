@@ -66,7 +66,7 @@ public class TimeManager : NetworkBehaviour
             case (int)eGameType.Deathmatch:
                 timer.Value = GameConst.MAX_DEATHMATCH_TIME;
                 break;
-            case (int)eGameType.Unrated:
+            case (int)eGameType.TeamBattle:
                 break;
             default:
                 Debug.LogError("想定していないゲームタイプです!!");
@@ -115,7 +115,7 @@ public class TimeManager : NetworkBehaviour
             case (int)eGameType.Deathmatch:
                 DeathMatchResult.Instance.CheckWinner();
                 break;
-            case (int)eGameType.Unrated:
+            case (int)eGameType.TeamBattle:
                 break;
             default:
                 Debug.LogError("想定していないゲームタイプです!!");

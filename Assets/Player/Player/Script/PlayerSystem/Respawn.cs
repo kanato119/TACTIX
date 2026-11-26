@@ -38,7 +38,7 @@ public class Respawn : MonoBehaviour
                 StartCoroutine(RespawnPosi(obj));
                 break;
 
-            case eGameType.Unrated:
+            case eGameType.TeamBattle:
                 Debug.Log("アンレート");
                 break;
         }    

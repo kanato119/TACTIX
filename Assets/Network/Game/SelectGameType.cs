@@ -18,7 +18,7 @@ public class SelectGameType : MonoBehaviour
     public void SelectUnrated()
     {
 
-        SessionManager.instance.SaveGameType(eGameType.Unrated);
+        SessionManager.instance.SaveGameType(eGameType.TeamBattle);
       
     }
 
