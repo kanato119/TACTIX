@@ -308,6 +308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5335470994994894466}
   - component: {fileID: 8042209951028253485}
+  - component: {fileID: 2791909463373404007}
   m_Layer: 0
   m_Name: Wepon
   m_TagString: Untagged
@@ -346,6 +347,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponManager
   ShowTopMostFoldoutHeaderGroup: 1
+--- !u!114 &2791909463373404007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249514246511777802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4795f2b0de8fa740bcabbc50991db45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MasterData
 --- !u!1 &1328332401474334611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,6 +1356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae4548a38e5ab3d4ab13123bb2a3fe0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HP
+  ShowTopMostFoldoutHeaderGroup: 1
   NOW_HP: 150
   MAX_HP: 150
   HPText: {fileID: 5450697960725241685}
@@ -2065,6 +2079,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8427150338887515791}
   - component: {fileID: 4822397851884973309}
+  - component: {fileID: 2969818546304311002}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -2124,6 +2139,27 @@ MonoBehaviour:
       MinSecondsBetweenUpdates: 0
       MaxSecondsBetweenUpdates: 0
     m_InternalValue: 100
+--- !u!114 &2969818546304311002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6789617670541925641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4741e588cdec44dbd39563151b52e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SubWeaponData
+  SubWeaponID: 0
+  MainWeaponID: 0
+  IsMainWeapon: 0
+  MaxAmmo: 0
+  MaxTotalAmmo: 0
+  Damage: 0
+  ReloadTime: 0
+  ShootInterval: 0
+  IsRapidFire: 0
 --- !u!1 &7194090975157745889
 GameObject:
   m_ObjectHideFlags: 0
@@ -2888,7 +2924,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1821507186432197681}
-  - component: {fileID: 7238486218530741905}
+  - component: {fileID: 8508112261999965057}
+  - component: {fileID: 3988953005632093166}
   m_Layer: 0
   m_Name: Assault
   m_TagString: Untagged
@@ -2919,7 +2956,7 @@ Transform:
   - {fileID: 3282648730748337605}
   m_Father: {fileID: 5335470994994894466}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &7238486218530741905
+--- !u!114 &8508112261999965057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2928,9 +2965,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 8644126445019784342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b559325984775a4eb78987a3be3d73a, type: 3}
+  m_Script: {fileID: 11500000, guid: 71814ad90b9590f41b7c1a82c996e36a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GunShot
+  m_EditorClassIdentifier: Assembly-CSharp::MainWeaponData
+  SubWeaponID: 0
+  MainWeaponID: 0
+  IsMainWeapon: 0
+  MaxAmmo: 0
+  MaxTotalAmmo: 0
+  Damage: 0
+  ReloadTime: 0
+  ShootInterval: 0
+  IsRapidFire: 0
+--- !u!114 &3988953005632093166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8644126445019784342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809047ba70e6b724fbb56ff2366a31ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainGunShot
   ShowTopMostFoldoutHeaderGroup: 1
   bulletPrefab: {fileID: 6755963417441443916, guid: daba6eebd65656e4cbafd31a74fd1c7b,
     type: 3}
@@ -2945,12 +3003,12 @@ MonoBehaviour:
     UpdateTraits:
       MinSecondsBetweenUpdates: 0
       MaxSecondsBetweenUpdates: 0
-    m_InternalValue: 25
+    m_InternalValue: 0
   TotalAmmo:
     UpdateTraits:
       MinSecondsBetweenUpdates: 0
       MaxSecondsBetweenUpdates: 0
-    m_InternalValue: 100
+    m_InternalValue: 0
 --- !u!1 &8688144303463091500
 GameObject:
   m_ObjectHideFlags: 0

@@ -38,6 +38,25 @@ public enum eWeapons
     /// アサルトライフル
     /// </summary>
     Assault,
+}
 
+public enum eSubWepon
+{
+    Inavalid = -1,
+ 
+    /// <summary>
+    /// ピストル
+    /// </summary>
+    Pistol,
 
+}
+
+public enum eMainWeapon
+{
+    Inavalid = -1,
+
+    /// <summary>
+    /// アサルトライフル
+    /// </summary>
+    Assault,
 }
