@@ -24,6 +24,7 @@ public class PlayerCamera : NetworkBehaviour
     [SerializeField] Camera _playerCamera;
 
     [SerializeField] private RecoilControl recoil;
+    [SerializeField] private RecoilPattern recoilPattern;
 
     private bool wasShooting;
 
@@ -75,16 +76,18 @@ public class PlayerCamera : NetworkBehaviour
         xRotation -= mouseY;
 
 
-        if (recoil.IsShooting)
+        if (recoilPattern.IsShooting)
         {
             wasShooting = true;
         }
         else if (wasShooting)
         {
-            xRotation -= recoil.currentRecoilXPos;
-            yRotation += recoil.currentRecoilYPos;
+            xRotation -= recoilPattern.currentRecoilXPos;
+            yRotation += recoilPattern.currentRecoilYPos;
 
-            recoil.ResetRecoil();
+            recoilPattern.ResetRecoil();
+
+
 
             wasShooting = false;
         }
@@ -99,8 +102,8 @@ public class PlayerCamera : NetworkBehaviour
     {
         if (!IsOwner) return;
 
-        float recoilX = recoil.currentRecoilXPos;
-        float recoilY = recoil.currentRecoilYPos;
+        float recoilX = recoilPattern.currentRecoilXPos;
+        float recoilY = recoilPattern.currentRecoilYPos;
 
         float cameraX = xRotation - recoilX;
         float cameraY = yRotation + recoilY;

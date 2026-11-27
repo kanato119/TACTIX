@@ -8,8 +8,12 @@ public class MasterData : MonoBehaviour
 
     private Entity_SubWeapon subWeapon;
 
+    private Entity_RecoilPattern recoilPattern;
+
     public Entity_MainWeapon.Param dataMainWeapon { get; private set; }
     public Entity_SubWeapon.Param dataSubWeapon {  get; private set; }
+
+    public Entity_RecoilPattern.Param dataRecoil {  get; private set; }
 
     private void Awake()
     {
@@ -19,15 +23,7 @@ public class MasterData : MonoBehaviour
 
         subWeapon = Resources.Load<Entity_SubWeapon>("Excel/SubWeapon");
 
-        if (mainWeapon == null)
-        {
-            Debug.LogError("MainWeaponの読み込みに失敗しました");
-        }
-
-        if (subWeapon == null)
-        {
-            Debug.LogError("SubWeaponの読み込みに失敗しました");
-        }
+        recoilPattern = Resources.Load<Entity_RecoilPattern>("Excel/RecoilPattern");
     }
 
     public void MainWeaponStatus(int weaponID)
@@ -59,4 +55,22 @@ public class MasterData : MonoBehaviour
             }
         }
     }
+
+    public void RecoilPatten(int bulletNumber, string sheetName)
+    {
+        dataRecoil = null;
+        foreach(Entity_RecoilPattern.Sheet sheet in recoilPattern.sheets)
+        {
+            if (sheet.name != sheetName)
+                continue;
+            foreach (Entity_RecoilPattern.Param param in sheet.list)
+            {
+                if(param.BulletNumber == bulletNumber)
+                {
+                    dataRecoil = param;
+                    return;
+                }
+            }
+        }
+    }    
 }

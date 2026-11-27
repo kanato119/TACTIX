@@ -25,7 +25,7 @@ public class MainGunShot : NetworkBehaviour
     [SerializeField] TextMeshProUGUI MaxRemainingBulletsText;
 
     [SerializeField] private RecoilControl recoil;
-
+    [SerializeField] private RecoilPattern recoilPattern;
     [SerializeField]
     private eWeapons currentWeapon;
 
@@ -145,6 +145,7 @@ public class MainGunShot : NetworkBehaviour
 
         Debug.Log("ServerRpcを呼び出します");
 
+        recoilPattern.RecoilMath();
 
         //画面中央からRay
         Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
@@ -171,9 +172,17 @@ public class MainGunShot : NetworkBehaviour
 
         Quaternion rotation = Quaternion.LookRotation(direction);
 
+        Quaternion bulletRecoil = Quaternion.Euler(
+        -recoilPattern.TotalBulletY,
+        recoilPattern.TotalBulletX,
+        0f
+        );
+
+        rotation *= bulletRecoil;
+
         FireServerRpc(muzzle.position, rotation);
 
-        recoil.RecoilMath();
+
 
     }
 

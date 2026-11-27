@@ -307,7 +307,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5335470994994894466}
-  - component: {fileID: 8042209951028253485}
   - component: {fileID: 2791909463373404007}
   m_Layer: 0
   m_Name: Wepon
@@ -334,19 +333,6 @@ Transform:
   - {fileID: 7042122565511280334}
   m_Father: {fileID: 5090806878408485980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8042209951028253485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249514246511777802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fac9877afda7a0b4cb92ab352d679749, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeaponManager
-  ShowTopMostFoldoutHeaderGroup: 1
 --- !u!114 &2791909463373404007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,6 +718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2518787650926601592}
   - component: {fileID: 2629231458147769710}
+  - component: {fileID: 2105582370437182615}
   m_Layer: 0
   m_Name: RecoilControl
   m_TagString: Untagged
@@ -773,6 +760,27 @@ MonoBehaviour:
   targetRecoilXPos: 0
   targetRecoilYPos: 0
   maxRecoilTime: 4
+--- !u!114 &2105582370437182615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2209158578081044677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf6e7df5efdd6a49a2b1fd974c4355c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RecoilPattern
+  sheetName: RecoilPattern
+  currentRecoilXPos: 0
+  currentRecoilYPos: 0
+  targetRecoilXPos: 0
+  targetRecoilYPos: 0
+  TotalBulletX: 0
+  TotalBulletY: 0
+  recoilSpeed: 10
+  resetTime: 0.15
 --- !u!1 &3908504387854683643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,6 +1069,7 @@ MonoBehaviour:
   audioListener: {fileID: 806465648492948682}
   _playerCamera: {fileID: 5691235860072095602}
   recoil: {fileID: 2629231458147769710}
+  recoilPattern: {fileID: 2105582370437182615}
 --- !u!1 &4962951044407800700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,6 +3007,7 @@ MonoBehaviour:
   RemainingBulletsText: {fileID: 5897814029516440348}
   MaxRemainingBulletsText: {fileID: 3345924589129090624}
   recoil: {fileID: 2629231458147769710}
+  recoilPattern: {fileID: 2105582370437182615}
   currentWeapon: 2
   AmmoCount:
     UpdateTraits:
