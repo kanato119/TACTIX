@@ -24,7 +24,7 @@ MonoBehaviour:
       Damage: 40
       HeadshotDamage: 160
       ReloadTime: 2
-      FireRate: 1
+      FireRate: 0.13
       RapidFire: 1
     - ID: 0
       nameID: 0
