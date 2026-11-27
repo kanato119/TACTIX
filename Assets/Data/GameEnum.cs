@@ -60,3 +60,18 @@ public enum eMainWeapon
     /// </summary>
     Assault,
 }
+
+
+/// <summary>
+/// Playerのステータス
+/// </summary>
+public enum eMatchPosition
+{
+    Inavalid = -1,
+
+    Enemy,
+
+    Defense,
+
+    Attack,
+}

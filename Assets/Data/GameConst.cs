@@ -52,8 +52,6 @@ public class GameConst
     //チームバトルの時間
     public const float MAX_TEAMBATTLE_TIME = 120.0f;
 
-
-
     public static readonly string POINT_MATCHPOINT_TEXT = "MATCHPOINT";
     public static readonly string PHASE_PURCHASE_TEXT = "購入フェーズ";
     //役割を伝えるUIに使う定数
