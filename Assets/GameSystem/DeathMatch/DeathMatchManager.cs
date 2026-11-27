@@ -1,5 +1,6 @@
 using UnityEngine;
 using Unity.Netcode;
+using System.Collections;
 
 /// <summary>
 /// デスマッチだけのシステムを管理するクラス
@@ -24,8 +25,6 @@ public class DeathMatchManager:NetworkBehaviour
 
     private TimeManager _time;
 
-    
-
     public void GameStart()
     {
         //ここでPlayerPositionをEnemyに設定する
@@ -33,19 +32,29 @@ public class DeathMatchManager:NetworkBehaviour
 
         _time.SetTime(GameConst.MAX_DEATHMATCH_TIME);
 
+
+        GameUpdate();
     }
 
+    /// <summary>
+    /// 試合中の処理
+    /// </summary>
+    public IEnumerator GameUpdate()
+    {
 
+        //ゲームのステータスで処理を分ける
+        yield return null;
+
+
+    }
 
     public void GameFinish()
     {
         //リザルト画面に飛ばす
 
+
     }
 
-    public void OnBeforeTransformParentChanged()
-    {
-        
-    }
+  
 
 }

@@ -9,7 +9,7 @@ public class MatchManager : NetworkBehaviour
 
     //マッチの共通の処理をここで書いて
     //eGameTypeの要素数を取得してSwhich文で分ける
-
+    public eMatchPhase matchStatus { get; private set; }
 
     SessionManager selectGame;
 
@@ -101,9 +101,10 @@ public class MatchManager : NetworkBehaviour
     /// <summary>
     /// マッチ中のステータスを変える
     /// </summary>
-    public void ChangeMatchStatus()
+    public void ChangeMatchStatus(eMatchPhase MatchStatus)
     {
 
+        matchStatus = MatchStatus;
 
     }
 }
