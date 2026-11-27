@@ -1,4 +1,6 @@
 
+using System.Runtime.InteropServices;
+
 /// <summary>
 /// ゲームの種類
 /// </summary>
@@ -74,4 +76,37 @@ public enum eMatchPosition
     Defense,
 
     Attack,
+}
+
+/// <summary>
+/// マッチのステータス
+/// </summary>
+
+public enum eMatchPhase
+{
+
+    Inavalid = -1,
+
+    /// <summary>
+    /// 試合前
+    /// </summary>
+    BeforeBattle,
+
+    /// <summary>
+    /// 試合中
+    /// </summary>
+    Battle,
+
+    /// <summary>
+    /// 購入フェーズ
+    /// </summary>
+    Purchasing,
+
+    /// <summary>
+    /// リザルト画面
+    /// </summary>
+    Result,
+
+
+
 }

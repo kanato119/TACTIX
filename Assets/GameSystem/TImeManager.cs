@@ -54,24 +54,11 @@ public class TimeManager : NetworkBehaviour
     /// <summary>
     /// 時間をサーバーにセットする関数
     /// </summary>
-    private void SetTime()
+    public void SetTime(float time)
     {
-        if ((!IsServer)) return;
+        if ((!IsServer)) return;    
 
-        GetGameType();
-
-        //ゲームタイプに応じてタイマーの初期値や、システムを設定する
-        switch (gameType)
-        {
-            case (int)eGameType.Deathmatch:
-                timer.Value = GameConst.MAX_DEATHMATCH_TIME;
-                break;
-            case (int)eGameType.TeamBattle:
-                break;
-            default:
-                Debug.LogError("想定していないゲームタイプです!!");
-                break;
-        }
+        timer.Value = time;
 
         //０以下にならないよう
         timer.Value = Mathf.Max(timer.Value, 0.0f);
@@ -91,7 +78,7 @@ public class TimeManager : NetworkBehaviour
         if (!IsServer) return;
         if (isGames) return;
 
-        SetTime();
+      
 
         isGames = true;
 

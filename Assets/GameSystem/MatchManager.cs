@@ -42,7 +42,7 @@ public class MatchManager : NetworkBehaviour
             case (int)eGameType.Deathmatch:
                 //ここでセットする
 
-                TimeManager.Instance.GameStart();
+              
 
                 break;
             case (int)eGameType.TeamBattle:
@@ -66,7 +66,7 @@ public class MatchManager : NetworkBehaviour
             case (int)eGameType.Deathmatch:
                 //ここでセットする
 
-                TimeManager.Instance.GameStart();
+                DeathMatchManager.instance.GameStart();
 
                 break;
             case (int)eGameType.TeamBattle:
@@ -98,5 +98,12 @@ public class MatchManager : NetworkBehaviour
         }
     }
 
+    /// <summary>
+    /// マッチ中のステータスを変える
+    /// </summary>
+    public void ChangeMatchStatus()
+    {
 
+
+    }
 }
