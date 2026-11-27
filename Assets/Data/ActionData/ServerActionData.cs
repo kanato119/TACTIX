@@ -52,6 +52,18 @@ public class ServerActionData
 
     // イベント発火用メソッド
 
+
+    /// <summary>
+    /// 使い方
+    /// On～～ ←使いたい（発火）したいイベント名
+    /// ? ←　null出ない時だけ
+    /// Invoke() ← 登録されたメソッドを実行
+    /// </summary>
+    
+
+    //下に書かれている関数を書けばイベントを発火できるようになっています
+
+
     // 時間制限
     public void TimerChanged(float time)
         => OnTimerChanged?.Invoke(time);
