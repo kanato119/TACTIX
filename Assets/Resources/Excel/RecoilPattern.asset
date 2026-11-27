@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a27941dfb174d4e9678c340fc82ee5, type: 3}
+  m_Name: RecoilPattern
+  m_EditorClassIdentifier: Assembly-CSharp::Entity_RecoilPattern
+  sheets:
+  - name: RecoilPattern
+    list:
+    - BulletNumber: 1
+      CameraX: 0
+      CameraY: 0
+      BulletX: 0
+      BulletY: 0
+    - BulletNumber: 2
+      CameraX: 0
+      CameraY: 0
+      BulletX: 0
+      BulletY: 0.8
+    - BulletNumber: 3
+      CameraX: 0
+      CameraY: 0
+      BulletX: 0
+      BulletY: 0.9
+    - BulletNumber: 4
+      CameraX: 0
+      CameraY: 0
+      BulletX: 0
+      BulletY: 1
+    - BulletNumber: 5
+      CameraX: 0
+      CameraY: 0
+      BulletX: 0
+      BulletY: 1
+    - BulletNumber: 6
+      CameraX: 0.1
+      CameraY: 0
+      BulletX: 0.1
+      BulletY: 1
+    - BulletNumber: 7
+      CameraX: 0.1
+      CameraY: 0
+      BulletX: 0.1
+      BulletY: 1
+    - BulletNumber: 8
+      CameraX: 0.2
+      CameraY: 0
+      BulletX: 0.2
+      BulletY: 0.9
+    - BulletNumber: 9
+      CameraX: 0.3
+      CameraY: 0
+      BulletX: 0.2
+      BulletY: 0.9
+    - BulletNumber: 10
+      CameraX: 0.4
+      CameraY: 0
+      BulletX: 0.3
+      BulletY: 0.8
+    - BulletNumber: 11
+      CameraX: 0.5
+      CameraY: 0
+      BulletX: 0.4
+      BulletY: 0.8
+    - BulletNumber: 12
+      CameraX: 0.6
+      CameraY: 0
+      BulletX: 0.5
+      BulletY: 0.7
+    - BulletNumber: 13
+      CameraX: 0.7
+      CameraY: 0
+      BulletX: 0.6
+      BulletY: 0.6
+    - BulletNumber: 14
+      CameraX: 0.8
+      CameraY: 0
+      BulletX: 0.7
+      BulletY: 0.5
+    - BulletNumber: 15
+      CameraX: 0.9
+      CameraY: 0
+      BulletX: 0.7
+      BulletY: 0.3
+    - BulletNumber: 16
+      CameraX: -0.5
+      CameraY: 0
+      BulletX: -0.4
+      BulletY: 0
+    - BulletNumber: 17
+      CameraX: -0.8
+      CameraY: 0
+      BulletX: -0.7
+      BulletY: 0
+    - BulletNumber: 18
+      CameraX: -1
+      CameraY: 0
+      BulletX: -0.9
+      BulletY: 0
+    - BulletNumber: 19
+      CameraX: -1
+      CameraY: 0
+      BulletX: -0.9
+      BulletY: 0
+    - BulletNumber: 20
+      CameraX: -1
+      CameraY: 0
+      BulletX: -0.9
+      BulletY: 0
+    - BulletNumber: 21
+      CameraX: -0.8
+      CameraY: 0
+      BulletX: -0.7
+      BulletY: 0
+    - BulletNumber: 22
+      CameraX: -0.6
+      CameraY: 0
+      BulletX: -0.5
+      BulletY: 0
+    - BulletNumber: 23
+      CameraX: -0.5
+      CameraY: 0
+      BulletX: -0.4
+      BulletY: 0
+    - BulletNumber: 24
+      CameraX: -0.3
+      CameraY: 0
+      BulletX: -0.2
+      BulletY: 0
+    - BulletNumber: 25
+      CameraX: -0.2
+      CameraY: 0
+      BulletX: -0.1
+      BulletY: 0
+    - BulletNumber: 0
+      CameraX: 0
+      CameraY: 0
+      BulletX: 0
+      BulletY: 0
+  - name: RecoilPattern2
+    list:
+    - BulletNumber: 1
+      CameraX: 0
+      CameraY: 0
+      BulletX: 0
+      BulletY: 0
+    - BulletNumber: 2
+      CameraX: 0
+      CameraY: 0.8
+      BulletX: 0
+      BulletY: 0.6
+    - BulletNumber: 3
+      CameraX: 0
+      CameraY: 0.9
+      BulletX: 0
+      BulletY: 0.7
+    - BulletNumber: 4
+      CameraX: 0
+      CameraY: 1
+      BulletX: 0
+      BulletY: 0.8
+    - BulletNumber: 5
+      CameraX: 0
+      CameraY: 1
+      BulletX: 0
+      BulletY: 0.8
+    - BulletNumber: 6
+      CameraX: 0.1
+      CameraY: 1
+      BulletX: 0.1
+      BulletY: 0.8
+    - BulletNumber: 7
+      CameraX: 0.2
+      CameraY: 0.8
+      BulletX: 0.2
+      BulletY: 0.7
+    - BulletNumber: 8
+      CameraX: 0.3
+      CameraY: 0.9
+      BulletX: 0.2
+      BulletY: 0.7
+    - BulletNumber: 9
+      CameraX: 0.4
+      CameraY: 0.8
+      BulletX: 0.3
+      BulletY: 0.6
+    - BulletNumber: 10
+      CameraX: 0.5
+      CameraY: 0.8
+      BulletX: 0.4
+      BulletY: 0.6
+    - BulletNumber: 11
+      CameraX: 0.4
+      CameraY: 0.8
+      BulletX: 0.3
+      BulletY: 0.6
+    - BulletNumber: 12
+      CameraX: 0.2
+      CameraY: 0.9
+      BulletX: 0.2
+      BulletY: 0.7
+    - BulletNumber: 13
+      CameraX: -0.1
+      CameraY: 0.9
+      BulletX: -0.1
+      BulletY: 0.7
+    - BulletNumber: 14
+      CameraX: -0.3
+      CameraY: 0.8
+      BulletX: -0.2
+      BulletY: 0.6
+    - BulletNumber: 15
+      CameraX: -0.4
+      CameraY: 0.8
+      BulletX: -0.3
+      BulletY: 0.6
+    - BulletNumber: 16
+      CameraX: -0.3
+      CameraY: 0.7
+      BulletX: -0.2
+      BulletY: 0.5
+    - BulletNumber: 17
+      CameraX: -0.1
+      CameraY: 0.7
+      BulletX: -0.1
+      BulletY: 0.5
+    - BulletNumber: 18
+      CameraX: 0.1
+      CameraY: 0.8
+      BulletX: 0.1
+      BulletY: 0.6
+    - BulletNumber: 19
+      CameraX: 0.3
+      CameraY: 0.8
+      BulletX: 0.2
+      BulletY: 0.6
+    - BulletNumber: 20
+      CameraX: 0.4
+      CameraY: 0.7
+      BulletX: 0.3
+      BulletY: 0.5
+    - BulletNumber: 21
+      CameraX: 0.3
+      CameraY: 0.7
+      BulletX: 0.2
+      BulletY: 0.5
+    - BulletNumber: 22
+      CameraX: -0.1
+      CameraY: 0.7
+      BulletX: 0.1
+      BulletY: 0.5
+    - BulletNumber: 23
+      CameraX: -0.1
+      CameraY: 0.6
+      BulletX: -0.1
+      BulletY: 0.4
+    - BulletNumber: 24
+      CameraX: -0.2
+      CameraY: 0.6
+      BulletX: -0.2
+      BulletY: 0.4
+    - BulletNumber: 25
+      CameraX: -0.1
+      CameraY: 0.5
+      BulletX: -0.1
+      BulletY: 0.3
+    - BulletNumber: 26
+      CameraX: 0.1
+      CameraY: 0.5
+      BulletX: 0.1
+      BulletY: 0.3
+    - BulletNumber: 27
+      CameraX: 0.2
+      CameraY: 0.5
+      BulletX: 0.2
+      BulletY: 0.3
+    - BulletNumber: 28
+      CameraX: 0.1
+      CameraY: 0.4
+      BulletX: 0.1
+      BulletY: 0.2
+    - BulletNumber: 29
+      CameraX: -0.1
+      CameraY: 0.4
+      BulletX: -0.1
+      BulletY: 0.2
+    - BulletNumber: 30
+      CameraX: 0.2
+      CameraY: 0.4
+      BulletX: -0.2
+      BulletY: 0.2
+    - BulletNumber: 0
+      CameraX: 0
+      CameraY: 0
+      BulletX: 0
+      BulletY: 0
